@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <!-- JS source paths -->
+    <fileset dir="${src.dir}" id="js.src.fileset">
+      <include name="**/*.js"/>
+    </fileset>
+    <!-- Jslint settings -->
+    <property name="predef.word" value="window,document,$" />
+	
+	    <!-- Js report paths -->
+    <property name="js.cpd.dir" value="${qualityreport.dir}/js-cpd" />
+    <property name="js.cpd.report" value="${js.cpd.dir}/cpd.txt" />
+    <property name="js.pmd.dir" value="${qualityreport.dir}/js-pmd" />
+    <property name="js.pmd.report" value="${js.pmd.dir}/ps.xml" />
+    <property name="js.jslint.dir" value="${qualityreport.dir}/js-jslint" />
+    <property name="js.jslint.report" value="${js.jslint.dir}/jslint-report.xml" />
+    <property name="js.mi.dir" value="${qualityreport.dir}/js-mi" />
+    <property name="js.mi.report" value="${js.mi.dir}/mi.xml" />
+    <property name="js.javascriptlint.dir" value="${qualityreport.dir}/js-javascriptlint" />
+    <property name="js.javascriptlint.report" value="${js.javascriptlint.dir}/javascriptlint-report.txt" />
+</project>
+
+
+
+
+
+
+
+

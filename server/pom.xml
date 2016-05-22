@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Licensed under the Apache License, Version 2.0 (the "License"); you 
+	may not use this file except in compliance with the License. You may obtain 
+	a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless 
+	required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.glority.qualityserver</groupId>
+	<artifactId>quality</artifactId>
+	<packaging>war</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>AppFuse Light Spring MVC Module</name>
+
+	<build>
+		<defaultGoal>install</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.appfuse.plugins</groupId>
+				<artifactId>appfuse-maven-plugin</artifactId>
+				<version>${appfuse.version}</version>
+				<configuration>
+					<genericCore>${amp.genericCore}</genericCore>
+					<fullSource>${amp.fullSource}</fullSource>
+				</configuration>
+				<!-- Dependency needed by appfuse:gen-model to connect to database. -->
+				<!-- See http://issues.appfuse.org/browse/APF-868 to learn more. -->
+				<dependencies>
+					<dependency>
+						<groupId>${jdbc.groupId}</groupId>
+						<artifactId>${jdbc.artifactId}</artifactId>
+						<version>${jdbc.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>hibernate3-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<components>
+						<component>
+							<name>hbm2ddl</name>
+							<implementation>annotationconfiguration</implementation>
+							<!-- Use 'jpaconfiguration' if you're using JPA. -->
+							<!--<implementation>jpaconfiguration</implementation> -->
+						</component>
+					</components>
+					<componentProperties>
+						<drop>true</drop>
+						<jdk5>false</jdk5>
+						<propertyfile>target/classes/qualityserver.properties</propertyfile>
+						<skip>${skipTests}</skip>
+					</componentProperties>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>${jdbc.groupId}</groupId>
+						<artifactId>${jdbc.artifactId}</artifactId>
+						<version>${jdbc.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.7.2</version>
+				<configuration>
+					<excludes>
+						<exclude>**/*WebTest.java</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<version>${jetty.version}</version>
+				<configuration>
+					<webAppConfig>
+						<contextPath>/</contextPath>
+					</webAppConfig>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.zeroturnaround</groupId>
+				<artifactId>javarebel-maven-plugin</artifactId>
+				<version>1.0.5</version>
+				<executions>
+					<execution>
+						<id>generate-rebel-xml</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+			</testResource>
+			<testResource>
+				<directory>src/main/webapp</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</testResource>
+		</testResources>
+		<!-- Read the contents of the file below to see how to change databases -->
+		<filters>
+		</filters>
+	</build>
+
+	<dependencies>
+		<!-- AppFuse Dependencies -->
+		<dependency>
+			<groupId>org.appfuse</groupId>
+			<artifactId>appfuse-web</artifactId>
+			<version>${appfuse.version}</version>
+			<type>pom</type>
+			<!-- This exclusion and the dependency following this one allow DAO framework 
+				switching. -->
+			<!-- You only need these if you want to use JPA or iBATIS. See APF-565 
+				for more information. -->
+			<!-- It does no harm to leave it in for Hibernate, but it's not needed. -->
+			<exclusions>
+				<exclusion>
+					<groupId>org.appfuse</groupId>
+					<artifactId>appfuse-hibernate</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-asm</artifactId>
+				</exclusion>				
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.appfuse</groupId>
+			<artifactId>appfuse-${dao.framework}</artifactId>
+			<version>${appfuse.version}</version>
+			<exclusions>
+			<exclusion>
+			<groupId>org.compass-project</groupId>
+			<artifactId>compass</artifactId>
+			</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>${jdbc.groupId}</groupId>
+			<artifactId>${jdbc.artifactId}</artifactId>
+			<version>${jdbc.version}</version>
+		</dependency>
+		<!-- Spring Web Dependencies -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>displaytag</groupId>
+			<artifactId>displaytag</artifactId>
+			<version>1.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>jcl104-over-slf4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springmodules</groupId>
+			<artifactId>spring-modules-validation</artifactId>
+			<version>0.8</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-support</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>rhino</groupId>
+					<artifactId>js</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-cas-client</artifactId>
+			<version>${spring.security.version}</version>
+			<optional>false</optional>
+		</dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>          
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>      
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>  
+		<!-- Testing Dependencies -->
+		<dependency>
+			<groupId>org.jmock</groupId>
+			<artifactId>jmock</artifactId>
+			<version>2.5.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jmock</groupId>
+			<artifactId>jmock-junit4</artifactId>
+			<version>2.5.1</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Upgrade junit-dep used by jmock -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit-dep</artifactId>
+			<version>4.5</version>
+			<scope>test</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.jwebunit</groupId>
+			<artifactId>jwebunit-htmlunit-plugin</artifactId>
+			<version>${jwebunit.version}</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-classic</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-lgpl</artifactId>
+			<version>1.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-lgpl</artifactId>
+			<version>1.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-c3p0</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<!-- guality engine -->
+		<dependency>
+			<groupId>com.glority.quality</groupId>
+			<artifactId>qualityengine</artifactId>
+			<version>1.0.2</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- file upload -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.48</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.7.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>1.8.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>org.htmlparser</groupId>
+			<artifactId>htmlparser</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.subethamail</groupId>
+			<artifactId>subethasmtp-wiser</artifactId>
+			<version>1.2</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+        <dependency>
+            <groupId>org.directwebremoting</groupId>
+            <artifactId>dwr</artifactId>
+            <version>${dwr.version}</version>
+        </dependency>   
+          
+        <dependency>
+        <groupId>org.tmatesoft.svnkit</groupId>
+             <artifactId>svnkit</artifactId>
+             <version>1.7.6</version>
+             <scope>compile</scope>
+        </dependency> 
+        
+         <dependency>
+     		<groupId>com.amazonaws</groupId>
+     		<artifactId>aws-java-sdk</artifactId>
+     		<version>1.3.26</version>
+   		</dependency>  
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>integration-test</id>
+			<activation>
+				<property>
+					<name>!skipTests</name>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.7.2</version>
+						<executions>
+							<execution>
+								<id>surefire-it</id>
+								<phase>integration-test</phase>
+								<goals>
+									<goal>test</goal>
+								</goals>
+								<configuration>
+									<excludes>
+										<exclude>none</exclude>
+									</excludes>
+									<includes>
+										<include>**/*WebTest*</include>
+									</includes>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<version>1.2.1</version>
+						<executions>
+							<execution>
+								<id>init-db</id>
+								<phase>generate-test-sources</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<configuration>
+									<executable>bash</executable>
+									<arguments>
+										<argument>${basedir}/src/main/sql/schema/${db.init.script}</argument>
+									</arguments>
+									<skip>${skipTests}</skip>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.codehaus.cargo</groupId>
+						<artifactId>cargo-maven2-plugin</artifactId>
+						<version>${cargo.version}</version>
+						<configuration>
+							<wait>${cargo.wait}</wait>
+							<container>
+								<containerId>${cargo.container}</containerId>
+								<home>${cargo.container.home}</home>
+								<zipUrlInstaller>
+									<url>${cargo.container.url}</url>
+									<installDir>${installDir}</installDir>
+								</zipUrlInstaller>
+							</container>
+							<configuration>
+								<home>${project.build.directory}/${cargo.container}/container</home>
+								<properties>
+									<cargo.hostname>${cargo.host}</cargo.hostname>
+									<cargo.servlet.port>${cargo.port}</cargo.servlet.port>
+								</properties>
+								<deployables>
+									<deployable>
+										<properties>
+											<context>ROOT</context>
+										</properties>
+									</deployable>
+								</deployables>
+							</configuration>
+						</configuration>
+						<executions>
+							<execution>
+								<id>start-container</id>
+								<phase>pre-integration-test</phase>
+								<goals>
+									<goal>start</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>stop-container</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>stop</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>emma</id>
+			<dependencies>
+				<dependency>
+					<groupId>emma</groupId>
+					<artifactId>emma</artifactId>
+					<version>2.1.5320</version>
+				</dependency>
+			</dependencies>
+		</profile>
+		<profile>
+			<id>env-prod</id>
+			<properties>
+				<db.init.script>updateDBSchema.sh</db.init.script>		
+			</properties>
+		</profile>
+		
+	</profiles>
+
+	<properties>
+		<!-- Properties might change on different profiles. Following settings are for dev env by default -->
+		<db.name>qualitysystem</db.name>
+		
+		<!-- Application settings -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<dao.framework>hibernate</dao.framework>
+		<web.framework>spring</web.framework>
+		<amp.genericCore>true</amp.genericCore>
+		<amp.fullSource>false</amp.fullSource>
+		<hibernate.version>3.6.1.Final</hibernate.version>
+		<!-- Framework dependency versions -->
+		<appfuse.version>2.1.0</appfuse.version>
+		<cargo.version>1.0.6</cargo.version>
+		<jetty.version>6.1.26</jetty.version>
+		<jmock.version>2.5.1</jmock.version>
+		<junit.version>4.8.2</junit.version>
+		<spring.version>3.2.0.RC1</spring.version>
+		<dwr.version>3.0.0-rc3-SNAPSHOT</dwr.version>
+		<spring.security.version>3.0.5.RELEASE</spring.security.version>
+		<jwebunit.version>2.5</jwebunit.version>
+
+		<!-- Database settings -->
+		<dbunit.dataTypeFactoryName>org.dbunit.ext.mysql.MySqlDataTypeFactory</dbunit.dataTypeFactoryName>
+		<dbunit.operation.type>NONE</dbunit.operation.type>
+		<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
+		<jdbc.groupId>mysql</jdbc.groupId>
+		<jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
+		<jdbc.version>5.1.14</jdbc.version>
+
+
+		<!-- Cargo settings -->
+		<cargo.container>tomcat6x</cargo.container>
+		<cargo.container.home>${env.CATALINA_HOME}</cargo.container.home>
+		<cargo.container.url>http://archive.apache.org/dist/tomcat/tomcat-6/v6.0.29/bin/apache-tomcat-6.0.29.zip</cargo.container.url>
+		<cargo.host>localhost</cargo.host>
+		<cargo.port>25888</cargo.port>
+		<cargo.wait>false</cargo.wait>
+		
+		<mail.default.from>noreply@qualitysystem.com</mail.default.from>
+		<!-- This is a testing mail server. Only limited addresses are able to receive email -->
+		<mail.host>192.168.1.110</mail.host>
+		<!--
+        <mail.username></mail.username>
+        <mail.password></mail.password>
+        -->
+		<db.init.script>initDevDBSchema.sh</db.init.script>
+	</properties>
+</project>

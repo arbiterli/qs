@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <!--  Testing paths -->
+    <property name="testcomplate.report" value="${qualityreport.dir}/testcomplete/root.xml" />
+    <property name="java.junit.report" value="${qualityreport.dir}/java-junit/junit.xml" />
+    <property name="java.junit.dir" value="${qualityreport.dir}/java-junit" />
+	
+	<property name="testinfo.jenkinsJob" value="" />
+    <property name="testinfo.jenkinsBuildId" value="22" />
+    <property name="testinfo.configuration.os" value="" />
+    <property name="testinfo.configuration.lang" value="" />
+    <property name="testinfo.configuration.arch" value="" />
+    <property name="testinfo.configuration.softwares" value="" />
+    <property name="testinfo.configuration.csvpath" value="" />
+    <property name="testinfo.configuration.lang" value="" />
+    <property name="testinfo.configuration.arch" value="" />
+    <property name="testinfo.configuration.softwares" value="" />
+    <property name="testinfo.configuration.csvpath" value="" />
+    <property name="testcomplete.pjstemplate" value="C:/WinZipCourier_ATC/Templates/TemplateSuites.pjs"/>
+    <property name="testcomplete.caseid" value="91"/>
+    <property name="testcomplete.testrunid" value="11"/>
+    <property name="testcomplete.atcpath" value="C:\\WinZipCourier_ATC"/>
+    <property name="testrail.server" value="http://testrail.glority.com"/>
+    <property name="testrail.key" value="glority123"/>
+    <property name="testrail.productid" value="2"/>
+    <property name="testrail.productversion" value="4.5"/>
+    <property name="testrail.testruntype" value="development"/>
+    <property name="testGroupId" value=""/>
+</project>
+
+
+
+
+
+
+
+

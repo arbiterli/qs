@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="0" disabled="0" errors="0" time="0" name="AllTests">
+  <testsuite name="Point2PointDistanceTest" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="TestName" status="run" time="0" classname="Point2PointDistanceTest" />
+  </testsuite>
+  <testsuite name="PointInLineTest" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="TestNane" status="run" time="0" classname="PointInLineTest" />
+  </testsuite>
+  <testsuite name="GetNewColorFlag" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="TestName" status="run" time="0" classname="GetNewColorFlag" />
+  </testsuite>
+</testsuites>

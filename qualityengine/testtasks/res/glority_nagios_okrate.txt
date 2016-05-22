@@ -1,0 +1,163 @@
+<html>
+<head>
+<link rel="shortcut icon" href="/nagios/images/favicon.ico" type="image/ico">
+<title>
+Nagios Availability
+</title>
+<LINK REL='stylesheet' TYPE='text/css' HREF='/nagios/stylesheets/common.css'>
+<LINK REL='stylesheet' TYPE='text/css' HREF='/nagios/stylesheets/avail.css'>
+</head>
+<BODY CLASS='avail'>
+
+<!-- Produced by Nagios (http://www.nagios.org).  Copyright (c) 1999-2007 Ethan Galstad. -->
+<table border=0 width=100% cellspacing=0 cellpadding=0>
+<tr>
+<td align=left valign=top width=33%>
+<TABLE CLASS='infoBox' BORDER=1 CELLSPACING=0 CELLPADDING=0>
+<TR><TD CLASS='infoBox'>
+<DIV CLASS='infoBoxTitle'>Host Availability Report</DIV>
+Last Updated: Mon Jan 14 13:46:50 CST 2013<BR>
+Nagios&reg; Core&trade; 3.3.1 - <A HREF='http://www.nagios.org' TARGET='_new' CLASS='homepageURL'>www.nagios.org</A><BR>
+Logged in as <i>nagiosadmin</i><BR>
+</TD></TR>
+</TABLE>
+<TABLE BORDER=1 CELLPADDING=0 CELLSPACING=0 CLASS='linkBox'>
+<TR><TD CLASS='linkBox'>
+<a href='avail.cgi?host=all&show_log_entries&t1=1358056010&t2=1358142410&backtrack=4&assumestateretention=yes&assumeinitialstates=yes&assumestatesduringnotrunning=yes&initialassumedhoststate=0&initialassumedservicestate=0&show_log_entries&showscheduleddowntime=yes'>View Availability Report For All Hosts</a><BR>
+<a href='trends.cgi?host=zipsend&t1=1358056010&t2=1358142410&assumestateretention=no&assumeinitialstates=yes&includesoftstates=yes&assumestatesduringnotrunning=yes&initialassumedhoststate=0&backtrack=4'>View Trends For This Host</a><BR>
+<a href='histogram.cgi?host=zipsend&t1=1358056010&t2=1358142410&assumestateretention=yes'>View Alert Histogram For This Host</a><BR>
+<a href='status.cgi?host=zipsend'>View Status Detail For This Host</a><BR>
+<a href='history.cgi?host=zipsend'>View Alert History For This Host</a><BR>
+<a href='notifications.cgi?host=zipsend'>View Notifications For This Host</a><BR>
+</TD></TR>
+</TABLE>
+</td>
+<td align=center valign=top width=33%>
+<DIV ALIGN=CENTER CLASS='dataTitle'>
+Host 'zipsend'</DIV>
+<BR>
+<IMG SRC='/nagios/images/trends.gif' BORDER=0 ALT='Availability Report' TITLE='Availability Report'>
+<BR CLEAR=ALL>
+<div align=center class='reportRange'>01-13-2013 13:46:50 to 01-14-2013 13:46:50</div>
+<div align=center class='reportDuration'>Duration: 1d 0h 0m 0s</div>
+</td>
+<td align=right valign=bottom width=33%>
+<form method="GET" action="avail.cgi">
+<table border=0 CLASS='optBox'>
+<tr><td valign=top align=left class='optBoxItem'>First assumed host state:</td><td valign=top align=left class='optBoxItem'>First assumed service state</td></tr>
+<tr>
+<td valign=top align=left class='optBoxItem'>
+<input type='hidden' name='t1' value='1358056010'>
+<input type='hidden' name='t2' value='1358142410'>
+<input type='hidden' name='show_log_entries' value=''>
+<input type='hidden' name='host' value='zipsend'>
+<input type='hidden' name='assumeinitialstates' value='yes'>
+<input type='hidden' name='assumestateretention' value='yes'>
+<input type='hidden' name='assumestatesduringnotrunning' value='yes'>
+<input type='hidden' name='includesoftstates' value='no'>
+<select name='initialassumedhoststate'>
+<option value=0 SELECTED>Unspecified
+<option value=-1 >Current State
+<option value=3 >Host Up
+<option value=4 >Host Down
+<option value=5 >Host Unreachable
+</select>
+</td>
+<td CLASS='optBoxItem'>
+<select name='initialassumedservicestate'>
+<option value=0 SELECTED>Unspecified
+<option value=-1 >Current State
+<option value=6 >Service Ok
+<option value=8 >Service Warning
+<option value=7 >Service Unknown
+<option value=9 >Service Critical
+</select>
+</td>
+</tr>
+<tr><td valign=top align=left class='optBoxItem'>Report period:</td><td valign=top align=left class='optBoxItem'>Backtracked archives:</td></tr>
+<tr>
+<td valign=top align=left class='optBoxItem'>
+<select name='timeperiod'>
+<option SELECTED>[ Current time range ]
+<option value=today >Today
+<option value=last24hours SELECTED>Last 24 Hours
+<option value=yesterday >Yesterday
+<option value=thisweek >This Week
+<option value=last7days >Last 7 Days
+<option value=lastweek >Last Week
+<option value=thismonth >This Month
+<option value=last31days >Last 31 Days
+<option value=lastmonth >Last Month
+<option value=thisyear >This Year
+<option value=lastyear >Last Year
+</select>
+</td>
+<td valign=top align=left CLASS='optBoxItem'>
+<input type='text' size='2' maxlength='2' name='backtrack' value='4'>
+</td>
+</tr>
+<tr><td valign=top align=left></td>
+<td valign=top align=left CLASS='optBoxItem'>
+<input type='submit' value='Update'>
+</td>
+</tr>
+<tr><td></td><td align=right valign=bottom>
+</td></tr>
+</table>
+</form>
+</td>
+</tr>
+</table>
+<div align=center class='reportTime'>[ Availability report completed in 0 min 0 sec ]</div>
+<BR><BR>
+<DIV ALIGN=CENTER CLASS='dataTitle'>Host State Breakdowns:</DIV>
+<p align='center'>
+<a href='trends.cgi?host=zipsend&t1=1358056010&t2=1358142410&includesoftstates=no&assumestateretention=yes&assumeinitialstates=yes&assumestatesduringnotrunning=yes&initialassumedhoststate=0&backtrack=4'><img src='trends.cgi?createimage&smallimage&host=zipsend&t1=1358056010&t2=1358142410&includesoftstates=no&assumestateretention=yes&assumeinitialstates=yes&assumestatesduringnotrunning=yes&initialassumedhoststate=0&backtrack=4' border=1 alt='Host State Trends' title='Host State Trends' width='500' height='20'></a><br>
+</p>
+<DIV ALIGN=CENTER>
+<TABLE BORDER=0 CLASS='data'>
+<TR><TH CLASS='data'>State</TH><TH CLASS='data'>Type / Reason</TH><TH CLASS='data'>Time</TH><TH CLASS='data'>% Total Time</TH><TH CLASS='data'>% Known Time</TH></TR>
+<tr CLASS='dataEven'><td CLASS='hostUP' rowspan=3>UP</td><td CLASS='dataEven'>Unscheduled</td><td CLASS='dataEven'>1d 0h 0m 0s</td><td CLASS='dataEven'>100.000%</td><td class='dataEven'>100.000%</td></tr>
+<tr CLASS='dataEven'><td CLASS='dataEven'>Scheduled</td><td CLASS='dataEven'>0d 0h 0m 0s</td><td CLASS='dataEven'>0.000%</td><td class='dataEven'>0.000%</td></tr>
+<tr CLASS='hostUP'><td CLASS='hostUP'>Total</td><td CLASS='hostUP'>1d 0h 0m 0s</td><td CLASS='hostUP'>100.000%</td><td class='hostUP'>100.000%</td></tr>
+<tr CLASS='dataOdd'><td CLASS='hostDOWN' rowspan=3>DOWN</td><td CLASS='dataOdd'>Unscheduled</td><td CLASS='dataOdd'>0d 0h 0m 0s</td><td CLASS='dataOdd'>0.000%</td><td class='dataOdd'>0.000%</td></tr>
+<tr CLASS='dataOdd'><td CLASS='dataOdd'>Scheduled</td><td CLASS='dataOdd'>0d 0h 0m 0s</td><td CLASS='dataOdd'>0.000%</td><td class='dataOdd'>0.000%</td></tr>
+<tr CLASS='hostDOWN'><td CLASS='hostDOWN'>Total</td><td CLASS='hostDOWN'>0d 0h 0m 0s</td><td CLASS='hostDOWN'>0.000%</td><td class='hostDOWN'>0.000%</td></tr>
+<tr CLASS='dataEven'><td CLASS='hostUNREACHABLE' rowspan=3>UNREACHABLE</td><td CLASS='dataEven'>Unscheduled</td><td CLASS='dataEven'>0d 0h 0m 0s</td><td CLASS='dataEven'>0.000%</td><td class='dataEven'>0.000%</td></tr>
+<tr CLASS='dataEven'><td CLASS='dataEven'>Scheduled</td><td CLASS='dataEven'>0d 0h 0m 0s</td><td CLASS='dataEven'>0.000%</td><td class='dataEven'>0.000%</td></tr>
+<tr CLASS='hostUNREACHABLE'><td CLASS='hostUNREACHABLE'>Total</td><td CLASS='hostUNREACHABLE'>0d 0h 0m 0s</td><td CLASS='hostUNREACHABLE'>0.000%</td><td class='hostUNREACHABLE'>0.000%</td></tr>
+<tr CLASS='dataOdd'><td CLASS='dataOdd' rowspan=3>Undetermined</td><td CLASS='dataOdd'>Nagios Not Running</td><td CLASS='dataOdd'>0d 0h 0m 0s</td><td CLASS='dataOdd'>0.000%</td><td CLASS='dataOdd'></td></tr>
+<tr CLASS='dataOdd'><td CLASS='dataOdd'>Insufficient Data</td><td CLASS='dataOdd'>0d 0h 0m 0s</td><td CLASS='dataOdd'>0.000%</td><td CLASS='dataOdd'></td></tr>
+<tr CLASS='dataOdd'><td CLASS='dataOdd'>Total</td><td CLASS='dataOdd'>0d 0h 0m 0s</td><td CLASS='dataOdd'>0.000%</td><td CLASS='dataOdd'></td></tr>
+<tr><td colspan=3></td></tr>
+<tr CLASS='dataEven'><td CLASS='dataEven'>All</td><td class='dataEven'>Total</td><td CLASS='dataEven'>1d 0h 0m 0s</td><td CLASS='dataEven'>100.000%</td><td CLASS='dataEven'>100.000%</td></tr>
+</table>
+</DIV>
+<BR><BR>
+<DIV ALIGN=CENTER CLASS='dataTitle'>State Breakdowns For Host Services:</DIV>
+<DIV ALIGN=CENTER>
+<TABLE BORDER=0 CLASS='data'>
+<TR><TH CLASS='data'>Service</TH><TH CLASS='data'>% Time OK</TH><TH CLASS='data'>% Time Warning</TH><TH CLASS='data'>% Time Unknown</TH><TH CLASS='data'>% Time Critical</TH><TH CLASS='data'>% Time Undetermined</TH></TR>
+<tr CLASS='dataOdd'><td CLASS='dataOdd'><a href='avail.cgi?host=zipsend&service=HTTP+SERVER&t1=1358056010&t2=1358142410&backtrack=4&assumestateretention=yes&assumeinitialstates=yes&assumestatesduringnotrunning=yes&initialassumedhoststate=0&initialassumedservicestate=0&show_log_entries&showscheduleddowntime=yes'>HTTP SERVER</a></td><td CLASS='serviceOK'>100.000% (100.000%)</td><td CLASS='serviceWARNING'>0.000% (0.000%)</td><td CLASS='serviceUNKNOWN'>0.000% (0.000%)</td><td class='serviceCRITICAL'>0.000% (0.000%)</td><td class='dataOdd'>0.000%</td></tr>
+<tr CLASS='dataEven'><td CLASS='dataEven'><a href='avail.cgi?host=zipsend&service=ZipSend+Tomcat+HomePage&t1=1358056010&t2=1358142410&backtrack=4&assumestateretention=yes&assumeinitialstates=yes&assumestatesduringnotrunning=yes&initialassumedhoststate=0&initialassumedservicestate=0&show_log_entries&showscheduleddowntime=yes'>ZipSend Tomcat HomePage</a></td><td CLASS='serviceOK'>100.000% (100.000%)</td><td CLASS='serviceWARNING'>0.000% (0.000%)</td><td CLASS='serviceUNKNOWN'>0.000% (0.000%)</td><td class='serviceCRITICAL'>0.000% (0.000%)</td><td class='dataEven'>0.000%</td></tr>
+<tr CLASS='dataOdd'><td CLASS='dataOdd'>Average</td><td CLASS='serviceOK'>33.000% (100.000%)</td><td CLASS='serviceWARNING'>0.000% (0.000%)</td><td CLASS='serviceUNKNOWN'>0.000% (0.000%)</td><td class='serviceCRITICAL'>0.000% (0.000%)</td><td class='dataOdd'>0.000%</td></tr>
+</table>
+</DIV>
+<BR><BR>
+<DIV ALIGN=CENTER CLASS='dataTitle'>Host Log Entries:</DIV>
+<DIV ALIGN=CENTER CLASS='infoMessage'><a href='avail.cgi?host=zipsend&show_log_entries&t1=1358056010&t2=1358142410&backtrack=4&assumestateretention=yes&assumeinitialstates=yes&assumestatesduringnotrunning=yes&initialassumedhoststate=0&initialassumedservicestate=0&show_log_entries&full_log_entries&showscheduleddowntime=yes'>[ View full log entries ]</a></DIV>
+<DIV ALIGN=CENTER>
+<table border=1 cellspacing=0 cellpadding=3 class='logEntries'>
+<tr><th class='logEntries'>Event Start Time</th><th class='logEntries'>Event End Time</th><th class='logEntries'>Event Duration</th><th class='logEntries'>Event/State Type</th><th class='logEntries'>Event/State Information</th></tr>
+<tr class='logEntriesEven'><td class='logEntriesEven'>01-09-2013 00:00:00</td><td class='logEntriesEven'>01-10-2013 00:00:00</td><td class='logEntriesEven'>1d 0h 0m 0s</td><td class='logEntriesUP'>HOST UP (HARD)</td><td class='logEntriesEven'>TCP OK &#45; 0&#46;194 second response time on port 443</td></tr>
+<tr class='logEntriesOdd'><td class='logEntriesOdd'>01-10-2013 00:00:00</td><td class='logEntriesOdd'>01-11-2013 00:00:00</td><td class='logEntriesOdd'>1d 0h 0m 0s</td><td class='logEntriesUP'>HOST UP (HARD)</td><td class='logEntriesOdd'>TCP OK &#45; 0&#46;213 second response time on port 443</td></tr>
+<tr class='logEntriesEven'><td class='logEntriesEven'>01-11-2013 00:00:00</td><td class='logEntriesEven'>01-12-2013 00:00:00</td><td class='logEntriesEven'>1d 0h 0m 0s</td><td class='logEntriesUP'>HOST UP (HARD)</td><td class='logEntriesEven'>TCP OK &#45; 0&#46;201 second response time on port 443</td></tr>
+<tr class='logEntriesOdd'><td class='logEntriesOdd'>01-12-2013 00:00:00</td><td class='logEntriesOdd'>01-13-2013 00:00:00</td><td class='logEntriesOdd'>1d 0h 0m 0s</td><td class='logEntriesUP'>HOST UP (HARD)</td><td class='logEntriesOdd'>TCP OK &#45; 0&#46;207 second response time on port 443</td></tr>
+<tr class='logEntriesEven'><td class='logEntriesEven'>01-13-2013 00:00:00</td><td class='logEntriesEven'>01-14-2013 00:00:00</td><td class='logEntriesEven'>1d 0h 0m 0s</td><td class='logEntriesUP'>HOST UP (HARD)</td><td class='logEntriesEven'>TCP OK &#45; 0&#46;203 second response time on port 443</td></tr>
+<tr class='logEntriesOdd'><td class='logEntriesOdd'>01-14-2013 00:00:00</td><td class='logEntriesOdd'>01-14-2013 13:46:50</td><td class='logEntriesOdd'>0d 13h 46m 50s+</td><td class='logEntriesUP'>HOST UP (HARD)</td><td class='logEntriesOdd'>TCP OK &#45; 0&#46;198 second response time on port 443</td></tr>
+</table>
+</DIV>
+
+<!-- Produced by Nagios (http://www.nagios.org).  Copyright (c) 1999-2007 Ethan Galstad. -->
+</body>
+</html>

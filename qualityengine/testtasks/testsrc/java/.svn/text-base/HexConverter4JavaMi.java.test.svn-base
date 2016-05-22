@@ -1,0 +1,35 @@
+package TestHexconverter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class HexConverter4Mi {
+
+    /**
+     * 
+     * @param args
+     */
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        List<String> list = null;
+        int i = 31; // initial variable
+        if (i != 0) {
+            list = new ArrayList<String>();
+            for (; i > 0; i--) {
+                String temp = Integer.toHexString(i);
+                if (temp.length() > 5) {
+                    list.add(temp);
+                    counter++;
+                }
+            }
+        }
+
+        System.out.println(counter);
+    }
+
+    /**
+     * A static var.
+     */
+    private static int counter = 0; // do this
+
+}

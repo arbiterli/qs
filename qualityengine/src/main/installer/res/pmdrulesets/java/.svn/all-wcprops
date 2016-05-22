@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java
+END
+coupling.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/coupling.xml
+END
+migrating_to_junit4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/migrating_to_junit4.xml
+END
+migrating.xml
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/migrating.xml
+END
+junit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/junit.xml
+END
+controversial.xml
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/controversial.xml
+END
+unusedcode.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/unusedcode.xml
+END
+braces.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/braces.xml
+END
+rulesets.properties
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/rulesets.properties
+END
+finalizers.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/finalizers.xml
+END
+design.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/design.xml
+END
+sunsecure.xml
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/sunsecure.xml
+END
+android.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/android.xml
+END
+basic.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/basic.xml
+END
+j2ee.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/j2ee.xml
+END
+comments.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/comments.xml
+END
+migrating_to_13.xml
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/migrating_to_13.xml
+END
+migrating_to_14.xml
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/migrating_to_14.xml
+END
+strictexception.xml
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/strictexception.xml
+END
+migrating_to_15.xml
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/migrating_to_15.xml
+END
+strings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/strings.xml
+END
+javabeans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/javabeans.xml
+END
+imports.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/imports.xml
+END
+empty.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/empty.xml
+END
+unnecessary.xml
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/unnecessary.xml
+END
+clone.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/clone.xml
+END
+typeresolution.xml
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/typeresolution.xml
+END
+logging-java.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/logging-java.xml
+END
+codesize.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/codesize.xml
+END
+optimizations.xml
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/optimizations.xml
+END
+naming.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/naming.xml
+END
+logging-jakarta-commons.xml
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/java/logging-jakarta-commons.xml
+END

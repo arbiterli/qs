@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets type="array">
+	<ticket>
+		<assigned-to-id>aSIMFChk8r4P1TacwqjQWU</assigned-to-id>
+		<completed-date type="datetime">2012-12-06T06:48:18Z
+		</completed-date>
+		<component-id type="integer"></component-id>
+		<created-on type="datetime">2012-12-06T04:55:13Z</created-on>
+		<description>***** Nagios *****
+
+			Notification Type: PROBLEM
+
+			Service: Portal Server
+			Host: quality.glority.com
+			Address: quality.glority.com
+			State: WARNING
+
+			Date/Time: Thu Dec 6 12:59:11 CST 2012
+
+			Additional Info:
+
+			HTTP WARNING: HTTP/1.1 404 Not Found - 128 bytes in 0.268 second response
+			time</description>
+		<from-support type="integer">0</from-support>
+		<id type="integer">39935593</id>
+		<importance type="integer">-16</importance>
+		<importance-float type="float">-16.0</importance-float>
+		<is-story type="boolean">false</is-story>
+		<milestone-id type="integer"></milestone-id>
+		<notification-list>nagios@gateway.glority.com,aSIMFChk8r4P1TacwqjQWU
+		</notification-list>
+		<number type="integer">16</number>
+		<priority type="integer">3</priority>
+		<reporter-id>bgfq4qA1Gr2QjIaaaHk9wZ</reporter-id>
+		<space-id>bJPF-2ngKr4OKpacwqjQWU</space-id>
+		<status type='integer'>3</status>
+		<status-name>Fixed</status-name>
+		<story-importance type="integer">0</story-importance>
+		<summary>** PROBLEM Service Alert: quality.glority.com/Portal Server
+			is WARNING **</summary>
+		<updated-at type="datetime">2012-12-06T06:48:18Z</updated-at>
+		<working-hours type="float">0.0</working-hours>
+		<working-hour type="float" warning="deprecated">0.0</working-hour>
+		<estimate type="string">Small</estimate>
+		<total-estimate type="float">1.0</total-estimate>
+		<invested-hours type="float">0.0</invested-hours>
+		<assigned-to>
+			<id>aSIMFChk8r4P1TacwqjQWU</id>
+			<login>xu.qingsong@glority.com</login>
+			<login_name warning="deprecated">xu.qingsong@glority.com</login_name>
+			<name>Kinson Xu</name>
+		</assigned-to>
+		<reporter>
+			<id>bgfq4qA1Gr2QjIaaaHk9wZ</id>
+			<login>Anonymous</login>
+			<login_name warning="deprecated">Anonymous</login_name>
+			<name>Anonymous</name>
+		</reporter>
+	</ticket>
+	<ticket>
+		<assigned-to-id>aSIMFChk8r4P1TacwqjQWU</assigned-to-id>
+		<completed-date type="datetime">2012-12-08T06:48:18Z
+		</completed-date>
+		<component-id type="integer"></component-id>
+		<created-on type="datetime">2012-12-08T05:05:12Z</created-on>
+		<description>***** Nagios *****
+
+			Notification Type: RECOVERY
+
+			Service: Portal Server
+			Host: quality.glority.com
+			Address: quality.glority.com
+			State: OK
+
+			Date/Time: Thu Dec 6 13:09:11 CST 2012
+
+			Additional Info:
+
+			HTTP OK: HTTP/1.1 302 Found - 324 bytes in 0.292 second response time
+		</description>
+		<from-support type="integer">0</from-support>
+		<id type="integer">39935843</id>
+		<importance type="integer">-17</importance>
+		<importance-float type="float">-17.0</importance-float>
+		<is-story type="boolean">false</is-story>
+		<milestone-id type="integer"></milestone-id>
+		<notification-list>nagios@gateway.glority.com,aSIMFChk8r4P1TacwqjQWU
+		</notification-list>
+		<number type="integer">17</number>
+		<priority type="integer">3</priority>
+		<reporter-id>bgfq4qA1Gr2QjIaaaHk9wZ</reporter-id>
+		<space-id>bJPF-2ngKr4OKpacwqjQWU</space-id>
+		<status type='integer'>3</status>
+		<status-name>Fixed</status-name>
+		<story-importance type="integer">0</story-importance>
+		<summary>** RECOVERY Service Alert: quality.glority.com/Portal Server
+			is OK **</summary>
+		<updated-at type="datetime">2012-12-06T06:48:18Z</updated-at>
+		<working-hours type="float">0.0</working-hours>
+		<working-hour type="float" warning="deprecated">0.0</working-hour>
+		<estimate type="string">Small</estimate>
+		<total-estimate type="float">1.0</total-estimate>
+		<invested-hours type="float">0.0</invested-hours>
+		<assigned-to>
+			<id>aSIMFChk8r4P1TacwqjQWU</id>
+			<login>xu.qingsong@glority.com</login>
+			<login_name warning="deprecated">xu.qingsong@glority.com</login_name>
+			<name>Kinson Xu</name>
+		</assigned-to>
+		<reporter>
+			<id>bgfq4qA1Gr2QjIaaaHk9wZ</id>
+			<login>Anonymous</login>
+			<login_name warning="deprecated">Anonymous</login_name>
+			<name>Anonymous</name>
+		</reporter>
+	</ticket>
+	<ticket>
+		<assigned-to-id>aSIMFChk8r4P1TacwqjQWU</assigned-to-id>
+		<completed-date type="datetime">2012-12-10T06:48:18Z
+		</completed-date>
+		<component-id type="integer"></component-id>
+		<created-on type="datetime">2012-12-10T05:11:03Z</created-on>
+		<description>***** Nagios *****
+
+			Notification Type: RECOVERY
+
+			Service: Report Server
+			Host: quality.glority.com
+			Address: quality.glority.com
+			State: OK
+
+			Date/Time: Thu Dec 6 13:15:01 CST 2012
+
+			Additional Info:
+
+			HTTP OK: HTTP/1.1 302 Found - 324 bytes in 0.283 second response time
+		</description>
+		<from-support type="integer">0</from-support>
+		<id type="integer">39935963</id>
+		<importance type="integer">-18</importance>
+		<importance-float type="float">-18.0</importance-float>
+		<is-story type="boolean">false</is-story>
+		<milestone-id type="integer"></milestone-id>
+		<notification-list>nagios@gateway.glority.com,aSIMFChk8r4P1TacwqjQWU
+		</notification-list>
+		<number type="integer">18</number>
+		<priority type="integer">3</priority>
+		<reporter-id>bgfq4qA1Gr2QjIaaaHk9wZ</reporter-id>
+		<space-id>bJPF-2ngKr4OKpacwqjQWU</space-id>
+		<status type='integer'>3</status>
+		<status-name>Working</status-name>
+		<story-importance type="integer">0</story-importance>
+		<summary>** RECOVERY Service Alert: quality.glority.com/Report Server
+			is OK **</summary>
+		<updated-at type="datetime">2012-12-06T06:48:18Z</updated-at>
+		<working-hours type="float">0.0</working-hours>
+		<working-hour type="float" warning="deprecated">0.0</working-hour>
+		<estimate type="string">Small</estimate>
+		<total-estimate type="float">1.0</total-estimate>
+		<invested-hours type="float">0.0</invested-hours>
+		<assigned-to>
+			<id>aSIMFChk8r4P1TacwqjQWU</id>
+			<login>xu.qingsong@glority.com</login>
+			<login_name warning="deprecated">xu.qingsong@glority.com</login_name>
+			<name>Kinson Xu</name>
+		</assigned-to>
+		<reporter>
+			<id>bgfq4qA1Gr2QjIaaaHk9wZ</id>
+			<login>Anonymous</login>
+			<login_name warning="deprecated">Anonymous</login_name>
+			<name>Anonymous</name>
+		</reporter>
+	</ticket>
+</tickets>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/exception
+END
+IllegalDataException.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/exception/IllegalDataException.java
+END
+InitException.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/exception/InitException.java
+END

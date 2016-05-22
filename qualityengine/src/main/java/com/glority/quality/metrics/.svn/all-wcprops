@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics
+END
+MICheckBaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/MICheckBaseTask.java
+END
+CPDCheckBaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/CPDCheckBaseTask.java
+END
+MetricsCheckBaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/MetricsCheckBaseTask.java
+END
+MetricsBaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/MetricsBaseTask.java
+END
+TestCheckBaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/TestCheckBaseTask.java
+END
+PMDCheckBaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/PMDCheckBaseTask.java
+END

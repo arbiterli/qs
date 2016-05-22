@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/util
+END
+DaoUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/util/DaoUtils.java
+END
+VersionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/util/VersionUtils.java
+END
+FileLockUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/util/FileLockUtils.java
+END
+DateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/util/DateUtils.java
+END

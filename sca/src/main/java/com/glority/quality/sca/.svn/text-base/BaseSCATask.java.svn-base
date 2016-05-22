@@ -1,0 +1,98 @@
+package com.glority.quality.sca;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.tools.ant.BuildException;
+import org.apache.tools.ant.Task;
+import org.apache.tools.ant.types.FileSet;
+
+import com.glority.quality.sca.FileFilterToPiece.MethodEnum;
+import com.glority.quality.sca.model.ErrorNode;
+
+/**
+ * sca base task.
+ * 
+ * @author LYX
+ * 
+ */
+public abstract class BaseSCATask extends Task {
+    protected MethodEnum method = MethodEnum.NONE;
+    protected List<FileSet> filesets = new ArrayList<FileSet>();
+    protected List<List<File>> pieces = new ArrayList<List<File>>();
+    protected int divisionNum = DEFAULT_DIVISION_NUM;
+    protected static final int DEFAULT_DIVISION_NUM = 500;
+    protected int reportFileSize;
+    protected String reportFilePath;
+    protected String scaErrorSetting;
+
+    public String getScaErrorSetting() {
+        return scaErrorSetting;
+    }
+
+    public void setScaErrorSetting(String scaErrorSetting) {
+        this.scaErrorSetting = scaErrorSetting;
+    }
+
+    public void setMethod(String method) {
+        this.method = MethodEnum.getValueOf(method);
+    }
+
+    public void setDivisionNum(int divisionNum) {
+        this.divisionNum = divisionNum;
+    }
+
+    public void addFileset(FileSet set) {
+        filesets.add(set);
+    }
+
+    public void setReportFilePath(String reportFilePath) {
+        this.reportFilePath = reportFilePath;
+    }
+
+    @SuppressWarnings("deprecation")
+    public void generateListOfFileList() {
+        FileFilterToPiece filter = new FileFilterToPiece();
+        filter.setDivisionNum(divisionNum);
+        pieces = filter.getFilePieces(filesets, project, method);
+    }
+
+    public void execute() {
+        try {
+            generateListOfFileList();
+            runSCA();
+            doWithReport();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new BuildException(e.getMessage(), e);
+        }
+    }
+
+    /**
+     * after the sca running,do something with the reports such as merge and zip.
+     * 
+     * @throws Exception
+     */
+    public abstract void doWithReport() throws Exception;
+
+    /**
+     * when we need generate a standard reprot,we should implement this methd.
+     * 
+     * @param originalReportPath
+     * @param subErrorAmount
+     * @param subWarningAmount
+     * @param errorEle
+     * @return
+     * @throws Exception
+     */
+    public abstract List<ErrorNode> analyzeOriginalReport(String originalReportPath)
+            throws Exception;
+
+    /**
+     * run the static code analysis.
+     * 
+     * @throws Exception
+     */
+    public abstract void runSCA() throws Exception;
+}

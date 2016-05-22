@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/35674/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd
+END
+GridBagHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/GridBagHelper.java
+END
+CsTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CsTokenizer.java
+END
+MatchAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/MatchAlgorithm.java
+END
+FortranTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/FortranTokenizer.java
+END
+CPD.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CPD.java
+END
+AbstractLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/AbstractLanguage.java
+END
+CsLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CsLanguage.java
+END
+RubyTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/RubyTokenizer.java
+END
+CPPTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CPPTokenizer.java
+END
+FortranLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/FortranLanguage.java
+END
+SimpleRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/SimpleRenderer.java
+END
+AnyTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/AnyTokenizer.java
+END
+PHPTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/PHPTokenizer.java
+END
+EcmascriptTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/EcmascriptTokenizer.java
+END
+RubyLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/RubyLanguage.java
+END
+XMLRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/XMLRenderer.java
+END
+CPDTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/35674/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CPDTask.java
+END
+ReportException.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/ReportException.java
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/Readme.txt
+END
+PHPLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/PHPLanguage.java
+END
+AnyLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/AnyLanguage.java
+END
+CssLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CssLanguage.java
+END
+Match.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/Match.java
+END
+CPDConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CPDConfiguration.java
+END
+JSPLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/JSPLanguage.java
+END
+TokenEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/TokenEntry.java
+END
+FileReporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/FileReporter.java
+END
+Tokens.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/Tokens.java
+END
+MatchCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/MatchCollector.java
+END
+Renderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/Renderer.java
+END
+CPDNullListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CPDNullListener.java
+END
+Tokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/Tokenizer.java
+END
+LanguageFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/LanguageFactory.java
+END
+JavaTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/JavaTokenizer.java
+END
+CPDListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CPDListener.java
+END
+VSRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/VSRenderer.java
+END
+CSVRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CSVRenderer.java
+END
+Language.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/Language.java
+END
+CssTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CssTokenizer.java
+END
+GUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/GUI.java
+END
+JavaLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/JavaLanguage.java
+END
+CPPLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/CPPLanguage.java
+END
+JSPTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/JSPTokenizer.java
+END
+SourceCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/SourceCode.java
+END
+EcmascriptLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/EcmascriptLanguage.java
+END
+AbstractTokenizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/cpd/AbstractTokenizer.java
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin
+END
+roleofuser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/roleofuser.jsp
+END
+errormanagement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/errormanagement.jsp
+END
+admin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/admin.jsp
+END
+usermanagement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/usermanagement.jsp
+END
+versionofproduct.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/versionofproduct.jsp
+END
+productmanagement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/productmanagement.jsp
+END
+rolemanagement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/rolemanagement.jsp
+END
+errorofproduct.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/errorofproduct.jsp
+END
+versionmanagement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/admin/versionmanagement.jsp
+END

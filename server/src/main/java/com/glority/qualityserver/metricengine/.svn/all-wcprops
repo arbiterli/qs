@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine
+END
+BasicItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/BasicItem.java
+END
+MetricFormulaGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/MetricFormulaGenerator.java
+END
+ItemContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/ItemContainer.java
+END
+MetricItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/MetricItem.java
+END
+MetricDescriptionParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/MetricDescriptionParser.java
+END
+ExtendItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/ExtendItem.java
+END
+DisplayType.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/DisplayType.java
+END
+DataItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/DataItem.java
+END
+MetricEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/MetricEngine.java
+END
+ScoreGeneratorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/ScoreGeneratorFactory.java
+END
+ScoreItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/ScoreItem.java
+END
+MetricEngineProfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/MetricEngineProfile.java
+END
+MetricEngineConfigParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/MetricEngineConfigParser.java
+END
+MetricEngineCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/MetricEngineCache.java
+END

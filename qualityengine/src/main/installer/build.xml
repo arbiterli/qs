@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Note: you should rename the buildsettings.xml.sample to buildsettings.xml
+and update the settings in the file base on your product
+the buildsettings.xml contains all customized settings for the product
+ -->
+<project name="qualityengine" basedir="." default="check-init">
+	<!-- include buildsettings.xml: -->
+	<property environment="env"/>
+	<import file="${env.ProductPath}/buildsettings.xml"/>
+    
+	<!-- This res path of the quality engine, which holds some setting files of the quality engine -->
+	<property name="engine.res.dir" value="res"/>
+	<property name="verbose" value="false"/>
+	
+    <path id="common.classpath">
+    	<fileset dir="lib" includes="**/*.jar" />	
+    </path>
+	
+	<target name="check-init">
+	  
+	</target>
+	
+	<target name="java-run-cpd" description="Run java CPD">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="classpath" />	
+	  <delete dir="${java.cpd.dir}" />
+	  <mkdir dir="${java.cpd.dir}" />
+	  <cpd minimumTokenCount="${cpdMiniTokenCount}" outputFile="${java.cpd.report}" language="java">
+         <fileset refid="java.src.fileset" />
+      </cpd>
+    </target>	
+	<target name="java-check-cpd" description="Check Java CPD">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpdcheck_threshold" classname="com.glority.quality.metrics.java.JavaCPDCheckTask" classpathref="classpath"/>	
+      <cpdcheck_threshold reportPath="${java.cpd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </cpdcheck_threshold>
+    </target>
+
+	<target name="java-run-pmd">
+	    <path id="classpath">
+			<fileset dir="lib" includes="**/*.jar" />
+	    </path>		
+		<delete dir="${java.pmd.dir}" />
+        <mkdir dir="${java.pmd.dir}" />
+        <taskdef name="pmd" classname="com.glority.quality.sca.ExtendedPMDTask" classpathref="classpath" />
+        <pmd>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/android.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/basic.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/braces.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/clone.xml</ruleset>	
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/codesize.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/comments.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/controversial.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/coupling.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/design.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/empty.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/finalizers.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/j2ee.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/javabeans.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/junit.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/logging-jakarta-commons.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/logging-java.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/migrating.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/optimizations.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/strictexception.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/strings.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/sunsecure.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/unnecessary.xml</ruleset>
+        	<ruleset>${engine.res.dir}/pmdrulesets/java/unusedcode.xml</ruleset>
+        	<formatter type="xml" toFile="${java.pmd.report}"/>
+        	<fileset refid="java.src.fileset" />
+        </pmd>
+        <xslt in="${java.pmd.report}" out="${java.pmd.dir}/pmd.html" style="${engine.res.dir}/pmd-report-per-class.xslt">
+            <outputproperty name="indent" value="yes" />
+        </xslt>
+    </target>
+	
+	<target name="java-check-pmd">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="javacheck_threshold" classname="com.glority.quality.metrics.java.JavaPMDCheckTask" classpathref="classpath"/>	
+      <javacheck_threshold reportPath="${java.pmd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </javacheck_threshold>
+    </target>	
+
+	<target name="java-run-checkstyle" >
+	   <delete dir="${tmp.dir}" />	
+	   <mkdir dir="${tmp.dir}" />
+	  <delete dir="${java.checkstyle.dir}" />
+	  <mkdir dir="${java.checkstyle.dir}" />
+		<copy todir="${tmp.dir}">
+			<fileset refid="java.src.fileset" />
+		</copy>
+	  <taskdef name="checkstyle" classname="com.glority.quality.sca.java.JavaCheckstyleTask" classpathref="common.classpath"/>
+	  <checkstyle jarPath="lib/checkstyle-5.6-all.jar" rulePath="${engine.res.dir}/sun_checks.xml" srcDir="${tmp.dir}" reportPath="${java.checkstyle.report}" qualityXmlPath="${qualityxmlFile}" verbose="${verbose}">
+	  </checkstyle>
+	  <style in="${java.checkstyle.report}" out="${java.checkstyle.dir}/checkstyle_report.html" style="${engine.res.dir}/checkstyle-noframes-sorted.xsl"/>
+	</target>	
+
+	<target name="java-check-checkstyle">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />
+      </path>
+	  <taskdef name="javacheckstyle_threshold" classname="com.glority.quality.metrics.java.JavaCheckStyleCheckTask" classpathref="classpath"/>	
+      <javacheckstyle_threshold reportPath="${java.checkstyle.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </javacheckstyle_threshold>
+    </target>	
+	<target name="java-run-mi" description="Run java MI">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="mi" classname="com.glority.quality.sca.ExtendedMITask" classpathref="classpath" />	
+	  <delete dir="${java.mi.dir}" />
+	  <mkdir dir="${java.mi.dir}" />
+	  <mi reportPath="${java.mi.dir}" language="java">
+	  	<fileset refid="java.src.fileset" />
+      </mi>
+    </target>	
+	<target name="java-check-mi" description="Check Java MI">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="micheck_threshold" classname="com.glority.quality.metrics.java.JavaMICheckTask" classpathref="classpath"/>	
+      <micheck_threshold reportPath="${java.mi.dir}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </micheck_threshold>
+    </target>
+
+	<target name="java-check-emma">
+      <path id="classpath">
+      	<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="emma_threshold" classname="com.glority.quality.metrics.java.JavaEmmaCheckTask" classpathref="classpath"/>	
+      <emma_threshold reportPath="${java.emma.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </emma_threshold>
+    </target>
+	
+	<target name="cpp-run-cpd">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="classpath" />	
+	  <delete dir="${cpp.cpd.dir}" />
+	  <mkdir dir="${cpp.cpd.dir}" />
+	  <cpd minimumTokenCount="${cpdMiniTokenCount}" outputFile="${cpp.cpd.report}" language="cpp">
+	  	<fileset refid="cpp.src.fileset" />
+      </cpd>
+    </target>
+	<target name="cpp-check-cpd">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpdcheck_threshold" classname="com.glority.quality.metrics.cpp.CppCPDCheckTask" classpathref="classpath"/>	
+      <cpdcheck_threshold reportPath="${cpp.cpd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </cpdcheck_threshold>
+    </target>
+
+	<target name="cs-run-cpd">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="classpath" />	
+	  <delete dir="${cs.cpd.dir}" />  
+	  <mkdir dir="${cs.cpd.dir}" />
+	  <cpd minimumTokenCount="${cpdMiniTokenCount}" outputFile="${cs.cpd.report}" language="cs">
+	  	<fileset refid="cs.src.fileset" />
+      </cpd>
+    </target>	
+	<target name="cs-check-cpd">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpdcheck_threshold" classname="com.glority.quality.metrics.cs.CsCPDCheckTask" classpathref="classpath"/>	
+      <cpdcheck_threshold reportPath="${cs.cpd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </cpdcheck_threshold>
+    </target>
+	
+	<target name="js-run-cpd">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="classpath" />	
+	  <delete dir="${js.cpd.dir}" />
+	  <mkdir dir="${js.cpd.dir}" />
+	  <cpd minimumTokenCount="${cpdMiniTokenCount}" outputFile="${js.cpd.report}" language="ecmascript">
+	  	<fileset refid="js.src.fileset" />
+      </cpd>
+    </target>
+	<target name="js-check-cpd">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="jscheck_threshold" classname="com.glority.quality.metrics.js.JsCPDCheckTask" classpathref="classpath"/>	
+      <jscheck_threshold reportPath="${js.cpd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </jscheck_threshold>
+    </target>
+
+	<target name="js-run-pmd">
+	    <path id="classpath">
+			<fileset dir="lib" includes="**/*.jar" />
+	    </path>	
+		<delete dir="${js.pmd.dir}" />	
+        <mkdir dir="${js.pmd.dir}" />
+        <taskdef name="pmd" classname="com.glority.quality.sca.ExtendedPMDTask" classpathref="classpath" />
+        <pmd>
+        	<ruleset>rulesets/ecmascript/basic.xml</ruleset>
+        	<ruleset>rulesets/ecmascript/braces.xml</ruleset>
+        	<ruleset>rulesets/ecmascript/unnecessary.xml</ruleset>
+        	<formatter type="xml" toFile="${js.pmd.report}"/>
+        	<fileset refid="js.src.fileset" />
+        </pmd>
+        <xslt in="${js.pmd.report}" out="${js.pmd.dir}/pmd.html" style="${engine.res.dir}/pmd-report-per-class.xslt">
+            <outputproperty name="indent" value="yes" />
+        </xslt>
+    </target>
+	
+	<target name="js-check-pmd">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="jscheck_threshold" classname="com.glority.quality.metrics.js.JsPMDCheckTask" classpathref="classpath"/>	
+      <jscheck_threshold reportPath="${js.pmd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </jscheck_threshold>
+    </target>
+
+	<target name="jsp-run-cpd" >
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="common.classpath" />	
+	  <delete dir="${jsp.cpd.dir}" />
+	  <mkdir dir="${jsp.cpd.dir}" />
+	  <cpd minimumTokenCount="${JSPcpdMiniTokenCount}" outputFile="${jsp.cpd.report}" language="jsp">
+         <fileset refid="jsp.src.fileset" />
+      </cpd>
+    </target>
+
+	<target name="jsp-check-cpd">
+	  <taskdef name="jspcheck_threshold" classname="com.glority.quality.metrics.jsp.JspCPDCheckTask" classpathref="common.classpath"/>	
+      <jspcheck_threshold reportPath="${jsp.cpd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </jspcheck_threshold>
+    </target>
+
+	<target name="jsp-run-pmd">
+	  <delete dir="${jsp.pmd.dir}" />	
+        <mkdir dir="${jsp.pmd.dir}" />
+        <taskdef name="pmd" classname="com.glority.quality.sca.ExtendedPMDTask" classpathref="common.classpath" />
+        <pmd>
+        	<ruleset>rulesets/jsp/basic.xml</ruleset>
+        	<ruleset>rulesets/jsp/basic-jsf.xml</ruleset>
+        	<formatter type="xml" toFile="${jsp.pmd.report}"/>
+        	<fileset refid="jsp.src.fileset" />
+        </pmd>
+        <xslt in="${jsp.pmd.report}" out="${jsp.pmd.dir}/pmd.html" style="${engine.res.dir}/pmd-report-per-class.xslt">
+            <outputproperty name="indent" value="yes" />
+        </xslt>
+    </target>
+
+	<target name="jsp-check-pmd">
+	  <taskdef name="jspcheck_threshold" classname="com.glority.quality.metrics.jsp.JspPMDCheckTask" classpathref="common.classpath"/>	
+        <jspcheck_threshold reportPath="${jsp.pmd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+        </jspcheck_threshold>
+    </target>
+
+    <target name="jsp-check-mi">
+        <taskdef name="jsp_check_mi" classname="com.glority.quality.sca.counter.FilesLineCount" classpathref="common.classpath"/>	
+        <jsp_check_mi qualityXmlPath="${qualityxmlFile}" languageType="jsp">
+            <fileset refid="jsp.src.fileset" />
+        </jsp_check_mi>
+    </target>
+
+
+    <target name="css-check-mi">
+        <taskdef name="css_check_mi" classname="com.glority.quality.sca.counter.FilesLineCount" classpathref="common.classpath" />	
+        <css_check_mi qualityXmlPath="${qualityxmlFile}" languageType="css">
+            <fileset refid="css.src.fileset" />
+        </css_check_mi>
+    </target>
+
+	<target name="css-run-cpd" >
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="common.classpath" />	
+	  <delete dir="${css.cpd.dir}" />
+	  <mkdir dir="${css.cpd.dir}" />
+	  <cpd minimumTokenCount="${CSScpdMiniTokenCount}" outputFile="${css.cpd.report}" language="css">
+         <fileset refid="css.src.fileset" />
+      </cpd>
+    </target>
+
+	<target name="css-check-cpd">
+	  <taskdef name="csscheck_threshold" classname="com.glority.quality.metrics.css.CssCPDCheckTask" classpathref="common.classpath"/>	
+      <csscheck_threshold reportPath="${css.cpd.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </csscheck_threshold>
+    </target>
+
+	<target name="cpp-run-mi">
+	  <taskdef name="mi" classname="com.glority.quality.sca.ExtendedMITask" classpathref="common.classpath" />		
+        <delete dir="${cpp.mi.dir}" />	
+        <mkdir dir="${cpp.mi.dir}" />
+	  <mi reportPath="${cpp.mi.dir}" language="cpp">
+         <fileset refid="cpp.src.fileset" />
+        </mi>
+	</target>	
+
+	<target name="cpp-check-mi" >
+	  <taskdef name="micheck_threshold" classname="com.glority.quality.metrics.cpp.CppMICheckTask" classpathref="common.classpath"/>	
+      <micheck_threshold reportPath="${cpp.mi.dir}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </micheck_threshold>
+    </target>
+
+	<target name="cs-run-mi">
+	  <taskdef name="mi" classname="com.glority.quality.sca.ExtendedMITask" classpathref="common.classpath" />		
+        <delete dir="${cs.mi.dir}" />	
+        <mkdir dir="${cs.mi.dir}" />
+	  <mi reportPath="${cs.mi.dir}" language="cs">
+         <fileset refid="cs.src.fileset" />
+        </mi>
+	</target>
+
+	<target name="cs-check-mi" >
+	  <taskdef name="micheck_threshold" classname="com.glority.quality.metrics.cs.CSMICheckTask" classpathref="common.classpath"/>	
+      <micheck_threshold reportPath="${cs.mi.dir}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </micheck_threshold>
+    </target>
+
+	<target name="js-run-mi">
+	  <taskdef name="mi" classname="com.glority.quality.sca.ExtendedMITask" classpathref="common.classpath" />		
+        <delete dir="${js.mi.dir}" />	
+        <mkdir dir="${js.mi.dir}" />
+	  <mi reportPath="${js.mi.dir}" language="js">
+         <fileset refid="js.src.fileset" />
+        </mi>
+	</target>
+
+	<target name="js-check-mi" >
+	  <taskdef name="micheck_threshold" classname="com.glority.quality.metrics.js.JSMICheckTask" classpathref="common.classpath"/>	
+      <micheck_threshold reportPath="${js.mi.dir}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </micheck_threshold>
+    </target>
+	
+	<target name="cpp-run-cpplint">
+		<delete dir="${tmp.dir}" />	
+	    <mkdir dir="${tmp.dir}" />
+		<delete dir="${cpp.cpplint.dir}" />	
+	    <mkdir dir="${cpp.cpplint.dir}" />
+		<taskdef name="cpplint" classname="com.glority.quality.sca.ExtendedCpplintTask" classpathref="common.classpath"/>	
+			<cpplint pythonPath="${python.path}" cpplintPath="${cpplint.path}" method="byFolder"
+			srcDir="${tmp.dir}" reportFilePath="${cpp.cpplint.report}" qualityXmlPath="${qualityxmlFile}" verbose="${verbose}" scaErrorSetting="${scaErrorSetting.path}">
+			    <fileset refid="cpp.src.fileset" />
+			</cpplint>
+	    </target>
+
+      <target name="cpp-check-cpplint">
+	  	<taskdef name="cpplint_threshold" classname="com.glority.quality.metrics.cpp.CppCpplintCheckTask" classpathref="common.classpath"/>	
+      	<cpplint_threshold reportPath="${cpp.cpplint.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      	</cpplint_threshold>
+    </target>
+	
+	<target name="cpp-check-pclint">
+		  <taskdef name="PClint_threshold" classname="com.glority.quality.metrics.cpp.CppPClintCheckTask" classpathref="common.classpath"/>
+	      <PClint_threshold reportPath="${cpp.pclint.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+	      </PClint_threshold>
+	    </target>
+
+	<target name="cpp-run-cppcheck">
+	    <delete dir="${tmp.dir}" />	
+          <mkdir dir="${tmp.dir}" />
+	    <delete dir="${cpp.cppcheck.dir}" />	
+          <mkdir dir="${cpp.cppcheck.dir}" />
+		<taskdef name="cppcheck" classname="com.glority.quality.sca.ExtendedCppcheckTask" classpathref="common.classpath"/>	
+			<cppcheck cppcheckPath="${cppcheck.path}" srcDir="${tmp.dir}" reportFilePath="${cpp.cppcheck.report}" qualityXmlPath="${qualityxmlFile}"
+			macroSetting="${cppcheck.macro.settings}" includesFilePath="${cppcheck.includesfile.txt.path}" method="byFolder" verbose="true" scaErrorSetting="${scaErrorSetting.path}">
+				<fileset refid="cpp.src.fileset" />
+			</cppcheck>
+    </target>
+
+      <target name="cpp-check-cppcheck">
+	  	<taskdef name="cppcheck_threshold" classname="com.glority.quality.metrics.cpp.CppCppcheckCheckTask" classpathref="common.classpath"/>	
+      	<cppcheck_threshold reportPath="${cpp.cppcheck.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      	</cppcheck_threshold>
+    </target>
+	
+	<target name="cs-run-fxcop">	
+	    <delete dir="${cs.fxcop.dir}" />	
+          <mkdir dir="${cs.fxcop.dir}" />
+	    <delete dir="${tmp.dir}" />	
+          <mkdir dir="${tmp.dir}" />
+	    <copy todir="${tmp.dir}" flatten="true">
+		<fileset refid="bin.src.fileset"/>
+	    </copy>
+        <taskdef name="fxcop" classname="com.glority.quality.sca.cs.CSFxcopTask" classpathref="common.classpath"/>
+			<fxcop fxcopPath="${fxcop.path}" srcDir="${tmp.dir}" reportPath="${cs.fxcop.report}" qualityXmlPath="${qualityxmlFile}"
+			verbose="${verbose}">
+			 </fxcop>
+    </target>
+
+	
+	
+    	<target name="cs-check-fxcop">
+	  	<taskdef name="fxcop_threshold" classname="com.glority.quality.metrics.cs.CSFxcopCheckTask" classpathref="common.classpath"/>	
+      	<fxcop_threshold reportPath="${cs.fxcop.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      	</fxcop_threshold>
+    </target>
+	
+		<target name="cs-run-stylecop">
+		    <delete dir="${tmp.dir}" />	
+	          <mkdir dir="${tmp.dir}" />
+		    <copy todir="${tmp.dir}">
+		    	<fileset refid="cs.src.fileset"/>
+		    </copy>
+		    <delete dir="${cs.stylecop.dir}" />	
+	          <mkdir dir="${cs.stylecop.dir}" />
+			<taskdef name="stylecop" classname="com.glority.quality.sca.cs.CSStylecopTask" classpathref="common.classpath"/>
+			<stylecop msbuildPath="${msbuild.path}" stylecopPath="${stylecop.path}" srcDir="${tmp.dir}" reportDir="${cs.stylecop.dir}" qualityXmlPath="${qualityxmlFile}"
+			verbose="${verbose}">
+			 </stylecop>
+	    </target>
+
+	<target name="cs-check-stylecop">
+	  	<taskdef name="stylecop_threshold" classname="com.glority.quality.metrics.cs.CSStylecopCheckTask" classpathref="common.classpath"/>	
+      	<stylecop_threshold reportPath="${cs.stylecop.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      	</stylecop_threshold>
+    </target>
+
+	<target name="js-run-jslint">
+	    <delete dir="${js.jslint.dir}" />	
+          <mkdir dir="${js.jslint.dir}" />
+	    <taskdef name="jslint" classname="com.googlecode.jslint4java.ant.JSLintTask" classpathref="common.classpath"/>	
+          <jslint haltOnFailure="false" options="bitwise=false,browser=false,continue=true,css=false,debug=false,devel=true,eqeq=false,es5=true,evil=false,forin=false,fragment=true,indent=4,maxerr=10000,maxlen=120,newcap=true,node=true,nomen=false,on=true,passfail=false,plusplus=true,regexp=true,rhino=true,sloppy=true,sub=true,undef=false,unparam=false,vars=true,white=true,windows=false">
+		 <predef>${predef.word}</predef>
+		 <formatter type="plain" />
+   		 <formatter type="xml" destfile="${js.jslint.report}" />	
+             <fileset refid="js.src.fileset" />
+          </jslint>
+    </target>
+
+	<target name="js-check-jslint">
+	  	<taskdef name="jslint_threshold" classname="com.glority.quality.metrics.js.JSJslintCheckTask" classpathref="common.classpath"/>	
+      	<jslint_threshold reportPath="${js.jslint.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      	</jslint_threshold>
+    </target>
+
+	<target name="js-run-javascriptlint">
+	    <delete dir="${tmp.dir}" />	
+          <mkdir dir="${tmp.dir}" />
+	    <copy todir="${tmp.dir}" flatten="true">
+		<fileset refid="js.src.fileset"/>
+	    </copy>
+	    <delete dir="${js.javascriptlint.dir}" />	
+          <mkdir dir="${js.javascriptlint.dir}" />
+	    <exec executable="cmd.exe" failonerror="true">
+		 <arg line="/k jsl -process ${tmp.dir}/*.js > ${js.javascriptlint.report}" />
+	    </exec>
+    </target>
+
+	<target name="js-check-javascriptlint">
+	  	<taskdef name="javascriptlint_threshold" classname="com.glority.quality.metrics.js.JSJavascriptlintCheckTask" classpathref="common.classpath"/>	
+      	<javascriptlint_threshold reportPath="${js.javascriptlint.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      	</javascriptlint_threshold>
+    </target>
+
+	<target name="css-run-csslint">
+	    <delete dir="${tmp.dir}" />	
+          <mkdir dir="${tmp.dir}" />
+	    <copy todir="${tmp.dir}" flatten="true">
+		<fileset refid="css.src.fileset"/>
+	    </copy>
+	    <delete dir="${css.csslint.dir}" />	
+          <mkdir dir="${css.csslint.dir}" />
+	    <exec executable="cmd.exe" >
+		 <arg line="/k csslint ${src.dir} > ${css.csslint.report}" />
+	    </exec>
+    </target>
+
+	<target name="css-check-csslint">
+	  	<taskdef name="csslint_threshold" classname="com.glority.quality.metrics.css.CSSCsslintCheckTask" classpathref="common.classpath"/>	
+      	<csslint_threshold reportPath="${css.csslint.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      	</csslint_threshold>
+    </target>
+
+	<target name="CppInjection">
+		  <taskdef name="inject" classname="com.glority.quality.injection.cpp.CppInjectionTask" classpathref="common.classpath" />	
+		  <inject outputDir="../instr" headInPath="../CppParser.h" headOutPath="CppParser.h" includeText="CppParser.h">
+	         <fileset refid="cpp.src.fileset" />
+	      </inject>
+    </target>
+	
+	<target name="check-testcomplete">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="testcompletecheck" classname="com.glority.quality.metrics.all.TestCompleteCheckTask" classpathref="classpath" />	
+      <testcompletecheck reportPath="${testcomplate.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </testcompletecheck>
+    </target>
+	
+	<target name="java-check-junit">
+        <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+        </path>
+	  <taskdef name="junitcheck" classname="com.glority.quality.metrics.java.JavaJunitCheckTask" classpathref="classpath" />	
+        <junitcheck reportPath="${java.junit.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+        </junitcheck>
+    </target>
+
+	<target name="java-merge-junit">
+        <junitreport todir="${java.junit.dir}">	
+ 		<fileset dir="${java.junit.dir}">
+    		   <include name="TEST-*.xml"/>
+  		</fileset>
+	      <report format="frames" todir="${java.junit.dir}"/>
+        </junitreport>
+    </target>
+
+	<target name="cpp-check-cppunit">
+	  <taskdef name="cppunitcheck" classname="com.glority.quality.metrics.cpp.CppCppunitCheckTask" classpathref="common.classpath" />	
+        <cppunitcheck reportPath="${cpp.cppunit.dir}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+        </cppunitcheck>
+    </target>
+	
+	<target name="cpp-check-vsts">
+	  <taskdef name="vsts" classname="com.glority.quality.metrics.cpp.CppVSTSCheckTask" classpathref="common.classpath" />	
+        <vsts reportPath="${cpp.vsts.dir}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+        </vsts>
+    </target>
+	
+	<target name="cpp-check-gtest">
+	  <taskdef name="gtest" classname="com.glority.quality.metrics.cpp.CppGtestCheckTask" classpathref="common.classpath" />	
+        <gtest reportPath="${cpp.gtest.dir}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+        </gtest>
+    </target>
+	
+	<target name="cs-check-nunit">
+	  <taskdef name="nunit" classname="com.glority.quality.metrics.cs.CSNunitCheckTask" classpathref="common.classpath" />	
+        <nunit reportPath="${cs.nunit.dir}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+        </nunit>
+    </target>
+
+	<target name="cpp-check-bullseye">
+	  <taskdef name="bullseye_threshold" classname="com.glority.quality.metrics.cpp.CppBullseyeCheckTask" classpathref="common.classpath"/>	
+      <bullseye_threshold reportPath="${cpp.bullseye.report}" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </bullseye_threshold>
+    </target>
+	
+	<target name="backup-upload">
+		  <taskdef name="backup_upload" classname="com.glority.quality.backup.BackupUploadTask" classpathref="common.classpath"/>	
+	      <backup_upload qualityXmlPath="${qualityxmlFile}" localDir="${backup.upload.local.dir}" remoteDir="${backup.upload.remote.dir}" server="${backup.server}" username="${backup.username}" password="${backup.password}" failOnError="${failOnError}">
+	      </backup_upload>	
+    </target>
+		
+	<target name="backup-download">
+		  <taskdef name="backup_download" classname="com.glority.quality.backup.BackupDownloadTask" classpathref="common.classpath"/>	
+		  <backup_download remoteDir="${backup.download.remote.dir}" localDir="${backup.download.local.dir}" qualityXmlPath="${qualityxmlFile}" server="${backup.server}" username="${backup.username}" password="${backup.password}" failOnError="${failOnError}">
+		  </backup_download>	
+	</target>
+	
+	<target name="backup-check">
+			  <taskdef name="backup_check" classname="com.glority.quality.backup.BackupLatestVersionCheckTask" classpathref="common.classpath"/>	
+			  <backup_check remoteDir="/qsbackup/" localDir="c:\\Sandbox\\tmp\\" qualityXmlPath="${qualityxmlFile}" server="${backup.server}" username="${backup.username}" password="${backup.password}" failOnError="${failOnError}">
+			  </backup_check>	
+	</target>
+
+	<target name="qualityreport-initial" depends="check-init">
+      <delete file="${qualityxmlFile}" />	
+      <path id="classpath">
+      	<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreport" classname="com.glority.quality.reportxml.QualityReportInitialTask" classpathref="classpath"/>	
+      <qualityreport qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" businessUnit="${productinfo.businessUnit}" productName="${productinfo.productName}" productVersion="${productinfo.productVersion}" svnUrl="${productinfo.svnUrl}" svnRevision="${productinfo.svnRevision}">
+      </qualityreport>
+    </target>	
+	<target name="qualityreport-jenkinsbuild">
+      <path id="classpath">
+      	<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreport" classname="com.glority.quality.reportxml.QualityReportBuildTask" classpathref="classpath"/>	
+      <qualityreport qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" jenkinsJobName="${buildinfo.jenkinsJob}" jenkinsBuildId="${buildinfo.jenkinsBuildId}">
+      </qualityreport>
+    </target>
+	<target name="qualityreport-jenkinstest">
+      <path id="classpath">
+      	<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreport" classname="com.glority.quality.reportxml.QualityReportTestTask" classpathref="classpath"/>	
+      <qualityreport qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" jenkinsJobName="${testinfo.jenkinsJob}" jenkinsBuildId="${testinfo.jenkinsBuildId}">
+      </qualityreport>
+    </target>
+
+	<target name="qualityreport-configuration">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreport" classname="com.glority.quality.reportxml.QualityReportConfigurationTask" classpathref="classpath"/>	
+      <qualityreport 
+	    id="${testGroupId}"
+		qualityXmlPath="${qualityxmlFile}" 
+      	failOnError="${failOnError}"
+        os="${testinfo.configuration.os}"
+		lang="${testinfo.configuration.lang}"
+		arch="${testinfo.configuration.arch}"
+		softwares="${testinfo.configuration.softwares}"
+      	configurationCSVPath="${testinfo.configuration.csvpath}">
+      </qualityreport>
+    </target>
+
+	<target name="qualityreport-upload">
+      <path id="classpath">
+		<fileset dir="lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreportuploader" classname="com.glority.quality.connectors.reportserver.UploadQualityReportTask" classpathref="classpath"/>	
+      <qualityreportuploader qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" qualityXmlUploadURL="${reportserver.qualityXmlUploadURL}">
+      </qualityreportuploader>	
+    </target>
+	
+	<!-- this loads <emma> and <emmajava> custom tasks: -->
+	<taskdef resource="emma_ant.properties" classpathref="common.classpath" />	
+	<target name="emma-instr" description="Instrument java code with emma">
+	  <mkdir dir="${emma.coverage.dir}" />
+	  <emma enabled="${emma.enabled}" >
+		<instr instrpath="${emma.instr.in.dir}"
+		  destdir="${emma.instr.tmp.dir}"	       
+		  metadatafile="${emma.coverage.dir}/metadata.emma"
+		  merge="true">
+		  <filter value="${emma.filter}" />
+		</instr>
+	  </emma>
+	  <copy todir="${emma.instr.in.dir}" overwrite="true">
+		<fileset dir="${emma.instr.tmp.dir}">
+		</fileset>
+	  </copy>
+    </target>
+	<target name="emma-report" description="Generate emma report">
+	  <mkdir dir="${emma.src.tmp.dir}" />
+	  <copy todir="${emma.src.tmp.dir}">
+	  	<fileset refid="java.src.fileset" />
+	  </copy>
+	  <delete dir="${java.emma.dir}" />
+	  <emma enabled="${emma.enabled}">
+		<report sourcepath="${emma.src.tmp.dir}" sort="+name,+method,+class" metrics="method:100,line:90,block:90,class:100">
+		  <fileset dir="${emma.coverage.dir}">
+			<include name="*.emma" />
+		  </fileset>
+		  <infileset file="${emma.coverage.merged.es}" />
+		  <xml outfile="${java.emma.dir}/emma.xml" depth="package" columns="class,method,block,line,name" />
+		  <txt outfile="${java.emma.dir}/emma.txt" depth="package" columns="class,method,block,line,name" />
+		  <html outfile="${java.emma.dir}/emma.html" depth="method" columns="name,class,method,block,line" />
+		</report>
+	  </emma>		
+	</target>
+	<target name="emma-merge" description="Merge the coverage data from 2 tests">
+	  <emma enabled="${emma.enabled}">
+	  	<merge outfile="${emma.coverage.merged.es}" >
+	  	  <fileset file="${emma.coverage.merged.es}" />
+	  	  <fileset file="${emma.coverage.rundata}" />
+	  	</merge>
+	  </emma>		
+	</target>	
+	<target name="emma-dumpsource" description="Dump the java source code out, since emma report requires source code">
+	  <mkdir dir="${emma.src.tmp.dir}" />
+	  <copy todir="${emma.src.tmp.dir}" overwrite="true">
+	  	<fileset refid="java.src.fileset" />
+	  </copy>
+	  <taskdef name="dump" classname="com.glority.quality.metrics.java.JavaEmmaDumpSourceTask" classpathref="common.classpath"/>	
+	  <dump emmaTempPath="${emma.src.tmp.dir}" failOnError="${failOnError}">
+	  </dump>
+	</target>
+
+    <target name="ftp-qs-upload">
+	  <taskdef name="ftpuploader" classname="com.glority.quality.connectors.ftp.FTPTPUploadTask" classpathref="common.classpath"/>	
+      <ftpuploader localPath="${ftp.localpath}" 
+      	   pathDefFile="res/path_types.properties" 
+      	   businessUnit="${productinfo.businessUnit}" 
+      	   failOnError="${failOnError}" 
+      	   server="${ftp.server}" 
+      	   username="${ftp.username}" 
+      	   password="${ftp.password}" 
+      	   productName="${productinfo.productName}" 
+      	   jenkinsBuild="${buildinfo.jenkinsBuildId}" 
+      	   folderType="${ftp.qsPathType}"
+      	   qualityXmlPath="${qualityxmlFile}">      	   
+      </ftpuploader>	
+    </target>	
+    <target name="ftp-qs-download">
+	  <taskdef name="ftpdownloader" classname="com.glority.quality.connectors.ftp.FTPTPDownloadTask" classpathref="common.classpath"/>	
+      <ftpdownloader localPath="${ftp.localpath}" 
+      	   pathDefFile="res/path_types.properties" 
+      	   businessUnit="${productinfo.businessUnit}" 
+      	   productName="${productinfo.productName}" 
+      	   jenkinsBuild="${buildinfo.jenkinsBuildId}" 
+      	   server="${ftp.server}" 
+      	   username="${ftp.username}" 
+      	   password="${ftp.password}" 
+      	   folderType="${ftp.qsPathType}"
+      	   failOnError="${failOnError}">
+      </ftpdownloader>	
+    </target>
+    <target name="ftp-common-upload">
+	  <taskdef name="ftpcommonuploader" classname="com.glority.quality.connectors.ftp.FTPCommonUploadTask" classpathref="common.classpath"/>	
+      <ftpcommonuploader localPath="${ftp.localpath}" 
+      	   remotePath="${ftp.remotepath}" 
+      	   failOnError="${failOnError}" 
+      	   server="${ftp.server}" 
+      	   username="${ftp.username}" 
+      	   password="${ftp.password}">
+      </ftpcommonuploader>	
+    </target>	
+    <target name="ftp-common-download">
+	  <taskdef name="ftpcommondownloader" classname="com.glority.quality.connectors.ftp.FTPCommonDownloadTask" classpathref="common.classpath"/>	
+      <ftpcommondownloader localPath="${ftp.localpath}" 
+      	   remotePath="${ftp.remotepath}" 
+      	   failOnError="${failOnError}" 
+      	   server="${ftp.server}" 
+      	   username="${ftp.username}" 
+      	   password="${ftp.password}">
+      </ftpcommondownloader>	
+    </target>
+    <target name="scp-uploadfile">
+	  <taskdef name="qualityscp" classname="com.glority.quality.connectors.ssh.Scp" classpathref="common.classpath"/>	
+      <qualityscp qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" 
+      	   file="${scp.localpath}" todir="${ssh.username}@${ssh.server}:${scp.remotepath}" 
+      	   password="${ssh.password}" trust="true">
+      </qualityscp>	
+    </target>
+    <target name="scp-uploadfolder">
+	  <taskdef name="qualityscp" classname="com.glority.quality.connectors.ssh.Scp" classpathref="common.classpath"/>	
+      <qualityscp qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" 
+      	   todir="${ssh.username}@${ssh.server}:${scp.remotepath}" 
+      	   password="${ssh.password}" trust="true">
+      	<fileset dir="${scp.localpath}"/>
+      </qualityscp>	
+    </target>	
+    <target name="scp-download">
+  	  <taskdef name="qualityscp" classname="com.glority.quality.connectors.ssh.Scp" classpathref="common.classpath"/>	
+        <qualityscp qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" 
+        	   file="${ssh.username}@${ssh.server}:${scp.remotepath}" todir="${scp.localpath}"
+        	   password="${ssh.password}" trust="true">
+        </qualityscp>
+    </target>
+    <target name="ssh-run">
+	  <taskdef name="qualityssh" classname="com.glority.quality.connectors.ssh.SSHExec" classpathref="common.classpath"/>	
+  	  <qualityssh qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" 
+       	  host="${ssh.server}"
+  	  	  username="${ssh.username}"
+  	      password="${ssh.password}"
+  	      trust="true"
+  	      command="${ssh.command}"
+    	  commandResource="${ssh.script}">
+      </qualityssh>
+    </target>
+
+    <target name="svn-checkout">
+	  <taskdef name="svncheckout" classname="com.glority.quality.connectors.svn.SVNCheckoutTask" classpathref="common.classpath"/>	
+      <svncheckout localPath="${svn.localpath}" 
+      	   svnURI="${svn.url}" 
+      	   failOnError="${failOnError}" 
+      	   revision="${svn.revision}"
+      	   username="${svn.username}" 
+      	   password="${svn.password}">
+      </svncheckout>	
+    </target>
+    <target name="svn-commit">
+	  <taskdef name="svncommit" classname="com.glority.quality.connectors.svn.SVNCommitTask" classpathref="common.classpath"/>	
+      <svncommit localPath="${svn.localpath}" 
+	       svnURI="${svn.url}" 
+	       failOnError="${failOnError}" 
+	       username="${svn.username}" 
+	       password="${svn.password}"
+    	   commitMessage="${svn.message}">
+      </svncommit>	
+    </target>
+
+    <target name="svn-update">
+	  <taskdef name="svnupdate" classname="com.glority.quality.connectors.svn.SVNUpdateTask" classpathref="common.classpath"/>	
+      <svnupdate localPath="${svn.localpath}" 
+   	       svnURI="${svn.url}" 
+   	       failOnError="${failOnError}" 
+   	       revision="${svn.revision}"
+   	       username="${svn.username}" 
+   	       password="${svn.password}">
+      </svnupdate>	
+    </target>
+
+    <target name="svn-info">
+      <taskdef name="svninfo" classname="com.glority.quality.connectors.svn.SVNInfoTask" classpathref="common.classpath"/> 
+      <svninfo qualityXmlPath="${qualityxmlFile}" localPath="${svn.localpath}" svnURI="${svn.url}" failOnError="${failOnError}" username=        "${svn.username}" password="${svn.password}">
+      </svninfo>  
+    </target>
+    <target name="svn-switch">
+      <taskdef name="svnswitch" classname="com.glority.quality.connectors.svn.SVNSwitchTask" classpathref="common.classpath"/> 
+      <svnswitch revision="${svn.revision}" localPath="${svn.localpath}" svnURI="${svn.url}" failOnError="${failOnError}" username="${svn.username}" password="${svn.password}">
+      </svnswitch>  
+    </target>	
+
+    <target name="pjs-run">
+    <taskdef name="pjsrun" classname="com.glority.quality.connectors.testcomplete.PjsRunTask" classpathref="common.classpath"/>  
+      <pjsrun 
+         qualityXmlPath="${qualityxmlFile}"
+         atcFolder="${testcomplete.atcpath}"
+         failOnError="${failOnError}" >
+      </pjsrun>  
+    </target>
+
+    <target name="pjs-single-generate">
+      <taskdef name="pjssinglegenerate" classname="com.glority.quality.connectors.testcomplete.GenerateTestCasePjs" classpathref="common.classpath"/>
+        <pjssinglegenerate pjsTemplate="${testcomplete.pjstemplate}"
+              testcasePath="${testcomplete.atcpath}"
+              caseId="${testcomplete.caseid}"
+              testrailServer="${testrail.server}"
+              testrailKey="${testrail.key}"
+              failOnError="${failOnError}" >
+        </pjssinglegenerate>
+    </target>
+    
+    <target name="pjs-testrun-generate">
+      <taskdef name="pjssinglegenerate" classname="com.glority.quality.connectors.testcomplete.GenerateTestRunPjs" classpathref="common.classpath"/>
+        <pjssinglegenerate pjsTemplate="${testcomplete.pjstemplate}"
+              qualityXmlPath="${qualityxmlFile}"
+              testcasePath="${testcomplete.atcpath}/"
+              productId="${testrail.productid}"
+              version="${testrail.productversion}"
+              type="${testrail.testruntype}"
+              testrailServer="${testrail.server}"
+              testrailKey="${testrail.key}"
+              failOnError="${failOnError}" >
+        </pjssinglegenerate>
+    </target>
+
+    <target name="testcomplete-check">
+      <taskdef name="testcompletecheck" classname="com.glority.quality.metrics.all.TestCompleteCheckTask" classpathref="common.classpath"/>
+        <testcompletecheck qualityXmlPath="${qualityxmlFile}" reportPath="${testcomplete.atcpath}/DynamicalSuites" failOnError="${failOnError}" >
+        </testcompletecheck>
+    </target>
+</project>

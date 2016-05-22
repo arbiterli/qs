@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/sql/schema
+END
+initDevDBSchema.sh
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/sql/schema/initDevDBSchema.sh
+END
+updateDBSchema.sh
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/sql/schema/updateDBSchema.sh
+END
+testdbdump.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/sql/schema/testdbdump.sql
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/sql/schema/Readme.txt
+END
+init_DB_Version.sql
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/sql/schema/init_DB_Version.sql
+END

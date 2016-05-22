@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model
+END
+SimpleMetricScoreFormula.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/SimpleMetricScoreFormula.java
+END
+ScoreFormula.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/ScoreFormula.java
+END
+BuildInfoMapKeys.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/BuildInfoMapKeys.java
+END
+MetricScoreFormula.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/MetricScoreFormula.java
+END
+DeployMapKeys.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/DeployMapKeys.java
+END
+ScoreOwner.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/ScoreOwner.java
+END
+VersionExt.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/VersionExt.java
+END
+MetricsDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/MetricsDescription.java
+END
+PageLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/PageLink.java
+END
+QuestionAndAnswer.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/QuestionAndAnswer.java
+END
+Page.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/Page.java
+END
+ComplexMetricScoreFormula.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/ComplexMetricScoreFormula.java
+END
+NavigationLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/NavigationLink.java
+END
+StatusMapKeys.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/model/StatusMapKeys.java
+END

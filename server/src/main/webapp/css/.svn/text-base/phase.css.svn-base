@@ -1,0 +1,500 @@
+#servers {
+	width: 819px;
+	margin-left: 40px;
+	margin-bottom: 54px;
+	color: #646464;
+}
+
+#servers ul {
+	list-style: none;
+	margin-left: -36px;
+}
+
+.server-head {
+	height: 50px;
+	line-height: 50px;
+	background-image: url(/images/servers.png);
+	margin-left: -5px;
+}
+
+.server {
+	height: 38px;
+	line-height: 38px;
+	margin-left: -5px;
+}
+
+.server,.server-head {
+	width: 820px;
+}
+
+.server div {
+	float: left;
+	height: 38px;
+	line-height: 38px;
+}
+
+.server-name {
+	padding-left: 50px;
+	text-align: left;
+}
+
+.server-name,.server-url {
+	width: 204px;
+}
+
+.server-url {
+	text-align: left;
+}
+
+.server-deployat {
+	width: 326px;
+}
+
+.server-deployat {
+	padding-right: 10px;
+	text-align: right;
+}
+
+.server-head div {
+	float: left;
+}
+
+.server-head-servers {
+	font-size: 19px;
+	padding-left: 5px;
+	width: 100px;
+	font-weight: normal;
+}
+
+.server-head-info {
+	text-align: right;
+	width: 650px;
+	font-size: 13px;
+}
+
+.server-head-img {
+	margin-top: 19px;
+	margin-left: 30px;
+	width: 20px;
+	height: 12px;
+	background-image: url(/images/server-img.jpg);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#scores {
+	height: 180px;
+	margin-bottom: 40px;
+}
+
+#scores div {
+	float: left;
+}
+
+#deployandcertify {
+   width: 80px;
+}
+
+#selectDropDown {
+	margin-left: 46px;
+	width: 100px;
+	height: 20px;
+	z-index: 1;
+}
+
+.finalscore {
+	margin-left: 40px;
+	width: 222px;
+	height: 190px;
+	line-height: 173px;
+	font-size: 115px;
+	background-image: url(/images/finalscore.png);
+	font-weight: bold;
+	
+}
+
+.running-quality,.hardware-quality,.issue-fix-ability,.code-quality {
+	width: 142px;
+	height: 135px;
+	margin-top: 53px;
+	line-height: 120px;
+	font-size: 50px;
+	background-image: url(/images/other-score.png);
+	cursor: pointer;
+}
+
+.finalscore,.running-quality,.hardware-quality,.issue-fix-ability,.code-quality
+	{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.equal,.add {
+	width: 35px;
+	height: 34px;
+	color: #646464;
+	font-size: 30px;
+	margin-top: 130px;
+	text-align: center;
+}
+
+.email-setting,.all-metric,#servers {
+	vertical-align: middle;
+	text-align: center;
+	box-shadow: 0px 10px 10px #c3c3c3;
+	-webkit-box-shadow: 0px 10px 10px #c3c3c3;
+	-moz-box-shadow: 0px 10px 10px #c3c3c3;
+}
+
+.all-metric {
+	margin-left: 40px;
+	width: 850px;
+	min-height: 30px;
+	height: auto;
+}
+
+.all-metric li {
+	list-style: none;
+}
+
+.all-metric ul {
+	margin-left: -40px;
+	margin-bottom: -14px;
+}
+
+.name,.submetric-name {
+	width: 222px;
+	text-align: left;
+	padding-left: 10px;
+}
+.name{ cursor:pointer; }
+
+.data,.submetric-data {
+	width: 227px;
+	text-align: left;
+}
+
+.exception,.submetric-exception {
+	width: 106px;
+}
+
+.submetric-exception {
+	color: #646464;
+	padding-left: 30px;
+	text-align: right;
+	width: 56px;
+	padding-right: 20px;
+}
+
+.power,.submetric-power {
+	color: #646464;
+	padding-right: 30px;
+	width: 71px;
+	text-align: right;
+}
+
+.score,.submetric-score {
+	width: 55px;
+	padding-right: 20px;
+	text-align: right;
+}
+
+.metric-img,.submetric-img {
+	width: 20px;
+}
+
+.metric-img {
+	background-image: url(/images/manager-on.png);
+	background-repeat: no-repeat;
+	margin-left: 40px;
+	margin-top: 10px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.name,.data,.exception,.score,.power,.metric-img {
+	float: left;
+	font-size: 16px;
+}
+
+.name,.data,.exception,.score,.power {
+	line-height: 55px;
+	height: 55px;
+}
+
+.submetric-name,.submetric-data,.submetric-exception,.submetric-score,.submetric-power,.submetric-img
+	{
+	font-size: 14px;
+	height: 31px;
+	line-height: 31px;
+	float: left;
+}
+
+.line {
+	width: 850px;
+	height: 1px;
+	background: #cacaca;
+	margin-left: 0px;
+}
+
+.submetric {
+	height: 31px;
+	margin-left: 0px;
+}
+
+.metric {
+	height: 55px;
+}
+
+.li-img {
+	height: 10px;
+	margin-top: -25px;
+}
+
+.div-img {
+	background-image: url(/images/li-img.png);
+	width: 18px;
+	height: 10px;
+	margin-left: 75px;
+}
+
+.metric-head {
+	height: 75px;
+	background: #54403b;
+	padding-top: 0px;
+}
+
+.metric-head div {
+	height: 35px;
+	margin-top: 25px;
+	font-size: 22px;
+	color: #beb5b3;
+}
+
+.email-setting {
+	position: absolute;
+	width: 253px;
+	height: 172px;
+	top: 20px;
+	left: 20px;
+	background: #f8f8f8;
+	z-index: 1000;
+	display: none;
+}
+
+.email-setting ul {
+	list-style: none;
+	margin-left: -30px;
+	margin-top: 10px;
+}
+
+.email-setting ul li {
+	text-align: left;
+}
+
+.email-setting ul li input {
+	width: 219px;
+	height: 38px;
+	line-height: 38px;
+	outline: none;
+	-webkit-box-shadow: 1px 1px 3px #C3C3C3, -1px -1px 3px #c3c3c3;
+	-moz-box-shadow: 1px 1px 3px #C3C3C3, -1px -1px 3px #c3c3c3;
+	box-shadow: 1px 1px 3px #C3C3C3, -1px -1px 3px #c3c3c3;
+	font-size: 16px;
+	padding-left: 11px;
+}
+
+.email-setting ul li input:focus {
+	border-color: #3EABFF;
+	box-shadow: 0 0 1px #1681D3, 1px 1px 3px #C3C3C3;
+}
+
+.email-setting ul li div {
+	float: left;
+	margin-top: 10px;
+}
+
+.cancle,.ok {
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.cancle {
+	width: 208px;
+	text-align: left;
+}
+
+.email-setting-img {
+	background-image: url(/images/li-img.png);
+	width: 18px;
+	height: 10px;
+	background-repeat: no-repeat;
+	margin-top: -10px;
+	margin-left: 220px;
+}
+
+.shadow {
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 0px;
+	filter: alpha(opacity =         10);
+	opacity: 0.1;
+	background: black;
+	display: none;
+}
+
+#footer {
+	height: 50px;
+	line-height: 50px;
+}
+
+.all-metric-img {
+	position: absolute;
+	background-image: url(/images/jtd.png);
+	height: 36px;
+	width: 63px;
+	background-repeat: no-repeat;
+	margin-left: 80px;
+	margin-top: -29px;
+}
+
+.all-metric-head {
+	margin-top: -25px;
+}
+
+.servers ul li {
+	width: 850px;
+	min-width: 820px;
+}
+
+.low {
+	background-image: url(/images/low.png);
+	width: 35px;
+	height: 43px;
+	margin-left: -5px;
+	margin-top: 5px;
+	line-height: 43px;
+	color: white;
+	font-size: 13px;
+	float: left;
+	padding-right: 10px;
+}
+
+.otherlow {
+	width: 45px;
+	margin-left: -15px;
+	margin-top: 5px;
+	float: left;
+}
+
+.finalscore-text {
+	width: 202px;
+	height: 18px;
+	line-height: 18px;
+	margin-left: 50px;
+	position: absolute;
+	text-align: center;
+	margin-top: 145px;
+	color: #646464;
+}
+
+.running-quality-text {
+	margin-left: 483px;
+}
+
+.hardware-quality-text {
+	margin-left: 440px;
+}
+
+.issue-fix-ability-text {
+	margin-left: 660px;
+}
+
+.code-quality-text {
+	margin-left: 305px;
+}
+
+.running-quality-text,.hardware-quality-text,.issue-fix-ability-text,.code-quality-text
+	{
+	width: 127px;
+	height: 18px;
+	line-height: 18px;
+	position: absolute;
+	text-align: center;
+	margin-top: 145px;
+	color: #646464;
+}
+
+.data-data {
+	width: 75px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.data-tip {
+	padding-left: 5px;
+	width: 132px;
+	text-align: left;
+	padding-left: 1px;
+	color: #646464;
+}
+.data-arrow {
+	width: 10px;
+	text-align: right;
+	}
+.data-data,.data-tip , .data-arrow{
+	float: left;
+}
+
+a {
+	color: black;
+}
+
+.name-head {
+	width: 242px;
+	text-align: left;
+}
+
+.data-head {
+	width: 84px;
+	text-align: right;
+	padding-right: 133px;
+}
+
+.exp-head {
+	width: 106px;
+}
+
+.power-head {
+	width: 101px;
+}
+
+.score-head {
+	width: 75px;
+}
+
+.name-head,.data-head,.exp-head,.power-head,.score-head {
+	line-height: 65px;
+	float: left;
+}
+
+.final-score-line {
+	background-image: url(/images/final-score-line.png);
+	width: 202px;
+	height: 2px;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 91px;
+}
+
+.email-tip {
+	width: 200px;
+	color: red;
+	text-align: left;
+	margin-left: 10px;
+	margin-top:10px;
+}

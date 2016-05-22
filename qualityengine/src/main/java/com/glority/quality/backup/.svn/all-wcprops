@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/backup
+END
+BackupDownloadTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/backup/BackupDownloadTask.java
+END
+BackupLatestVersionCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/backup/BackupLatestVersionCheckTask.java
+END
+BaseBackupDownloadTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/backup/BaseBackupDownloadTask.java
+END
+BackupUploadTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/backup/BackupUploadTask.java
+END

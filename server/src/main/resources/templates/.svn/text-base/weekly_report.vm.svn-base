@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Weekly Report Of Quality Portal</title>
+	</head>
+	<body style="font-family: Avenir,Helvetica,Verdana;">
+		<div style="width: 705px; margin: 0 auto; border:1px black solid; min-height: 300px; padding-bottom: 50px;">
+			<div  style="font-size: 40px; color: #646464; height: 70px; line-height: 70px; padding-left: 15px;">
+				<a style="text-decoration:none; color:#646464; "href="http://quality.glority.com">Quality Portal</a>
+			</div>
+			<div style="width: 680px; height: 1px; margin: 0 auto; background-color: #605725;"></div>
+			<div style="margin-left: 44px; margin-top: 28px;">
+				#foreach($product in $products)
+					<table style="width:354px;margin-top:10px;">	
+						<thead>
+							<tr><td colspan="3" style="height:39px;line-height:39px;vertical-align: top;color:black;font-size:24px;">
+								<a style="color:#000001;" href="https://quality.glority.com/productlist">$product.productname</a>
+							</td></tr>
+							<tr style="color:#646464;font-size:12px;">
+								<td style="line-height:30px;height:30px;vertical-align: top; width:110px;">Phase</td>
+								<td style="line-height:30px;height:30px;vertical-align: top; width:68px;">Score</td>
+								<td style="line-height:30px;height:30px;vertical-align: top; width:136px;">Score against last week</td>
+							</tr>
+						</thead>
+						<tbody>
+							#foreach($score in $product.scores)
+									#if($score.score < $passingScore)
+										<tr style="color:red;">
+											<td style="font-size:18px;">
+												<a style="color:#646464;" href="$score.phaseUrl">${score.name}</a>
+											</td>
+											<td style="font-size:18px;">${score.score}</td>
+											#if($score.vs > 0)
+												<td style="font-size:18px;color:green;">+${score.vs}</td>
+											#elseif($score.vs < 0)
+												<td style="font-size:18px;color:red;">${score.vs}</td>
+											#elseif($score.vs == $scoreInvalid) 
+												<td style="font-size:18px;color:#646464;">--</td>
+											#else
+												<td style="font-size:18px;color:#646464;">${score.vs}</td>
+											#end
+										</tr>
+									#elseif($score.score < $excellentScore)
+										<tr style="color:orange;">
+											<td style="font-size:18px;">
+												<a style="color:#646464;" href="$score.phaseUrl">${score.name}</a>
+											</td>
+											<td style="font-size:18px;">${score.score}</td>
+											#if($score.vs > 0)
+												<td style="font-size:18px;color:green;">+${score.vs}</td>
+											#elseif($score.vs < 0)
+												<td style="font-size:18px;color:red;">${score.vs}</td>
+											#elseif($score.vs == $scoreInvalid) 
+												<td style="font-size:18px;color:#646464;">--</td>
+											#else
+												<td style="font-size:18px;color:#646464;">${score.vs}</td>
+											#end
+										</tr>
+									#else
+										<tr style="color:green;">
+											<td style="font-size:18px;">
+												<a style="color:#646464;" href="$score.phaseUrl">${score.name}</a>
+											</td>
+											<td style="font-size:18px;">${score.score}</td>
+											#if($score.vs > 0)
+												<td style="font-size:18px;color:green;">+${score.vs}</td>
+											#elseif($score.vs < 0)
+												<td style="font-size:18px;color:red;">${score.vs}</td>
+											#elseif($score.vs == $scoreInvalid) 
+												<td style="font-size:18px;color:#646464;">--</td>
+											#else
+												<td style="font-size:18px;color:#646464;">${score.vs}</td>
+											#end
+										</tr>
+									#end
+							#end
+						</tbody>
+					</table>
+				#end
+			</div>
+		</div>
+	</body>
+</html>

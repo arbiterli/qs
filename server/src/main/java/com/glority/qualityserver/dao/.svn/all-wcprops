@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao
+END
+TestCaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/TestCaseDao.java
+END
+GenericDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/GenericDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/UserDao.java
+END
+TestDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/TestDao.java
+END
+ProductDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/ProductDao.java
+END
+RecordMetricDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/RecordMetricDao.java
+END
+ScoreEmailDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/ScoreEmailDao.java
+END
+VersionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/VersionDao.java
+END
+QualityEngineFailureDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/QualityEngineFailureDao.java
+END
+FailureDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/FailureDao.java
+END
+IssueDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/IssueDao.java
+END
+TestSuiteDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/TestSuiteDao.java
+END
+TestGroupDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/TestGroupDao.java
+END
+DeployDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/DeployDao.java
+END
+ProductExtendPropertyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/ProductExtendPropertyDao.java
+END
+SystemErrorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/SystemErrorDao.java
+END
+BuildDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/BuildDao.java
+END
+PhaseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/PhaseDao.java
+END
+RoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/RoleDao.java
+END
+ScoreOwnerMappingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/ScoreOwnerMappingDao.java
+END
+BuildMetricDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/BuildMetricDao.java
+END
+ServerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/ServerDao.java
+END
+ConfigurationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/ConfigurationDao.java
+END
+BuildCertifyHistoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/BuildCertifyHistoryDao.java
+END
+AlertDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/AlertDao.java
+END

@@ -1,0 +1,42 @@
+<!-- NOTE: If you're working offline, you might have to change the DOCTYPE 
+	to the following: <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate 
+	Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"> -->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.c3p0.max_size">300</property>
+		<property name="hibernate.c3p0.timeout">100</property>
+
+		<property name="hibernate.show_sql">false</property>
+		<property name="stringtype">unspecified</property>
+		<mapping class="com.glority.qualityserver.model.Build" />
+		<mapping class="com.glority.qualityserver.model.HotDeployConfig" />
+		<mapping class="com.glority.qualityserver.model.IssueTrack" />
+		<mapping class="com.glority.qualityserver.model.TestRail" />
+		<mapping class="com.glority.qualityserver.model.Configuration" />
+		<mapping class="com.glority.qualityserver.model.Failure" />
+		<mapping class="com.glority.qualityserver.model.BuildMetric" />
+		<mapping class="com.glority.qualityserver.model.Product" />
+		<mapping class="com.glority.qualityserver.model.Test" />
+		<mapping class="com.glority.qualityserver.model.TestGroup" />
+		<mapping class="com.glority.qualityserver.model.User" />
+		<mapping class="com.glority.qualityserver.model.Version" />
+		<mapping class="com.glority.qualityserver.model.TestCase" />
+		<mapping class="com.glority.qualityserver.model.TestSuite" />
+		<mapping class="com.glority.qualityserver.model.Phase" />
+		<mapping class="com.glority.qualityserver.model.Server" />
+		<mapping class="com.glority.qualityserver.model.Deploy" />
+		<mapping class="com.glority.qualityserver.model.Role" />
+		<mapping class="com.glority.qualityserver.model.SystemError" />
+		<mapping class="com.glority.qualityserver.model.RecordMetric" />
+		<mapping class="com.glority.qualityserver.model.BuildCertifyHistory" />
+		<mapping class="com.glority.qualityserver.model.IssueRecord" />
+		<mapping class="com.glority.qualityserver.model.QualityEngineFailure" />
+		<mapping class="com.glority.qualityserver.model.ScoreOwnerMapping" />
+		<mapping class="com.glority.qualityserver.model.ScoreEmail" />
+		<mapping class="com.glority.qualityserver.model.Alert" />
+		<mapping class="com.glority.qualityserver.model.ProductExtendProperty" />
+	</session-factory>
+</hibernate-configuration>

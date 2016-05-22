@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/internal
+END
+all-ecmascript.xml
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/internal/all-ecmascript.xml
+END
+dogfood-goal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/internal/dogfood-goal.xml
+END
+dogfood.xml
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/internal/dogfood.xml
+END
+pmdspecific.xml
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/internal/pmdspecific.xml
+END
+all-java.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/internal/all-java.xml
+END
+regress-dogfood-goal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/internal/regress-dogfood-goal.xml
+END
+regress-dogfood.xml
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/installer/res/pmdrulesets/internal/regress-dogfood.xml
+END

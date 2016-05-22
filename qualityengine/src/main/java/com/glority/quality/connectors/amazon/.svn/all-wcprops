@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/amazon
+END
+CloudWatchTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/amazon/CloudWatchTask.java
+END
+CloudWatchClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/amazon/CloudWatchClient.java
+END

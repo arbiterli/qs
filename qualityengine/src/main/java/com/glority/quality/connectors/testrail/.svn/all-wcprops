@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail
+END
+TCOfProductTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/TCOfProductTask.java
+END
+TestrailBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/TestrailBase.java
+END
+TCOfTestRunTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/TCOfTestRunTask.java
+END
+TCOfVersionTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/TCOfVersionTask.java
+END
+UpdateTestResultTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/UpdateTestResultTask.java
+END
+TestrailAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/TestrailAdapter.java
+END
+TestrailAdapterImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/TestrailAdapterImpl.java
+END
+GetSingleTCTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/GetSingleTCTask.java
+END
+TCOfNightlyBuildTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testrail/TCOfNightlyBuildTask.java
+END

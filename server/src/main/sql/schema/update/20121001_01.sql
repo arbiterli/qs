@@ -1,0 +1,1 @@
+use qualitysystem;select * from db_version;

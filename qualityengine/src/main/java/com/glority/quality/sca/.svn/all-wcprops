@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/35679/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/sca
+END
+ScaBaseCommandTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/sca/ScaBaseCommandTask.java
+END
+ExtendedCppcheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/!svn/ver/35679/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/sca/ExtendedCppcheckTask.java
+END
+ExtendedPMDTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/sca/ExtendedPMDTask.java
+END
+ExtendedMITask.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/sca/ExtendedMITask.java
+END
+ExtendedCPDTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/sca/ExtendedCPDTask.java
+END
+ExtendedCpplintTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/35679/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/sca/ExtendedCpplintTask.java
+END
+IScaBaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/sca/IScaBaseTask.java
+END

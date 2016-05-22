@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+<!-- This file contains all customized settings of the product. -->
+    <!-- The project name of your product -->
+    <property name="project" value=""/>
+	<!-- The root path of you product,already set in your setenv script-->
+	<property name="projectRoot" value="${env.ProjectRoot}"/> 
+    <!-- Src paths:your source code dir-->
+    <property name="src.dir" value="${projectRoot}/src" />
+    
+    <!-- source temp path:used as a filter,make task support "exclude" property.
+		make sure it's not in the "src.dir"-->
+    <property name="tmp.dir" value="${projectRoot}/tmp" /> 
+	
+	<!-- the two properties below specify the reports upload and download path 
+	make sure them right -->
+    <property name="productinfo.businessUnit" value="" />    
+    <property name="productinfo.productName" value="" />
+	
+	<!-- your product version -->
+    <property name="productinfo.productVersion" value="" />
+	
+	<!-- for your svn task such as svn-switch,svn-info,mainly used for branch build -->
+	<property name="productinfo.svnUrl" value="" />
+    <property name="productinfo.svnRevision" value="head" />
+
+
+<!--################################# you can use default settings below ############################################-->
+    <!-- Base report path -->
+    <property name="qualityreport.dir" value="${projectRoot}/qualityreports"/>
+	
+	<!-- report server url -->
+	<property name="reportserver.qualityXmlUploadURL" value="https://qualitytest.glority.com/keyupload?key=ffebdb20-053a-4588-b316-5562746ff940"/>
+	<!-- sca error that need to be excluded -->
+	<property name="scaErrorSetting.path" value="/sca_error_settings.properties"/>
+	
+	    <!-- Note:
+        For the following settings, you can keep them as default value
+     -->
+
+    <!-- Marks whether the target should fail and return exit code -1. Normally this target should set to false to make all target executed -->
+    <property name="failOnError" value="false" />    
+    <!--  The path to your threshold.properties file -->    
+    <property name="threshholdFile" value="${projectRoot}/threshold.properties"/>
+    <!--  The path to your quality.xml file -->
+    <property name="qualityxmlFile" value="${projectRoot}/quality.xml"/>
+    
+    <!-- CPD settings: number of duplicate tokens -->
+    <property name="cpdMiniTokenCount" value="100"/>
+    <property name="JSPcpdMiniTokenCount" value="50"/>
+    <property name="CSScpdMiniTokenCount" value="50"/>
+    
+    <!-- This info holds for jenkins build info,you should use "-D" to specify the 
+		properties in your script.-->
+    <property name="buildinfo.jenkinsJob" value="" />
+    <property name="buildinfo.jenkinsBuildId" value="latest" />
+	
+	<!--NOTE: should modify settings what you need-->
+	<import file="language_settings/javasettings.xml"/>
+	<import file="language_settings/cppsettings.xml"/>
+	<import file="language_settings/csharpsettings.xml"/>
+	<import file="language_settings/jssettings.xml"/>
+	<import file="language_settings/csssettings.xml"/>
+	<import file="language_settings/jspsettings.xml"/>
+	<import file="test_settings/testsettings.xml"/>
+ 	
+	<import file="connect_settings/sshsettings.xml"/>
+	<import file="connect_settings/svnsettings.xml"/>
+	<import file="connect_settings/ftpsettings.xml"/>
+	<import file="connect_settings/backupsettings.xml"/>
+    
+</project>
+
+
+
+
+
+
+
+

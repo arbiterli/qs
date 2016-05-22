@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/35822/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca
+END
+App.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/App.java
+END
+ReportGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/35699/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/ReportGenerator.java
+END
+BaseSCATask.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/35674/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/BaseSCATask.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/35674/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/FileUtil.java
+END
+FileFilterToPiece.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/FileFilterToPiece.java
+END

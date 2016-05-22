@@ -1,0 +1,1 @@
+update `qualitysystem`.`role` r set r.name='ROLE_TECHNIQUEMANAGER' where r.name='ROLE_MANAGER';

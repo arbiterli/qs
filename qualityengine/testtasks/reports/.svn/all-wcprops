@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports
+END
+pmd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/pmd.xml
+END
+cpd.txt
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/cpd.txt
+END
+fxcop-report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/fxcop-report.xml
+END
+quality.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/quality.xml
+END
+checkstyle_report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/checkstyle_report.xml
+END
+cppcheck-report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/cppcheck-report.xml
+END
+junit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/junit.xml
+END
+cpplint-report.txt
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/cpplint-report.txt
+END
+Configuration.CSV
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/Configuration.CSV
+END
+InitialQuality.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/InitialQuality.xml
+END
+mi.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/mi.xml
+END
+testcomplete.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/testcomplete.xml
+END
+stylecop-report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/stylecop-report.xml
+END
+jslint-report.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/jslint-report.xml
+END
+emma.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/emma.xml
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/schedule
+END
+QuartzJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/schedule/QuartzJob.java
+END
+QuartJobSchedulingListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/schedule/QuartJobSchedulingListener.java
+END
+SpringQuartzJobFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/schedule/SpringQuartzJobFactory.java
+END

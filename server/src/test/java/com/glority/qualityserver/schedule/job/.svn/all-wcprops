@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/schedule/job
+END
+TSchedulerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/schedule/job/TSchedulerService.java
+END
+TAlertManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/schedule/job/TAlertManager.java
+END
+CloudWatchJobTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/schedule/job/CloudWatchJobTest.java
+END

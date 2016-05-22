@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp
+END
+CppVSTSCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppVSTSCheckTask.java
+END
+CppCppcheckCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppCppcheckCheckTask.java
+END
+CppCppunitCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppCppunitCheckTask.java
+END
+CppBullseyeCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppBullseyeCheckTask.java
+END
+CppMICheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppMICheckTask.java
+END
+CppCPDCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppCPDCheckTask.java
+END
+CppGtestCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppGtestCheckTask.java
+END
+CppCpplintCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppCpplintCheckTask.java
+END
+CppPClintCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/cpp/CppPClintCheckTask.java
+END

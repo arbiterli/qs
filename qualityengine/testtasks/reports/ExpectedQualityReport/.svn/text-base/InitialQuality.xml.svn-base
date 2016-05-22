@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qaulityreport><productinfo><businessunit>businessUnit</businessunit><productname>productName</productname><productversion>productVersion</productversion><svnurl>svnUrl</svnurl><svnrevision>svnRevision</svnrevision></productinfo><buildtestinfo><certification/><timestamp/></buildtestinfo></qaulityreport>

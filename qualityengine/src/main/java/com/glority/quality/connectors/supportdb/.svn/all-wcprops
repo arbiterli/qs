@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb
+END
+SupportDBBaseTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/SupportDBBaseTask.java
+END
+SupportDBClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/SupportDBClient.java
+END
+GlorityOperationsDBClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/GlorityOperationsDBClient.java
+END
+NagiosEmailContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/NagiosEmailContent.java
+END
+GlorityOperationsDBTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/GlorityOperationsDBTask.java
+END
+SupportTicketFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/SupportTicketFilter.java
+END
+ProductNameFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/ProductNameFilter.java
+END
+CreateTimeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/CreateTimeFilter.java
+END
+StatusFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/StatusFilter.java
+END
+StdEmailContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/supportdb/StdEmailContent.java
+END

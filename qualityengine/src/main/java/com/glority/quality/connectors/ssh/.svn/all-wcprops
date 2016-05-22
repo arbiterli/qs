@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh
+END
+SSHSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/SSHSession.java
+END
+SSHExec.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/SSHExec.java
+END
+Directory.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/Directory.java
+END
+Scp.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/Scp.java
+END
+ScpToMessageBySftp.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/ScpToMessageBySftp.java
+END
+AbstractSshMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/AbstractSshMessage.java
+END
+ScpFromMessageBySftp.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/ScpFromMessageBySftp.java
+END
+LogListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/LogListener.java
+END
+SSHBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/SSHBase.java
+END
+SSHUserInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/SSHUserInfo.java
+END
+ScpToMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/ScpToMessage.java
+END
+ScpFromMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/ssh/ScpFromMessage.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/sca/cpd
+END
+CsCPDTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/sca/cpd/CsCPDTaskTest.java
+END
+CPDTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/sca/cpd/CPDTest.java
+END
+JsCPDTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/sca/cpd/JsCPDTaskTest.java
+END
+JavaCPDTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/sca/cpd/JavaCPDTaskTest.java
+END
+CppCPDTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/sca/cpd/CppCPDTaskTest.java
+END
+AbstractCPDTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/sca/cpd/AbstractCPDTaskTest.java
+END

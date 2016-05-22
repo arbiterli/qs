@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res
+END
+GlorityOperationsDBTaskTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/GlorityOperationsDBTaskTestData.xml
+END
+testInter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/testInter.xml
+END
+AwsCredentials.properties
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/AwsCredentials.properties
+END
+bullseye.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/bullseye.xml
+END
+sun_checks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/sun_checks.xml
+END
+checkstyle-noframes-sorted.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/checkstyle-noframes-sorted.xsl
+END
+pmd-report-per-class.xslt
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/pmd-report-per-class.xslt
+END
+glority_nagios_status.txt
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/glority_nagios_status.txt
+END
+path_types.properties
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/path_types.properties
+END
+glority_nagios_okrate.txt
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/glority_nagios_okrate.txt
+END
+glority_nagios_notification.txt
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/res/glority_nagios_notification.txt
+END

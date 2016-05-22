@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver
+END
+PropertyInjectUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/PropertyInjectUtil.java
+END
+UserRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/UserRole.java
+END
+MetricScoreType.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/MetricScoreType.java
+END
+ModelConvertor.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/ModelConvertor.java
+END
+ProductStage.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/ProductStage.java
+END
+ServerSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/ServerSettings.java
+END
+ServerErrorCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/ServerErrorCollector.java
+END
+SecuritySettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/SecuritySettings.java
+END
+AlertType.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/AlertType.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/Constants.java
+END
+FeatureGate.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/FeatureGate.java
+END
+FeatureGateName.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/FeatureGateName.java
+END
+DeployProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/DeployProtocol.java
+END

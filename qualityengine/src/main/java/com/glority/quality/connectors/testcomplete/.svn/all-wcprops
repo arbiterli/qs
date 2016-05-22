@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testcomplete
+END
+GeneratePjsBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testcomplete/GeneratePjsBase.java
+END
+GenerateTestCasePjs.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testcomplete/GenerateTestCasePjs.java
+END
+PjsGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testcomplete/PjsGenerator.java
+END
+PjsRunTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testcomplete/PjsRunTask.java
+END
+GenerateTestRunPjs.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testcomplete/GenerateTestRunPjs.java
+END
+Pjs.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/testcomplete/Pjs.java
+END

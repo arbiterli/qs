@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/java
+END
+JavaCheckStyleCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/java/JavaCheckStyleCheckTask.java
+END
+JavaEmmaCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/java/JavaEmmaCheckTask.java
+END
+JavaPMDCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/java/JavaPMDCheckTask.java
+END
+JavaMICheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/java/JavaMICheckTask.java
+END
+JavaCPDCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/java/JavaCPDCheckTask.java
+END
+JavaEmmaDumpSourceTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/java/JavaEmmaDumpSourceTask.java
+END
+JavaJunitCheckTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/metrics/java/JavaJunitCheckTask.java
+END

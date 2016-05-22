@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/mi/parser
+END
+JavaMIParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/mi/parser/JavaMIParser.java
+END
+CppMIParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/mi/parser/CppMIParser.java
+END
+IMISourceCodeParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/mi/parser/IMISourceCodeParser.java
+END
+CSMIParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/mi/parser/CSMIParser.java
+END
+MIParserFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/mi/parser/MIParserFactory.java
+END
+ES3MIParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/mi/parser/ES3MIParser.java
+END

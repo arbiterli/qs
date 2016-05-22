@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/scoreformulagenerator
+END
+SumWithPowerScoreGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/scoreformulagenerator/SumWithPowerScoreGenerator.java
+END
+BackupDataScoreGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/scoreformulagenerator/BackupDataScoreGenerator.java
+END
+AbstractLinearGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/scoreformulagenerator/AbstractLinearGenerator.java
+END
+StatusScoreGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/scoreformulagenerator/StatusScoreGenerator.java
+END
+SumBuildScoreGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/scoreformulagenerator/SumBuildScoreGenerator.java
+END
+LinearScoreGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/scoreformulagenerator/LinearScoreGenerator.java
+END
+RateLinearGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/scoreformulagenerator/RateLinearGenerator.java
+END

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <!-- bin source paths -->
+    <fileset dir="${src.dir}" id="bin.src.fileset">
+      <include name="**/*.dll"/>
+      <include name="**/*.exe"/>
+    </fileset>
+
+    <!-- CS source paths -->
+    <fileset dir="${src.dir}" id="cs.src.fileset">
+      <include name="**/*.cs"/>
+    </fileset>
+    <!-- fxcop setting -->
+    <property name="fxcop.path" value="C:/Microsoft FxCop 1.36/FxCopCmd.exe" />
+    <!-- stylecop setting-->
+    <property name="stylecop.path" value="stylecop.xml" />
+    <property name="msbuild.path" value="C:/WINDOWS/Microsoft.NET/Framework/v4.0.30319/MSBuild.exe" />
+	
+	    <!--  CS report paths -->
+    <property name="cs.cpd.dir" value="${qualityreport.dir}/cs-cpd" />
+    <property name="cs.cpd.report" value="${cs.cpd.dir}/cpd.txt" />
+    <property name="cs.fxcop.dir" value="${qualityreport.dir}/cs-fxcop" />
+    <property name="cs.fxcop.report" value="${cs.fxcop.dir}/fxcop-report.xml" />
+    <property name="cs.stylecop.dir" value="${qualityreport.dir}/cs-stylecop" />
+    <property name="cs.stylecop.report" value="${cs.stylecop.dir}/styleCop-report.xml" />
+    <property name="cs.mi.dir" value="${qualityreport.dir}/cs-mi" />
+    <property name="cs.mi.report" value="${cs.mi.dir}/mi.xml" />
+    <property name="cs.nunit.dir" value="${qualityreport.dir}/cs-nunit" />
+    <property name="cs.nunit.report" value="${cs.nunit.dir}/nunit.xml" />
+</project>
+
+
+
+
+
+
+
+

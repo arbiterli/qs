@@ -1,0 +1,70 @@
+10
+
+dir
+35822
+http://svn.glority.com/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors
+http://svn.glority.com
+
+
+
+2013-02-20T04:14:36.747013Z
+34662
+li.heping
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5edd340b-b13c-4ad3-bdb9-d9e00e381f86
+
+nagios
+dir
+
+jenkins
+dir
+
+reportserver
+dir
+
+supportdb
+dir
+
+vdi
+dir
+
+amazon
+dir
+
+svn
+dir
+
+assembla
+dir
+
+testrail
+dir
+
+crucible
+dir
+
+testcomplete
+dir
+
+ftp
+dir
+
+ssh
+dir
+
+issuedb
+dir
+

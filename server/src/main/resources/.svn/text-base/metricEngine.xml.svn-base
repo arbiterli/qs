@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metricengine>
+	<metric id="TESTCOMPLETE_TEST_TOTAL_COUNT" name="TESTCOMPLETE_TEST_TOTAL_COUNT"
+		type="TEST_SUMMARY"></metric>
+	<metric id="TESTCOMPLETE_TEST_FAILED_COUNT" name="TESTCOMPLETE_TEST_FAILED_COUNT"
+		type="TEST_SUMMARY"></metric>
+	<metric id="TESTCOMPLETE_TEST_SUCCESS_RATE" name="TESTCOMPLETE_TEST_SUCCESS_RATE"
+		type="TEST_SUMMARY"></metric>
+	<metric id="TESTCOMPLETE_TEST_PASSED_COUNT" name="TESTCOMPLETE_TEST_PASSED_COUNT"
+		type="TEST_SUMMARY"></metric>
+
+	<metric id="JAVA_LINES_OF_CODE" name="JAVA_LINES_OF_CODE" type="CODEBASEINFO"
+		link="java-mi" lang="JAVA" unit="lines"></metric>
+	<metric id="JAVA_LINES_OF_COMMENT" name="JAVA_LINES_OF_COMMENT"
+		type="CODEBASEINFO" link="java-mi" lang="JAVA"></metric>
+	<metric id="JAVA_MI_WITH_COMMENT" name="JAVA_MI_WITH_COMMENT"
+		type="MI" link="java-mi" unit="" doc="JAVA_MI" lang="JAVA"></metric>
+	<metric id="JAVA_MI" name="JAVA_MI" type="MI" link="java-mi"
+		doc="JAVA_MI" lang="JAVA"></metric>
+	<metric id="JUNIT_TEST_SUCCESS_RATE" name="JUNIT_TEST_SUCCESS_RATE"
+		type="TEST_SUMMARY" link="java-junit" doc="JAVA_TESTING" lang="JAVA" unit="%"></metric>
+	<metric id="JUNIT_TEST_TOTAL_COUNT" name="JUNIT_TEST_TOTAL_COUNT"
+		type="TEST_SUMMARY" link="java-junit" doc="JAVA_TESTING" lang="JAVA"></metric>
+	<metric id="JUNIT_TEST_PASSED_COUNT" name="JUNIT_TEST_PASSED_COUNT"
+		type="TEST_SUMMARY" link="java-junit" doc="JAVA_TESTING" lang="JAVA"></metric>
+	<metric id="JUNIT_TEST_SUCCESS_RATE" name="JUNIT_TEST_SUCCESS_RATE"
+		type="TEST_SUMMARY" link="java-junit" doc="JAVA_TESTING" lang="JAVA"></metric>
+	<metric id="JAVA_CPD" name="JAVA_CPD" type="DUPLICATION" link="java-cpd"
+		doc="JAVA_DUPLICATION" lang="JAVA" unit="duplications"></metric>
+	<metric id="JAVA_PMD_ERROR" name="JAVA_PMD_ERROR" type="DEFECTS"
+		link="java-pmd" doc="JAVA_DEFECTS" lang="JAVA" unit="defects"></metric>
+	<metric id="JAVA_PMD" name="JAVA_PMD" type="DEFECTS" link="java-pmd"
+		doc="JAVA_DEFECTS" lang="JAVA" ></metric>
+	<metric id="JAVA_PMD_WARNING" name="JAVA_PMD_WARNING" type="DEFECTS"
+		link="java-pmd" doc="JAVA_DEFECTS" lang="JAVA"></metric>
+	<metric id="JAVA_CHECKSTYLE" name="JAVA_CHECKSTYLE" type="LINT"
+		unit="violations" link="java-checkstyle" doc="JAVA_LINT" lang="JAVA"></metric>
+	<metric id="JAVA_EMMA_COVERAGE_LINE" name="JAVA_EMMA_COVERAGE_LINE"
+		type="COVERAGE" link="java-emma" doc="JAVA_COVERAGE" lang="JAVA" unit="%"></metric>
+	<metric id="JAVA_EMMA_COVERAGE_BLOCK" name="JAVA_EMMA_COVERAGE_BLOCK"
+		type="COVERAGE" link="java-emma" doc="JAVA_COVERAGE" lang="JAVA" unit="%"></metric>
+	<metric id="JAVA_EMMA_COVERAGE_METHOD" name="JAVA_EMMA_COVERAGE_METHOD"
+		type="COVERAGE" link="java-emma" doc="JAVA_COVERAGE" lang="JAVA"></metric>
+	<metric id="JAVA_EMMA_COVERAGE_CLASS" name="JAVA_EMMA_COVERAGE_CLASS"
+		type="COVERAGE" link="java-emma" doc="JAVA_COVERAGE" lang="JAVA"></metric>
+
+	<metric id="JS_LINES_OF_CODE" name="JS_LINES_OF_CODE" type="CODEBASEINFO"
+		link="js-mi" lang="JS" unit="lines"></metric>
+	<metric id="JS_LINES_OF_COMMENT" name="JS_LINES_OF_COMMENT"
+		type="CODEBASEINFO" link="js-mi" lang="JS" unit="lines"></metric>
+	<metric id="JS_MI_WITH_COMMENT" name="JS_MI_WITH_COMMENT" type="MI"
+		link="js-mi" doc="JS_MI" lang="JS"></metric>
+	<metric id="JS_MI" name="JS_MI" type="MI" link="js-mi" doc="JS_MI"
+		lang="JS"></metric>
+	<metric id="JS_CPD" name="JS_CPD" type="DUPLICATION" link="js-cpd"
+		doc="JS_DUPLICATION" lang="JS" unit="duplications"></metric>
+	<metric id="JS_PMD_ERROR" name="JS_PMD_ERROR" type="DEFECTS"
+		link="js-pmd" doc="JS_DEFECTS" lang="JS" unit="defects"></metric>
+	<metric id="JS_PMD" name="JS_PMD" type="DEFECTS" link="js-pmd"
+		doc="JS_DEFECTS" lang="JS" ></metric>
+	<metric id="JS_PMD_WARNING" name="JS_PMD_WARNING" type="DEFECTS"
+		link="js-pmd" doc="JS_DEFECTS" lang="JS"></metric>
+	<metric id="JS_JSLINT" name="JS_JSLINT" type="LINT" link="js-jslint"
+		doc="JS_LINT" lang="JS" unit="violations"></metric>
+
+	<metric id="CPP_LINES_OF_CODE" name="CPP_LINES_OF_CODE" type="CODEBASEINFO"
+		link="cpp-mi" lang="CPP" unit="lines"></metric>
+	<metric id="CPP_LINES_OF_COMMENT" name="CPP_LINES_OF_COMMENT"
+		type="CODEBASEINFO" link="cpp-mi" lang="CPP"></metric>
+	<metric id="CPP_MI_WITH_COMMENT" name="CPP_MI_WITH_COMMENT"
+		type="MI" link="cpp-mi" doc="CPP_MI" lang="CPP"></metric>
+	<metric id="CPP_MI" name="CPP_MI" type="MI" link="cpp-mi" doc="CPP_MI"
+		lang="CPP"></metric>
+	<metric id="CPP_CPD" name="CPP_CPD" type="DUPLICATION" link="cpp-cpd"
+		doc="CPP_DUPLICATION" lang="CPP" unit="duplications"></metric>
+	<metric id="CPP_CPPCHECK" name="CPP_CPPCHECK" type="DEFECTS"
+		link="cpp-cppcheck" doc="CPP_DEFECTS" lang="CPP" unit="defects"></metric>
+	<metric id="CPP_CPPLINT" name="CPP_CPPLINT" type="LINT" link="cpp-cpplint"
+		doc="CPP_LINT" lang="CPP" unit="violations"></metric>
+	<metric id="CPPUNIT_TEST_SUCCESS_RATE" name="CPPUNIT_TEST_SUCCESS_RATE"
+		type="TEST_SUMMARY" link="cpp-cppunit" doc="CPP_TESTING" lang="CPP" unit="%"></metric>
+	<metric id="CPPUNIT_TEST_TOTAL_COUNT" name="CPPUNIT_TEST_TOTAL_COUNT"
+		type="TEST_SUMMARY" link="cpp-cppunit" doc="CPP_TESTING" lang="CPP"></metric>
+	<metric id="CPPUNIT_TEST_PASSED_COUNT" name="CPPUNIT_TEST_PASSED_COUNT"
+		type="TEST_SUMMARY" link="cpp-cppunit" doc="CPP_TESTING" lang="CPP"></metric>
+	<metric id="CPPUNIT_TEST_SUCCESS_RATE" name="CPPUNIT_TEST_SUCCESS_RATE"
+		type="TEST_SUMMARY" link="cpp-cppunit" doc="CPP_TESTING" lang="CPP"></metric>
+	<metric id="CPP_BULLSEYE_COVERAGE_FUNCTION" name="CPP_BULLSEYE_COVERAGE_FUNCTION"
+		type="COVERAGE" link="cpp-coverage" doc="CPP_COVERAGE" lang="CPP"></metric>
+	<metric id="CPP_BULLSEYE_COVERAGE_CONDITION" name="CPP_BULLSEYE_COVERAGE_CONDITION"
+		type="COVERAGE" link="cpp-coverage" doc="CPP_COVERAGE" lang="CPP"></metric>
+	<metric id="CPP_BULLSEYE_COVERAGE_DECISION" name="CPP_BULLSEYE_COVERAGE_DECISION"
+		type="COVERAGE" link="cpp-coverage" doc="CPP_COVERAGE" lang="CPP" unit="%"></metric>
+
+	<metric id="CS_LINES_OF_CODE" name="CS_LINES_OF_CODE" type="CODEBASEINFO"
+		link="cs-mi" lang="CS" unit="lines"></metric>
+	<metric id="CS_LINES_OF_COMMENT" name="CS_LINES_OF_CODE" type="CS_LINES_OF_COMMENT"
+		link="cs-mi" lang="CS"></metric>
+	<metric id="CS_MI_WITH_COMMENT" name="CS_MI_WITH_COMMENT" type="MI"
+		link="cs-mi" doc="CS_MI" lang="CS"></metric>
+	<metric id="CS_MI" name="CS_MI" type="MI" link="cs-mi" doc="CS_MI"
+		lang="CS"></metric>
+	<metric id="MSTESTING_TEST_SUCCESS_RATE" name="MSTESTING_TEST_SUCCESS_RATE"
+		type="TEST_SUMMARY" doc="CS_TESTING" lang="CS" unit="%"></metric>
+	<metric id="CS_CPD" name="CS_CPD" type="DUPLICATION" link="cs-cpd"
+		doc="CS_DUPLICATION" lang="CS" unit="duplications"></metric>
+	<metric id="CS_FXCOP" name="CS_FXCOP" type="DEFECTS" link="cs-fxcop"
+		doc="CS_DEFECTS" lang="CS" unit="defects"></metric>
+	<metric id="CS_STYLECOP" name="CS_STYLECOP" type="LINT" link="cs-stylecop"
+		doc="CS_LINT" lang="CS" unit="violations"></metric>
+	<metric id="csCoverageMetric" name="CS_COVERAGE_LINE" type="COVERAGE" unit="%"></metric>
+		
+	<metric id="RQ_AVERAGE_SLA" name="AVERAGE_SLA" type="RUN_QUALITY"
+		doc="SM" calculatemethod="averageMetric" unit="%"></metric>
+	<metric id="RQ_INVALID_CHANGE" name="INVALID_CHANGE" type="RUN_QUALITY"
+		unit="times" doc="SM" calculatemethod="statisticInvalidChanges"></metric>
+	<metric id="RQ_ALERTS" name="CLOUD_WATCH_ALERTS" type="RUN_QUALITY" unit="times"
+		doc="SM" calculatemethod="sumMetric"></metric>
+
+	<metric id="IFA_ALL_OPEN_ISSUE" name="ALL_OPEN_ISSUE" type="ISSUE_FIX_ABILITY"
+		unit="issues"></metric>
+	<metric id="IFA_FIX_RATE" name="ISSUE_FIX_RATE" type="ISSUE_FIX_ABILITY" unit="%"></metric>
+	<metric id="IFA_NEW_ISSUE" name="NEW_ISSUE" type="ISSUE_FIX_ABILITY"
+		unit="issues"></metric>
+
+	<metric id="PRODUCT_TEST_TOTAL_COUNT" name="PRODUCT_TEST_TOTAL_COUNT"
+		type="METRIC_TYPE_TESTCASE">
+	</metric>
+	<metric id="PRODUCT_AUTOMATED_TEST_COUNT" name="PRODUCT_AUTOMATED_TEST_COUNT"
+		type="METRIC_TYPE_TESTCASE">
+	</metric>
+	
+	<score id="codeQualityScore" name="Code Quality" calculatemethod="sumScoreWithDynamicPower"
+		display="display" doc="CODE_QUALITY">
+		<metric ref="JAVA_LINES_OF_CODE"></metric>
+		<score ref="javaBuildScore" display="auto"></score>
+		<metric ref="JS_LINES_OF_CODE"></metric>
+		<score ref="jsBuildScore" display="auto"></score>
+		<metric ref="CPP_LINES_OF_CODE"></metric>
+		<score ref="cppBuildScore" display="auto"></score>
+		<metric ref="CS_LINES_OF_CODE"></metric>
+		<score ref="csBuildScore" display="auto"></score>
+	</score>
+
+	<score id="javaBuildScore" name="JAVA"
+		calculatemethod="sumWithPower" display="auto" doc="JAVA_QUALITY">
+		<score ref="javaCoverageScore" power="40" display="auto"></score>
+		<score ref="javaTestScore" power="30" display="auto"></score>
+		<score ref="javaMIScore" power="10" display="auto"></score>
+		<score ref="javaDeffectsScore" power="10" display="auto"></score>
+		<score ref="javaLintScore" power="5" display="auto"></score>
+		<score ref="javaDuplicationScore" power="5" display="auto"></score>
+	</score>
+
+	<score id="javaMIScore" name="Maintainability Index"
+		calculatemethod="linearScore" doc="JAVA_MI" expected="&gt;=130">
+		<metric ref="JAVA_MI_WITH_COMMENT"></metric>
+		<data id="javaMILeft" value="80" type="Constant"></data>
+		<data id="javaMIRight" value="130" type="Constant"></data>
+	</score>
+
+	<score id="javaTestScore" name="Unit Test Pass Rate"
+		calculatemethod="linearScore" doc="JAVA_TESTING" expected="100%">
+		<metric ref="JUNIT_TEST_SUCCESS_RATE"></metric>
+		<data id="javaTestScoreLeft" value="60" type="Constant"></data>
+		<data id="javaTestScoreRight" value="100" type="Constant"></data>
+	</score>
+
+	<score id="javaDuplicationScore" name="Duplications Rate"
+		calculatemethod="per1000RateLinearScore" doc="JAVA_DUPLICATION" expected="&lt;=1" >
+		<metric ref="JAVA_CPD"></metric>
+		<metric ref="JAVA_LINES_OF_CODE"></metric>
+		<data id="javaDuplicationScoreLeft" value="5.0" type="Constant"></data>
+		<data id="javaDuplicationScoreRight" value="1.0" type="Constant"></data>
+	</score>
+
+	<score id="javaDeffectsScore" name="Potential Defects Rate"
+		calculatemethod="per1000RateLinearScore" doc="JAVA_DEFFECTS" expected="0">
+		<metric ref="JAVA_PMD_ERROR"></metric>
+		<metric ref="JAVA_LINES_OF_CODE"></metric>
+		<data id="javadeffectsZeroScoreBound" value="5.0" type="Constant"></data>
+		<data id="javadeffectsFullScoreBound" value="0.0" type="Constant"></data>
+	</score>
+
+	<score id="javaLintScore" name="Code Style Violations Rate"
+		calculatemethod="per1000RateLinearScore" doc="JAVA_LINT" expected="0">
+		<metric ref="JAVA_CHECKSTYLE"></metric>
+		<metric ref="JAVA_LINES_OF_CODE"></metric>
+		<data id="javaLintZeroScoreBound" value="5.0" type="Constant"></data>
+		<data id="javaLintFullScoreBound" value="0.0" type="Constant"></data>
+	</score>
+
+	<score id="javaCoverageScore" name="Test Coverage"
+		calculatemethod="linearScoreWithBackupData" doc="JAVA_COVERAGE" expected="&gt;=90%" datatype="Integer">
+		<metric ref="JAVA_EMMA_COVERAGE_LINE"></metric>
+		<metric ref="JAVA_EMMA_COVERAGE_BLOCK"></metric>
+		<data id="javaCoverageScoreZeroScoreBound" value="0" type="Constant"></data>
+		<data id="javaCoverageScoreFullScoreBound" value="90" type="Constant"></data>
+	</score>
+
+	<score id="jsBuildScore" name="JAVASCRIPT"
+		calculatemethod="sumWithPower" display="auto" doc="JS_QUALITY">
+		<score ref="jsMIScore" power="10" display="auto"></score>
+		<score ref="jsDeffectsScore" power="10" display="auto"></score>
+		<score ref="jsLintScore" power="5" display="auto"></score>
+		<score ref="jsDuplicationScore" power="5" display="auto"></score>
+	</score>
+
+	<score id="jsMIScore" name="Maintainability Index" calculatemethod="linearScore"
+		doc="JS_MI" expected="&gt;=130">
+
+		<metric ref="JS_MI_WITH_COMMENT"></metric>
+		<data id="jsMILeft" value="80" type="Constant"></data>
+		<data id="jsMIRight" value="130" type="Constant"></data>
+	</score>
+
+	<score id="jsDuplicationScore" name="Duplications Rate"
+		calculatemethod="per1000RateLinearScore" doc="JS_DUPLICATION" expected="&lt;=1">
+		<metric ref="JS_CPD"></metric>
+		<metric ref="JS_LINES_OF_CODE"></metric>
+		<data id="jsDuplicationScoreLeft" value="5.0" type="Constant"></data>
+		<data id="jsDuplicationScoreRight" value="1.0" type="Constant"></data>
+	</score>
+
+	<score id="jsDeffectsScore" name="Potential Defects Rate" calculatemethod="per1000RateLinearScore"
+		doc="JS_DEFECTS" expected="0">
+		<metric ref="JS_PMD_ERROR"></metric>
+		<metric ref="JS_LINES_OF_CODE"></metric>
+		<data id="jsdeffectsZeroScoreBound" value="5.0" type="Constant"></data>
+		<data id="jsdeffectsFullScoreBound" value="0.0" type="Constant"></data>
+	</score>
+
+	<score id="jsLintScore" name="Code Style Violations Rate" calculatemethod="per1000RateLinearScore"
+		doc="JS_LINT" expected="0">
+		<metric ref="JS_JSLINT"></metric>
+		<metric ref="JS_LINES_OF_CODE"></metric>
+		<data id="jsLintZeroScoreBound" value="5.0" type="Constant"></data>
+		<data id="jsLintFullScoreBound" value="0.0" type="Constant"></data>
+	</score>
+
+	<score id="cppBuildScore" name="CPP" calculatemethod="sumScoreWithCheckExists"
+		display="auto" doc="CPP_QUALITY">
+		<score ref="cppCoverageScore" power="40" display="auto" exists="hasTest"></score>
+		<score ref="cppTestScore" power="30" display="auto" exists="hasTest"></score>
+		<score ref="cppMIScore" power="10" display="auto"></score>
+		<score ref="cppDeffectsScore" power="10" display="auto"></score>
+		<score ref="cppLintScore" power="5" display="auto"></score>
+		<score ref="cppDuplicationScore" power="5" display="auto"></score>
+	</score>
+
+	<score id="cppMIScore" name="Maintainability Index" calculatemethod="linearScore"
+		doc="CPP_MI" expected="130">
+		<metric ref="CPP_MI_WITH_COMMENT"></metric>
+		<data id="cppMILeft" value="80" type="Constant"></data>
+		<data id="cppMIRight" value="130" type="Constant"></data>
+	</score>
+
+	<score id="cppDuplicationScore" name="Duplications Rate"
+		calculatemethod="per1000RateLinearScore" doc="CPP_DUPLICATION" expected="&lt;=1">
+		<metric ref="CPP_CPD"></metric>
+		<metric ref="CPP_LINES_OF_CODE"></metric>
+		<data id="cppDuplicationScoreLeft" value="5.0" type="Constant"></data>
+		<data id="cppDuplicationScoreRight" value="1.0" type="Constant"></data>
+	</score>
+
+	<score id="cppDeffectsScore" name="Potential Defects Rate" calculatemethod="per1000RateLinearScore"
+		doc="CPP_DEFECTS" expected="0">
+		<metric ref="CPP_CPPCHECK"></metric>
+		<metric ref="CPP_LINES_OF_CODE"></metric>
+		<data id="cppdeffectsZeroScoreBound" value="5.0" type="Constant"></data>
+		<data id="cppdeffectsFullScoreBound" value="0.0" type="Constant"></data>
+	</score>
+
+	<score id="cppLintScore" name="Code Style Violations Rate" calculatemethod="per1000RateLinearScore"
+		doc="CPP_LINT" expected="0">
+		<metric ref="CPP_CPPLINT"></metric>
+		<metric ref="CPP_LINES_OF_CODE"></metric>
+		<data id="cppLintZeroScoreBound" value="5.0" type="Constant"></data>
+		<data id="cppLintFullScoreBound" value="0.0" type="Constant"></data>
+	</score>
+
+	<score id="cppCoverageScore" name="Test Coverage" calculatemethod="linearScore"
+		doc="CPP_COVERAGE" expected="&gt;=90%" datatype="Integer">
+		<metric ref="CPP_BULLSEYE_COVERAGE_DECISION"></metric>
+		<data id="cppCoverageScoreZeroScoreBound" value="0" type="Constant"></data>
+		<data id="cppCoverageScoreFullScoreBound" value="90" type="Constant"></data>
+	</score>
+	
+	<score id="cppTestScore" name="Unit Test Pass Rate" calculatemethod="linearScore"
+		doc="CPP_TESTING" expected="100%" >
+		<metric ref="CPPUNIT_TEST_SUCCESS_RATE"></metric>
+		<data id="cppTestScoreLeft" value="60" type="Constant"></data>
+		<data id="cppTestScoreRight" value="100" type="Constant"></data>
+	</score>
+
+	<score id="csBuildScore" name="CS" calculatemethod="sumScoreWithCheckExists"
+		display="auto" doc="CS_QUALITY">
+		<score ref="csCoverageScore" power="40" display="auto" exists="hasTest"></score>
+		<score ref="csTestScore" power="30" display="auto" exists="hasTest"></score>
+		<score ref="csMIScore" power="10" display="auto"></score>
+		<score ref="csDeffectsScore" power="10" display="auto"></score>
+		<score ref="csLintScore" power="5" display="auto"></score>
+		<score ref="csDuplicationScore" power="5" display="auto"></score>
+	</score>
+
+	<score id="csMIScore" name="Maintainability Index" calculatemethod="linearScore"
+		doc="CS_MI" expected="&gt;=130">
+		<metric ref="CS_MI_WITH_COMMENT"></metric>
+		<data id="csMILeft" value="80" type="Constant"></data>
+		<data id="csMIRight" value="130" type="Constant"></data>
+	</score>
+
+	<score id="csDuplicationScore" name="Duplications Rate"
+		calculatemethod="per1000RateLinearScore" doc="CS_DUPLICATION" expected="&lt;=1">
+		<metric ref="CS_CPD"></metric>
+		<metric ref="CS_LINES_OF_CODE"></metric>
+		<data id="csDuplicationScoreLeft" value="5.0" type="Constant"></data>
+		<data id="csDuplicationScoreRight" value="1.0" type="Constant"></data>
+	</score>
+
+	<score id="csDeffectsScore" name="Potential Defects Rate" calculatemethod="per1000RateLinearScore"
+		doc="CS_DEFFECTS" expected="0">
+		<metric ref="CS_FXCOP"></metric>
+		<metric ref="CS_LINES_OF_CODE"></metric>
+		<data id="csdeffectsZeroScoreBound" value="5.0" type="Constant"></data>
+		<data id="csdeffectsFullScoreBound" value="0.0" type="Constant"></data>
+	</score>
+
+	<score id="csLintScore" name="Code Style Violations Rate" calculatemethod="per1000RateLinearScore"
+		doc="CS_LINT" expected="0">
+		<metric ref="CS_STYLECOP"></metric>
+		<metric ref="CS_LINES_OF_CODE"></metric>
+		<data id="csLintZeroScoreBound" value="5.0" type="Constant"></data>
+		<data id="csLintFullScoreBound" value="0.0" type="Constant"></data>
+	</score>
+
+	<score id="csCoverageScore" name="Test Coverage" calculatemethod="linearScore"
+		doc="CS_COVERAGE" expected="&gt;=90%" datatype="Integer">
+		<metric ref="csCoverageMetric" ></metric>
+		<data id="csCoverageScoreZeroScoreBound" value="0" type="Constant"></data>
+		<data id="csCoverageScoreFullScoreBound" value="90" type="Constant"></data>
+	</score>
+
+	<score id="csTestScore" name="Unit Test Pass Rate" calculatemethod="linearScore"
+		doc="CS_TESTING" expected="100%" >
+		<metric ref="MSTESTING_TEST_SUCCESS_RATE"></metric>
+		<data id="csTestScoreLeft" value="60" type="Constant"></data>
+		<data id="csTestScoreRight" value="100" type="Constant"></data>
+	</score>
+
+	<score id="averageSLAScore" name="Service Availability"
+		calculatemethod="linearScore" doc="SM" expected="99.999%" datatype="DoubleThree">
+		<metric ref="RQ_AVERAGE_SLA" ></metric>
+		<data id="averageSLAZeroScoreBound" value="99" type="Constant"></data>
+		<data id="averageSLAFullScoreBound" value="100" type="Constant"></data>
+	</score>
+
+
+	<score id="invalidChangesScore" name="Invalidate Changes In 24h"
+		calculatemethod="fullScoreWithSpecifiedStatus" expected="no">
+		<metric ref="RQ_INVALID_CHANGE" expected="no"></metric>
+		<data id="invalidChangesFullScoreStatus" value="no" type="Constants"></data>
+		<data id="invalidChangesZeroScoreStatus" value="yes" type="Constants"></data>
+	</score>
+
+	<score id="alertsScore" name="Load Alerts In 24h"
+		calculatemethod="linearScore" expected="0">
+		<metric ref="RQ_ALERTS" expected="0"></metric>
+		<data id="alertScoreZeroScoreBound" value="10" type="Constant"></data>
+		<data id="alertScoreFullScoreBound" value="0" type="Constant"></data>
+	</score>
+
+	<score id="runningQualityScore" name="Running Quality"
+		calculatemethod="sumScoreWithCheckExists" display="auto">
+		<score ref="averageSLAScore" power="80" exists="hasNagiosWatch"></score>
+		<score ref="invalidChangesScore" power="10" exists="hasServer"></score>
+		<score ref="alertsScore" power="10" exists="hasCloudWatch"></score>
+	</score>
+
+	<score id="allOpenIssueScore" name="All Open Issue"
+		calculatemethod="linearScore" expected="0" datatype="Integer">
+		<metric ref="IFA_ALL_OPEN_ISSUE" expected="0"></metric>
+		<data id="openIssueZeroScoreBound" value="10" type="Constant"></data>
+		<data id="openIssueFullScoreBound" value="0" type="Constant"></data>
+	</score>
+
+	<score id="fixRateScore" name="Fixed Rate in 24h"
+		calculatemethod="linearScore" expected="100%">
+		<metric ref="IFA_FIX_RATE"></metric>
+		<data id="fixRateZeroScoreBound" value="0" type="Constant"></data>
+		<data id="fixRateFullScoreBound" value="100" type="Constant"></data>
+	</score>
+
+	<score id="newIssueScore" name="New Issue in 24h"
+		calculatemethod="linearScore" expected="0" datatype="Integer">
+		<metric ref="IFA_NEW_ISSUE" expected="0"></metric>
+		<data id="newIssueZeroScoreBound" value="10" type="Constant"></data>
+		<data id="newIssueFullScoreBound" value="0" type="Constant"></data>
+	</score>
+
+	<score id="issueFixAbilityScore" name="Issue Fix Ability"
+		calculatemethod="sumWithPower" display="auto">
+		<score ref="allOpenIssueScore" power="50"></score>
+		<score ref="fixRateScore" power="30"></score>
+		<score ref="newIssueScore" power="20"></score>
+	</score>
+
+	<score id="prodScore" name="PROD SCORE" calculatemethod="sumScoreWithCheckExists"
+		doc="PRODUCTION_QUALITY">
+  		<score ref="runningQualityScore" power="65" display="auto" exists="hasServer"></score>
+		<score ref="issueFixAbilityScore" power="30" display="auto" exists="hasServer"></score>	
+		<score ref="codeQualityScore" power="5" display="auto"></score>
+	</score>
+</metricengine>

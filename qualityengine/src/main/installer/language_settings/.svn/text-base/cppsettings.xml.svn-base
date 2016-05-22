@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+   <!-- Cpp source paths -->
+    <fileset dir="${src.dir}" id="cpp.src.fileset">
+      <include name="**/*.c"/>
+      <include name="**/*.h"/>
+      <include name="**/*.cpp"/>
+      <include name="**/*.hpp"/>
+      <include name="**/*.H"/>
+      <include name="**/*.CPP"/>
+      <include name="**/*.C"/>
+      <include name="**/*.cc"/>
+      <include name="**/*.hxx"/>
+      <include name="**/*.cxx"/>    
+    </fileset>  
+    <!-- cpplint setting -->
+    <property name="python.path" value="C:/Python27/python.exe" />  
+    <property name="cpplint.path" value="res/cpplint.py" /> 
+    <!-- cppcheck setting -->
+    <property name="cppcheck.path" value="res/cppcheck/cppcheck.exe" />
+    <property name="cppcheck.macro.settings" value="" />
+    <property name="cppcheck.includesfile.txt.path" value="res/cppcheck-includeFiles.txt" />
+	
+	    <!-- Cpp report paths -->
+    <property name="cpp.cpd.dir" value="${qualityreport.dir}/cpp-cpd" />
+    <property name="cpp.cpd.report" value="${cpp.cpd.dir}/cpd.txt" />
+    <property name="cpp.cpplint.dir" value="${qualityreport.dir}/cpp-cpplint" />
+    <property name="cpp.cpplint.report" value="${cpp.cpplint.dir}/cpplint-report.txt" />
+	<property name="cpp.pclint.dir" value="${qualityreport.dir}/cpp-pclint" />
+    <property name="cpp.pclint.report" value="${cpp.pclint.dir}/pclint-report.txt" />
+    <property name="cpp.cppcheck.dir" value="${qualityreport.dir}/cpp-cppcheck" />
+    <property name="cpp.cppcheck.report" value="${cpp.cppcheck.dir}/cppcheck-report.xml" />
+    <property name="cpp.mi.dir" value="${qualityreport.dir}/cpp-mi" />
+    <property name="cpp.mi.report" value="${cpp.mi.dir}/mi.xml" />
+    <property name="cpp.bullseye.dir" value="${qualityreport.dir}/cpp-bullseye" />
+    <property name="cpp.bullseye.report" value="${cpp.bullseye.dir}/bullseye-report.xml" />
+    <property name="cpp.cppunit.dir" value="${qualityreport.dir}/cpp-cppunit" />
+    <property name="cpp.cppunit.report" value="${cpp.cppunit.dir}/cppunit.xml" />
+    <property name="cpp.vsts.dir" value="${qualityreport.dir}/cpp-vsts" />
+    <property name="cpp.vsts.report" value="${cpp.vsts.dir}/vsts.xml" />
+    <property name="cpp.gtest.dir" value="${qualityreport.dir}/cpp-gtest" />
+    <property name="cpp.gtest.report" value="${cpp.gtest.dir}/gtest.xml" />
+</project>
+
+
+
+
+
+
+
+

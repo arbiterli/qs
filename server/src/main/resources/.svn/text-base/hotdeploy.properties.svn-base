@@ -1,0 +1,7 @@
+productionSiteUrl=50.18.122.188
+operationServer=192.168.1.98
+previewSiteUrl=50.18.122.188
+hotSitesPath=/opt/hotdeploy/source/hot/sites
+scriptsPath=/opt/hotdeploy/scripts/
+svnLogFolder=/opt/hotdeploy/cache/svn_log_cache
+svnDiffFolder=/opt/hotdeploy/cache/svn_diff_cache

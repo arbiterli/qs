@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate
+END
+TestSuiteDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/TestSuiteDaoHibernate.java
+END
+TestGroupDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/TestGroupDaoHibernate.java
+END
+DeployDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/DeployDaoHibernate.java
+END
+ProductExtendPropertyDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/ProductExtendPropertyDaoHibernate.java
+END
+SystemErrorDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/SystemErrorDaoHibernate.java
+END
+BuildDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/BuildDaoHibernate.java
+END
+ScoreEmailHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/ScoreEmailHibernate.java
+END
+PhaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/PhaseDaoHibernate.java
+END
+RoleDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/RoleDaoHibernate.java
+END
+ScoreOwnerMappingDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/ScoreOwnerMappingDaoHibernate.java
+END
+BuildMetricDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/BuildMetricDaoHibernate.java
+END
+ServerDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/ServerDaoHibernate.java
+END
+AlertDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/AlertDaoHibernate.java
+END
+BuildCertifyHistoryDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/BuildCertifyHistoryDaoHibernate.java
+END
+ConfigurationDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/ConfigurationDaoHibernate.java
+END
+TestCaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/TestCaseDaoHibernate.java
+END
+GenericDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/GenericDaoHibernate.java
+END
+UserDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/UserDaoHibernate.java
+END
+TestDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/TestDaoHibernate.java
+END
+ProductDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/ProductDaoHibernate.java
+END
+RecordMetricDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/RecordMetricDaoHibernate.java
+END
+VersionDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/VersionDaoHibernate.java
+END
+QualityEngineFailureDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/QualityEngineFailureDaoHibernate.java
+END
+FailureDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/FailureDaoHibernate.java
+END
+IssueDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/dao/hibernate/IssueDaoHibernate.java
+END

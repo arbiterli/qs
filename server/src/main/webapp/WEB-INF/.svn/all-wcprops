@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF
+END
+urlrewrite.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/urlrewrite.xml
+END
+NewFile.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/NewFile.jsp
+END
+security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/security.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/applicationContext.xml
+END
+dispatcher-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/dispatcher-servlet.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/web.xml
+END

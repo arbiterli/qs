@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+    "http://tuckey.org/res/dtds/urlrewrite3.0.dtd">
+
+<urlrewrite default-match-type="wildcard">
+     
+	<!-- upload, TODO: remove this web service when all client changed to keyupload -->
+	<rule>
+		<from>/upload</from>
+		<to>/apps/upload</to>
+	</rule>
+	
+	<rule>
+		<from>/keyupload</from>
+		<to>/apps/service/key/upload</to>
+	</rule>
+
+	<!-- login -->
+	<rule>
+		<from>/</from>
+		<to>/apps/dispatcher</to>
+	</rule>
+
+	<rule>
+		<from>/login</from>
+		<to>/apps/login/loginaction</to>
+	</rule>
+
+	<rule>
+		<from>/outersystemlogin</from>
+		<to>/apps/login/outersystemlogin</to>
+	</rule>
+
+	<!-- dispatch -->
+	<rule>
+		<from>/dispatcher</from>
+		<to>/apps/dispatcher</to>
+	</rule>
+
+	<!--user -->
+	<rule>
+		<from>/usercreatepage</from>
+		<to>/apps/user/usercreatepage</to>
+	</rule>
+
+	<rule>
+		<from>/usermanagepage</from>
+		<to>/apps/user/usermanagepage</to>
+	</rule>
+
+	<!-- product -->
+	<rule>
+		<from>/productlist</from>
+		<to>/apps/product/productlist</to>
+	</rule>
+
+	<rule>
+		<from>/product</from>
+		<to>/apps/product/productinfo</to>
+	</rule>
+
+	<!-- <rule> <from>/serverchangecheckdetailscore</from> <to>/apps/product/serverchangecheckdetailscore</to> 
+		</rule> <rule> <from>/servermonitoringdetailscore</from> <to>/apps/product/servermonitoringdetailscore</to> 
+		</rule> -->
+
+	<!-- phase -->
+	<rule>
+		<from>/phase</from>
+		<to>/apps/phase/productphase</to>
+	</rule>
+
+	<rule>
+		<from>/updateserverpage</from>
+		<to>/apps/phase/updateserverpage</to>
+	</rule>
+
+	<rule>
+		<from>/updateserver</from>
+		<to>/apps/phase/updateserver</to>
+	</rule>
+
+	<rule>
+		<from>/createserverpage</from>
+		<to>/apps/phase/createserverpage</to>
+	</rule>
+
+	<rule>
+		<from>/createserver</from>
+		<to>/apps/phase/createserver</to>
+	</rule>
+
+	<rule>
+		<from>/serverbuildpage</from>
+		<to>/apps/phase/serverbuildpage</to>
+	</rule>
+
+	<rule>
+		<from>/servermanage</from>
+		<to>/apps/phase/servermanage</to>
+	</rule>
+	<!-- deploy -->
+	<rule>
+		<from>/deployhistory</from>
+		<to>/apps/deploy/deployhistory</to>
+	</rule>
+	<rule>
+		<from>/getlogpage</from>
+		<to>/apps/deploy/getlogpage</to>
+	</rule>
+	<rule>
+		<from>/basedeployinfo</from>
+		<to>/apps/deploy/basedeployinfo</to>
+	</rule>
+
+	<rule>
+		<from>/phasedeployhistory</from>
+		<to>/apps/deploy/phasedeployhistory</to>
+	</rule>
+	
+	<rule>
+		<from>/updatephasedeployhistory</from>
+		<to>/apps/deploy/updatephasedeployhistory</to>
+	</rule>
+    
+    <rule>
+        <from>/svnpanel</from>
+	<to>/apps/svnsync/svnpanel</to>
+    </rule>
+	
+    <rule>
+        <from>/svndiff</from>
+        <to>/apps/svnsync/svndiff</to>
+    </rule>
+    
+    <rule>
+        <from>/svnupdate</from>
+        <to>/apps/svnsync/svnupdate</to>
+    </rule>
+    
+    <rule>
+        <from>/svnlog</from>
+        <to>/apps/svnsync/svnlog</to>
+    </rule>
+    
+    <rule>
+        <from>/synctopro</from>
+        <to>/apps/svnsync/synctopro</to>
+    </rule>
+    
+    <rule>
+        <from>/syncfrompro</from>
+        <to>/apps/svnsync/syncfrompro</to>
+    </rule>
+    
+    <rule>
+        <from>/lastrefreshtime</from>
+        <to>/apps/svnsync/lastrefreshtime</to>
+    </rule>
+    
+    <rule>
+        <from>/dosynctopro</from>
+        <to>/apps/svnsync/dosynctopro</to>
+    </rule>
+    
+    <rule>
+        <from>/dosyncfrompro</from>
+        <to>/apps/svnsync/dosyncfrompro</to>
+    </rule>
+	<!-- build -->
+	<rule>
+		<from>/buildlist</from>
+		<to>/apps/build/buildreportlist</to>
+	</rule>
+
+	<rule>
+		<from>/build</from>
+		<to>/apps/build/buildreport</to>
+	</rule>
+
+	<!-- failure -->
+	<rule>
+		<from>/failurepage</from>
+		<to>/apps/failure/failurepage</to>
+	</rule>
+
+	<rule>
+		<from>/failuredetail</from>
+		<to>/apps/failure/failuredetail</to>
+	</rule>
+	
+	
+	<rule>
+		<from>/admin</from>
+		<to>/apps/admin/management/admin</to>
+	</rule>
+	
+	<rule>
+		<from>/usermanagement</from>
+		<to>/apps/admin/management/usermanagement</to>
+	</rule>
+	
+	<rule>
+		<from>/productmanagement</from>
+		<to>/apps/admin/management/productmanagement</to>
+	</rule>
+	
+	<rule>
+		<from>/versionmanagement</from>
+		<to>/apps/admin/management/versionmanagement</to>
+	</rule>
+	
+	<rule>
+		<from>/errormanagement</from>
+		<to>/apps/admin/management/errormanagement</to>
+	</rule>
+	
+	<rule>
+		<from>/rolemanagement</from>
+		<to>/apps/admin/management/rolemanagement</to>
+	</rule>
+	
+	<rule>
+		<from>/usermodify</from>
+		<to>/apps/admin/management/usermodify</to>
+	</rule>
+	
+	<rule>
+		<from>/getProductInfo</from>
+		<to>/apps/admin/management/getProductInfo</to>
+	</rule>
+	
+	<rule>
+		<from>/versionmodify</from>
+		<to>/apps/admin/management/versionmodify</to>
+	</rule>
+	<rule>
+		<from>/productmodify</from>
+		<to>/apps/admin/management/productmodify</to>
+	</rule>
+	
+	<rule>
+		<from>/versionofproduct</from>
+		<to>/apps/admin/management/versionofproduct</to>
+	</rule>
+	
+	<rule>
+		<from>/roleofuser</from>
+		<to>/apps/admin/management/roleofuser</to>
+	</rule>
+	
+	<rule>
+		<from>/rolemodify</from>
+		<to>/apps/admin/management/rolemodify</to>
+	</rule>
+	
+	<rule>
+		<from>/errorofproduct</from>
+		<to>/apps/admin/management/errorofproduct</to>
+	</rule>
+	
+
+	<!-- web service -->
+	<rule>
+		<from>/reportQualityEngineFailure</from>
+		<to>/apps/service/key/reportQualityEngineFailure</to>
+	</rule>
+
+	<rule>
+		<from>/reportChildSystemError</from>
+		<to>/apps/service/key/reportChildSystemError</to>
+	</rule>
+	
+	<rule>
+	    <from>/metricsdescription/getMetricsDescription</from>
+	    <to>/apps/metricsdescription/getMetricsDescription</to>	    
+	</rule>
+	<rule>
+	    <from>/metricsdescription/getMetricsDescriptionDetail</from>
+	    <to>/apps/metricsdescription/getMetricsDescriptionDetail</to>	    
+	</rule>
+	
+   <rule>
+        <from>/image/**</from>
+        <to>/image/$1</to>
+    </rule>
+    <rule>
+        <from>/js/**</from>
+        <to>/js/$1</to>
+    </rule>
+    
+    <rule>
+        <from>/css/**</from>
+        <to>/css/$1</to>
+    </rule>
+    
+    <rule>
+        <from>/dwr/**</from>
+        <to>/dwr/$1</to>
+    </rule>
+    
+    <!-- System Error -->
+    <rule>
+    	<from>/systemerror</from>
+    	<to>/apps/systemerror/error</to>
+    </rule> 
+    
+    <rule>
+    	<from>/errordetail</from>
+    	<to>/apps/systemerror/detail</to>
+    </rule>   
+    
+	<!-- Spring MVC
+	
+     <rule>
+        <from>/apps/**</from>
+        <to last="true" type="redirect">/$1</to>
+    </rule>
+    
+    <rule>
+        <from>/**</from>
+        <to>/apps/$1</to>
+    </rule>
+     -->
+    
+	<!-- Remove JSESSIONID from URLs when cookies disabled -->
+	<!-- http://stackoverflow.com/questions/962729/is-it-possible-to-disable-jsessionid-in-tomcat-servlet -->
+	<outbound-rule encodefirst="true" match-type="regex">
+		<name>Strip URL Session ID's</name>
+		<from>^(.*?)(?:\;jsessionid=[^\?#]*)?(\?[^#]*)?(#.*)?$</from>
+		<to>$1$2$3</to>
+	</outbound-rule>
+</urlrewrite>

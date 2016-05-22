@@ -1,0 +1,84 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
+
+	<http access-denied-page="/apps/login/loginaction?denied=true"
+		entry-point-ref="casEntryPoint">
+		<intercept-url pattern="/apps/login/**" filters="none" />
+		<intercept-url pattern="/apps/upload**" filters="none" />
+
+        <intercept-url pattern="/apps/service/noauth/**" filters="none" />
+        <intercept-url pattern="/apps/service/key/**" filters="none" />
+        <intercept-url pattern="/apps//admin/management/**" access="ROLE_ADMIN" />
+        <intercept-url pattern="/apps/service/auth/**" access="ROLE_ADMIN,ROLE_TECHNIQUEMANAGER,ROLE_DEVELOPER,ROLE_MARKETING,ROLE_BUSINESSOWNER" />
+
+		<intercept-url pattern="/image/**" filters="none" />
+		<intercept-url pattern="/css/**" filters="none" />
+		<intercept-url pattern="/js/**" filters="none" />
+        <intercept-url pattern="/dwr/**" access="ROLE_ADMIN,ROLE_TECHNIQUEMANAGER,ROLE_DEVELOPER,ROLE_MARKETING,ROLE_BUSINESSOWNER" />
+        <intercept-url pattern="/apps/dwrdemo" filters="none" />
+
+		<intercept-url pattern="/apps/**"
+			access="ROLE_ADMIN,ROLE_TECHNIQUEMANAGER,ROLE_DEVELOPER,ROLE_MARKETING,ROLE_BUSINESSOWNER" />
+		<form-login login-page="/login" authentication-failure-url="/login?error=true"
+			default-target-url="/dispatcher" login-processing-url="/j_spring_cas_security_check"
+			always-use-default-target="true" />
+		<logout logout-success-url="/apps/login/loginaction?logout=true" />
+		<custom-filter position="CAS_FILTER" ref="casFilter" />
+		<custom-filter before="LOGOUT_FILTER" ref="requestSingleLogoutFilter" />
+		<custom-filter before="CAS_FILTER" ref="singleLogoutFilter" />
+		<custom-filter after="CAS_FILTER" ref="qualityACLFilter" />
+	</http>
+	<!-- <authentication-manager> <authentication-provider user-service-ref="userDao"> 
+		<password-encoder ref="md5Encoder" /> </authentication-provider> </authentication-manager> -->
+	<beans:bean id="qualityACLFilter"
+		class="com.glority.qualityserver.web.filter.QualityServerACLFilter">
+	</beans:bean>
+
+	<beans:bean id="casFilter"
+		class="org.springframework.security.cas.web.CasAuthenticationFilter">
+		<beans:property name="authenticationManager" ref="authenticationManager" />
+	</beans:bean>
+
+	<beans:bean id="casEntryPoint"
+		class="org.springframework.security.cas.web.CasAuthenticationEntryPoint">
+		<beans:property name="loginUrl"
+			value="https://qsauth.glority.com/cas/login" />
+		<beans:property name="serviceProperties" ref="serviceProperties" />
+	</beans:bean>
+
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider ref="casAuthenticationProvider" />
+	</authentication-manager>
+
+	<beans:bean id="casAuthenticationProvider"
+		class="org.springframework.security.cas.authentication.CasAuthenticationProvider">
+		<beans:property name="userDetailsService" ref="userDao" />
+		<beans:property name="serviceProperties" ref="serviceProperties" />
+		<beans:property name="ticketValidator">
+			<beans:bean
+				class="org.jasig.cas.client.validation.Cas20ServiceTicketValidator">
+				<beans:constructor-arg index="0"
+					value="https://qsauth.glority.com/cas" />
+			</beans:bean>
+		</beans:property>
+		<beans:property name="key" value="qualityserver01" />
+	</beans:bean>
+
+	<beans:bean id="singleLogoutFilter"
+		class="org.jasig.cas.client.session.SingleSignOutFilter" />
+
+	<beans:bean id="requestSingleLogoutFilter"
+		class="org.springframework.security.web.authentication.logout.LogoutFilter">
+		<beans:constructor-arg value="https://qsauth.glority.com/cas/logout" />
+		<beans:constructor-arg>
+			<beans:bean
+				class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler" />
+		</beans:constructor-arg>
+		<beans:property name="filterProcessesUrl" value="/j_spring_cas_security_logout" />
+	</beans:bean>
+
+</beans:beans>

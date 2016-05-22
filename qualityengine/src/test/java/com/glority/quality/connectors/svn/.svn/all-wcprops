@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/svn
+END
+SVNCheckoutTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/svn/SVNCheckoutTaskTest.java
+END
+SVNCommitTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/svn/SVNCommitTaskTest.java
+END
+AbstractSVNBaseTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/svn/AbstractSVNBaseTaskTest.java
+END
+SVNExportTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/svn/SVNExportTaskTest.java
+END
+SVNShowLogTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/svn/SVNShowLogTaskTest.java
+END
+SVNUpdateTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/svn/SVNUpdateTaskTest.java
+END

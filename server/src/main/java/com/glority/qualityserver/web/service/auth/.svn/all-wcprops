@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth
+END
+AbstractACLDwrService.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/AbstractACLDwrService.java
+END
+DeaultAuthService.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/DeaultAuthService.java
+END
+AdminManageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/AdminManageService.java
+END
+DebugJobService.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/DebugJobService.java
+END
+DeployControlledService.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/DeployControlledService.java
+END
+BuildControlledService.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/BuildControlledService.java
+END
+BasicDataService.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/BasicDataService.java
+END
+ScoreOwnerEmailSettingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/ScoreOwnerEmailSettingService.java
+END
+ServerControlledService.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/auth/ServerControlledService.java
+END

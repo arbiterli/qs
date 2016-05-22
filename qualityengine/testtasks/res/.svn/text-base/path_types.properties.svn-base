@@ -1,0 +1,9 @@
+all=
+root=
+installer=installer/
+debuginstaller=debug_installer/
+tests=tests/
+buildreports=buildreports/
+testreport=testreport/
+log=log/
+qualityxml=quality.xml

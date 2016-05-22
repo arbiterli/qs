@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver
+END
+AbstractBaseControllerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/AbstractBaseControllerTest.java
+END
+AbstractMailTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/AbstractMailTest.java
+END
+MailEngineTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/MailEngineTest.java
+END
+TestUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/TestUtil.java
+END
+AbstractBaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/AbstractBaseTest.java
+END

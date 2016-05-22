@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/ftp
+END
+FTPTestsUploadTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/ftp/FTPTestsUploadTaskTest.java
+END
+FTPTestsDownloadTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/ftp/FTPTestsDownloadTaskTest.java
+END
+FTPCommonUploadTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/ftp/FTPCommonUploadTaskTest.java
+END
+FTPCommonDownloadTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/connectors/ftp/FTPCommonDownloadTaskTest.java
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins
+END
+JenkinsGetJobs.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins/JenkinsGetJobs.java
+END
+BullsEyeTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins/BullsEyeTool.java
+END
+JenkinsBuildExecutorGetTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins/JenkinsBuildExecutorGetTask.java
+END
+JenkinsResultMergeTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins/JenkinsResultMergeTask.java
+END
+CovFileTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins/CovFileTool.java
+END
+JenkinsAddBuild.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins/JenkinsAddBuild.java
+END
+JenkinsBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins/JenkinsBase.java
+END
+JenkinsCheckBuildResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/main/java/com/glority/quality/connectors/jenkins/JenkinsCheckBuildResult.java
+END

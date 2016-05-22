@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp
+END
+usermanage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/usermanage.jsp
+END
+buildreportlist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/buildreportlist.jsp
+END
+metricdescription.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/metricdescription.jsp
+END
+error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/error.jsp
+END
+buildreport.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/buildreport.jsp
+END
+deployresult.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/deployresult.jsp
+END
+phasedeployhistory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/phasedeployhistory.jsp
+END
+phase.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/phase.jsp
+END
+dwrdemo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/dwrdemo.jsp
+END
+usercreate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/usercreate.jsp
+END
+svnsync.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/svnsync.jsp
+END
+products.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/products.jsp
+END
+server.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/server.jsp
+END
+success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/success.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/login.jsp
+END
+failures.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/failures.jsp
+END
+failuredetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/failuredetail.jsp
+END
+systemerrorinfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/systemerrorinfo.jsp
+END
+datepicker.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/datepicker.jsp
+END
+syncproandprev.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/syncproandprev.jsp
+END
+logPage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/logPage.jsp
+END
+deployhistory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/deployhistory.jsp
+END
+servermanage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/servermanage.jsp
+END
+product.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/product.jsp
+END
+jobdebug.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/jobdebug.jsp
+END
+systemerrors.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/WEB-INF/jsp/systemerrors.jsp
+END

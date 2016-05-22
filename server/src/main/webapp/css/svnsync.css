@@ -1,0 +1,171 @@
+#log {
+	display: block;
+	padding-top: 1px;
+	bottom: 400px;
+	width:980px;
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+.sorting_disabled {
+    padding: 10px 18px 10px 10px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #060C2C;
+    border: 1px solid #1D5A68;	
+}
+#example_info {
+    display: none;
+}
+
+#diff_title {
+    width: 642px;
+    height: 42px;
+    background-color: #060C2C;  
+}
+
+#title_col {
+    width: 200px;
+    height: 42px;
+    line-height: 34px;
+    text-align: center;
+}
+
+#svn_diff_title {
+    width: 980px;
+    height: 42px;
+    background-color: #060C2C;
+}
+
+#diff_panel {
+    height: 357px;
+    width: 980;
+    border: 1px solid #1D5A68;
+    margin-bottom: 100px;
+    color: white; 
+}
+
+#svn_diff_panel {
+    height: 357px;
+    width: 980;
+    border: 1px solid #1D5A68;
+    margin-bottom: 100px;
+    color: white; 
+}
+
+#svn_diff_container {
+   background-color: #28394B;
+}
+
+#diff_container {
+   background-color: #28394B;
+}
+
+#svn_diff {
+   overflow: auto;
+   width: 940px;
+   height: 315px;
+   margin-left: 40px;	
+}
+
+#diff {
+   overflow: auto;
+   width: 602px;
+   height: 315px;
+   margin-left: 40px;	
+}
+
+#update_container {
+   background-color: #2c4655;
+   height: 315px;
+   width: 338px;
+}
+
+#update_btn {
+   position: relative;
+   background-image: url(/image/icon_update.png);
+   width: 216px;
+   margin-left: 60px;
+   height: 66px;
+   color: #FFFFFF;
+   font-weight: bold;
+   font-size: 26px;
+   font-family:verdana;
+   border-style: none; 
+   text-align: center;
+   cursor: pointer;
+   *cursor: hand;
+}
+
+.update_btn_result {
+   font-size: 14px;
+   font-family:verdana;
+}
+
+#updating {
+   width: 216px;
+   height: 205px;
+   top: -65px;
+   position: relative;
+}
+
+#show_status {
+   padding-top:12px;
+}
+
+#update_result_div {
+   height: 60%;
+   width: 100%;
+}
+
+.result_img {
+   margin-top: -2px;
+}
+
+#block_div {
+   position:relative;
+   opacity:0.6;
+   background-color: #2c2222;
+   height: 357px;
+   width: 336px;
+   margin-top: -66px;
+}
+
+#refresh_btn {
+	font-weight: bold;
+	border-style: none;
+	font-size: 12px;
+	background: transparent url(/image/btn-lightblue.png);
+	cursor: pointer;
+	width: 92px;
+	margin-left: 20px;'
+}
+#last_update_tag {
+	left: 200px;
+	margin-left: 600px;
+}
+
+.name_diff {
+	margin-top: 30px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.name_svn_diff {
+	margin-top: -70px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+#note_div {
+    margin-left: 60px;
+    font-size: 14px;
+}

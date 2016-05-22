@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="StyleCop" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+<UsingTask AssemblyFile="res/StyleCop/StyleCop.dll"
+      TaskName="StyleCopTask" />
+<PropertyGroup>
+	
+		<SrcDir Condition=" '$(SrcDir)' == '' ">$(srcdir)</SrcDir>
+		<OutDir Condition=" '$(OutDir)' == '' ">$(outdir)</OutDir>
+		
+	</PropertyGroup>
+  <Target Name="StyleCop">
+		
+	  <Message Text="Project Source Folder = $(SrcDir)" />
+	  <Message Text="Project Output folder = $(OutDir)" />
+      <CreateItem Include="$(SrcDir)/**/*.cs">
+          <Output TaskParameter="Include" ItemName="StyleCopFiles" />
+      </CreateItem>
+      <StyleCopTask
+          ProjectFullPath="$(MSBuildProjectFile)"
+          SourceFiles="@(StyleCopFiles)"
+          ForceFullAnalysis="true"
+          TreatErrorsAsWarnings="true"
+          OutputFile="$(OutDir)/stylecop-report.xml" />
+	</Target>
+ 
+</Project>
+		  
+		  

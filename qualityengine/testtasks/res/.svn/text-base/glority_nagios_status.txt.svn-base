@@ -1,0 +1,177 @@
+<html>
+<head>
+<link rel="shortcut icon" href="/nagios/images/favicon.ico" type="image/ico">
+<title>
+Current Network Status
+</title>
+<LINK REL='stylesheet' TYPE='text/css' HREF='/nagios/stylesheets/common.css'><LINK REL='stylesheet' TYPE='text/css' HREF='/nagios/stylesheets/status.css'></head>
+<body CLASS='status'>
+
+<!-- Produced by Nagios (http://www.nagios.org).  Copyright (c) 1999-2007 Ethan Galstad. -->
+<table border=0 width=100% cellspacing=0 cellpadding=0>
+<tr>
+<td align=left valign=top width=33%>
+<TABLE CLASS='infoBox' BORDER=1 CELLSPACING=0 CELLPADDING=0>
+<TR><TD CLASS='infoBox'>
+<DIV CLASS='infoBoxTitle'>Current Network Status</DIV>
+Last Updated: Mon Jan 14 15:16:17 CST 2013<BR>
+Updated every 90 seconds<br>
+Nagios&reg; Core&trade; 3.3.1 - <A HREF='http://www.nagios.org' TARGET='_new' CLASS='homepageURL'>www.nagios.org</A><BR>
+Logged in as <i>nagiosadmin</i><BR>
+</TD></TR>
+</TABLE>
+<TABLE BORDER=1 CELLPADDING=0 CELLSPACING=0 CLASS='linkBox'>
+<TR><TD CLASS='linkBox'>
+<a href='history.cgi?host=zipsend'>View History For This Host</a><br>
+<a href='notifications.cgi?host=zipsend'>View Notifications For This Host</a>
+<br><a href='status.cgi?host=all'>View Service Status Detail For All Hosts</a>
+</TD></TR>
+</TABLE>
+</td>
+<td align=center valign=top width=33%>
+<DIV CLASS='hostTotals'>Host Status Totals</DIV>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR><TD>
+<TABLE BORDER=1 CLASS='hostTotals'>
+<TR>
+<TH CLASS='hostTotals'><A CLASS='hostTotals' HREF='status.cgi?host=zipsend&hoststatustypes=2'>Up</A></TH>
+<TH CLASS='hostTotals'><A CLASS='hostTotals' HREF='status.cgi?host=zipsend&hoststatustypes=4'>Down</A></TH>
+<TH CLASS='hostTotals'><A CLASS='hostTotals' HREF='status.cgi?host=zipsend&hoststatustypes=8'>Unreachable</A></TH>
+<TH CLASS='hostTotals'><A CLASS='hostTotals' HREF='status.cgi?host=zipsend&hoststatustypes=1'>Pending</A></TH>
+</TR>
+<TR>
+<TD CLASS='hostTotalsUP'>1</TD>
+<TD CLASS='hostTotals'>0</TD>
+<TD CLASS='hostTotals'>0</TD>
+<TD CLASS='hostTotals'>0</TD>
+</TR>
+</TABLE>
+</TD></TR><TR><TD ALIGN=CENTER>
+<TABLE BORDER=1 CLASS='hostTotals'>
+<TR>
+<TH CLASS='hostTotals'><A CLASS='hostTotals' HREF='status.cgi?host=zipsend&hoststatustypes=12'><I>All Problems</I></A></TH>
+<TH CLASS='hostTotals'><A CLASS='hostTotals' HREF='status.cgi?host=zipsend'><I>All Types</I></A></TH>
+</TR><TR>
+<TD CLASS='hostTotals'>0</TD>
+<TD CLASS='hostTotals'>1</TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</DIV>
+</td>
+<td align=center valign=top width=33%>
+<DIV CLASS='serviceTotals'>Service Status Totals</DIV>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR><TD>
+<TABLE BORDER=1 CLASS='serviceTotals'>
+<TR>
+<TH CLASS='serviceTotals'><A CLASS='serviceTotals' HREF='status.cgi?host=zipsend&servicestatustypes=2&hoststatustypes=15'>Ok</A></TH>
+<TH CLASS='serviceTotals'><A CLASS='serviceTotals' HREF='status.cgi?host=zipsend&servicestatustypes=4&hoststatustypes=15'>Warning</A></TH>
+<TH CLASS='serviceTotals'><A CLASS='serviceTotals' HREF='status.cgi?host=zipsend&servicestatustypes=8&hoststatustypes=15'>Unknown</A></TH>
+<TH CLASS='serviceTotals'><A CLASS='serviceTotals' HREF='status.cgi?host=zipsend&servicestatustypes=16&hoststatustypes=15'>Critical</A></TH>
+<TH CLASS='serviceTotals'><A CLASS='serviceTotals' HREF='status.cgi?host=zipsend&servicestatustypes=1&hoststatustypes=15'>Pending</A></TH>
+</TR>
+<TR>
+<TD CLASS='serviceTotalsOK'>2</TD>
+<TD CLASS='serviceTotals'>0</TD>
+<TD CLASS='serviceTotals'>0</TD>
+<TD CLASS='serviceTotals'>0</TD>
+<TD CLASS='serviceTotals'>0</TD>
+</TR>
+</TABLE>
+</TD></TR><TR><TD ALIGN=CENTER>
+<TABLE BORDER=1 CLASS='serviceTotals'>
+<TR>
+<TH CLASS='serviceTotals'><A CLASS='serviceTotals' HREF='status.cgi?host=zipsend&servicestatustypes=28&hoststatustypes=15'><I>All Problems</I></A></TH>
+<TH CLASS='serviceTotals'><A CLASS='serviceTotals' HREF='status.cgi?host=zipsend&hoststatustypes=15'><I>All Types</I></A></TH>
+</TR><TR>
+<TD CLASS='serviceTotals'>0</TD>
+<TD CLASS='serviceTotals'>2</TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</DIV>
+</td>
+<td align=right valign=bottom>
+</td>
+</tr>
+</table>
+<P>
+<table border=0 width=100%>
+<tr>
+<td valign=top align=left width=33%>
+</td><td valign=top align=center width=33%>
+<DIV ALIGN=CENTER CLASS='statusTitle'>Service Status Details For Host 'zipsend'</DIV>
+<br></td>
+<td valign=top align=right width=33%></td>
+</tr>
+</table>
+<TABLE BORDER=0 width=100% CLASS='status'>
+<TR>
+<TH CLASS='status'>Host&nbsp;<A HREF='status.cgi?host=zipsend&sorttype=1&sortoption=1'><IMG SRC='/nagios/images/up.gif' BORDER=0 ALT='Sort by host name (ascending)' TITLE='Sort by host name (ascending)'></A><A HREF='status.cgi?host=zipsend&sorttype=2&sortoption=1'><IMG SRC='/nagios/images/down.gif' BORDER=0 ALT='Sort by host name (descending)' TITLE='Sort by host name (descending)'></A></TH><TH CLASS='status'>Service&nbsp;<A HREF='status.cgi?host=zipsend&sorttype=1&sortoption=2'><IMG SRC='/nagios/images/up.gif' BORDER=0 ALT='Sort by service name (ascending)' TITLE='Sort by service name (ascending)'></A><A HREF='status.cgi?host=zipsend&sorttype=2&sortoption=2'><IMG SRC='/nagios/images/down.gif' BORDER=0 ALT='Sort by service name (descending)' TITLE='Sort by service name (descending)'></A></TH><TH CLASS='status'>Status&nbsp;<A HREF='status.cgi?host=zipsend&sorttype=1&sortoption=3'><IMG SRC='/nagios/images/up.gif' BORDER=0 ALT='Sort by service status (ascending)' TITLE='Sort by service status (ascending)'></A><A HREF='status.cgi?host=zipsend&sorttype=2&sortoption=3'><IMG SRC='/nagios/images/down.gif' BORDER=0 ALT='Sort by service status (descending)' TITLE='Sort by service status (descending)'></A></TH><TH CLASS='status'>Last Check&nbsp;<A HREF='status.cgi?host=zipsend&sorttype=1&sortoption=4'><IMG SRC='/nagios/images/up.gif' BORDER=0 ALT='Sort by last check time (ascending)' TITLE='Sort by last check time (ascending)'></A><A HREF='status.cgi?host=zipsend&sorttype=2&sortoption=4'><IMG SRC='/nagios/images/down.gif' BORDER=0 ALT='Sort by last check time (descending)' TITLE='Sort by last check time (descending)'></A></TH><TH CLASS='status'>Duration&nbsp;<A HREF='status.cgi?host=zipsend&sorttype=1&sortoption=6'><IMG SRC='/nagios/images/up.gif' BORDER=0 ALT='Sort by state duration (ascending)' TITLE='Sort by state duration (ascending)'></A><A HREF='status.cgi?host=zipsend&sorttype=2&sortoption=6'><IMG SRC='/nagios/images/down.gif' BORDER=0 ALT='Sort by state duration time (descending)' TITLE='Sort by state duration time (descending)'></A></TH><TH CLASS='status'>Attempt&nbsp;<A HREF='status.cgi?host=zipsend&sorttype=1&sortoption=5'><IMG SRC='/nagios/images/up.gif' BORDER=0 ALT='Sort by current attempt (ascending)' TITLE='Sort by current attempt (ascending)'></A><A HREF='status.cgi?host=zipsend&sorttype=2&sortoption=5'><IMG SRC='/nagios/images/down.gif' BORDER=0 ALT='Sort by current attempt (descending)' TITLE='Sort by current attempt (descending)'></A></TH><TH CLASS='status'>Status Information</TH>
+</TR>
+<TR>
+<TD CLASS='statusEven'><TABLE BORDER=0 WIDTH='100%' cellpadding=0 cellspacing=0>
+<TR>
+<TD ALIGN=LEFT>
+<TABLE BORDER=0 cellpadding=0 cellspacing=0>
+<TR>
+<TD align=left valign=center CLASS='statusEven'><A HREF='extinfo.cgi?type=1&host=zipsend' title='www.zipsend.com'>zipsend</A></TD>
+</TR>
+</TABLE>
+</TD>
+<TD align=right valign=center>
+<TABLE BORDER=0 cellpadding=0 cellspacing=0>
+<TR>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+<TD CLASS='statusEven'><TABLE BORDER=0 WIDTH='100%' CELLSPACING=0 CELLPADDING=0><TR><TD ALIGN=LEFT><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD ALIGN=LEFT valign=center CLASS='statusEven'><A HREF='extinfo.cgi?type=2&host=zipsend&service=HTTP+SERVER'>HTTP SERVER</A></TD></TR>
+</TABLE>
+</TD>
+<TD ALIGN=RIGHT CLASS='statusEven'>
+<TABLE BORDER=0 cellspacing=0 cellpadding=0>
+<TR>
+</TR>
+</TABLE>
+</TD>
+</TR></TABLE></TD>
+<TD CLASS='statusOK'>OK</TD>
+<TD CLASS='statusEven' nowrap>01-14-2013 15:13:10</TD>
+<TD CLASS='statusEven' nowrap> 2d 10h 33m  7s</TD>
+<TD CLASS='statusEven'>1/3</TD>
+<TD CLASS='statusEven' valign='center'>HTTP OK&#58; HTTP&#47;1&#46;1 200 OK &#45; 25919 bytes in 2&#46;033 second response time&nbsp;</TD>
+</TR>
+<TR>
+<TD></TD>
+<TD CLASS='statusOdd'><TABLE BORDER=0 WIDTH='100%' CELLSPACING=0 CELLPADDING=0><TR><TD ALIGN=LEFT><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD ALIGN=LEFT valign=center CLASS='statusOdd'><A HREF='extinfo.cgi?type=2&host=zipsend&service=ZipSend+Tomcat+HomePage'>ZipSend Tomcat HomePage</A></TD></TR>
+</TABLE>
+</TD>
+<TD ALIGN=RIGHT CLASS='statusOdd'>
+<TABLE BORDER=0 cellspacing=0 cellpadding=0>
+<TR>
+</TR>
+</TABLE>
+</TD>
+</TR></TABLE></TD>
+<TD CLASS='statusOK'>OK</TD>
+<TD CLASS='statusOdd' nowrap>01-14-2013 15:12:25</TD>
+<TD CLASS='statusOdd' nowrap> 5d 22h 33m 52s</TD>
+<TD CLASS='statusOdd'>1/3</TD>
+<TD CLASS='statusOdd' valign='center'>&lt;h2&gt;Send large files in 3 easy steps&#33;&lt;&#47;h2&gt;&nbsp;</TD>
+</TR>
+</TABLE>
+<BR><DIV CLASS='itemTotalsTitle'>2 Matching Service Entries Displayed</DIV>
+
+<!-- Produced by Nagios (http://www.nagios.org).  Copyright (c) 1999-2007 Ethan Galstad. -->
+</body>
+</html>

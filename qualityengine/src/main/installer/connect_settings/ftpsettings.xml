@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<!-- if use ftp-qs-download and ftp-qs-upload task,remotepath has no use
+	the path is decided by productinfo.businessUnit,productinfo.productName,svnRevision
+	and buildinfo.jenkinsBuildId-->
+    <property name="ftp.server" value="quality.glority.com" />
+	<property name="ftp.username" value="qsdata" />
+	<property name="ftp.password" value="qsdata" />
+	<property name="ftp.localpath" value="" />
+	<property name="ftp.remotepath" value="" />
+	<!-- See folder types from res/path_types.properties  -->
+	<property name="ftp.qsPathType" value="qualityxml" />
+</project>
+
+
+
+
+
+
+
+

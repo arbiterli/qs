@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<!-- when you need to use svn task such as:svn-switch,svn-info,you should specify 
+		these -->
+ 	<property name="svn.localpath" value="" />
+	<property name="svn.url" value="${productinfo.svnUrl}" />  
+	<property name="svn.revision" value="${productinfo.productVersion}" />
+	<property name="svn.username" value="" />   
+	<property name="svn.password" value="" />
+	<property name="svn.message" value="" />
+    <property name="svn.destPath" value="" /> 
+</project>
+
+
+
+
+
+
+
+

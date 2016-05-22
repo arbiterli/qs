@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metricdescriptions>
+  <metric name="JAVA LINT" >
+     <overview>
+	The programming style adopted by a software development project can help to comply with good programming practices which improve the code quality,
+	readability, re-usability, and reduce the cost of development. The performed checks mainly limit themselves to the presentation and don't analyze content,
+	and do not confirm the correctness or completeness of the program. In practice, it can be fastidious to comply with all the style constraints,
+	some of which could possibly harm the programming stages' dynamic; so, it may be useful to determine which level of check is needed for a certain type of program.
+	 </overview>
+	 <QuestionAndAnswers>
+	 </QuestionAndAnswers>
+	 <ReferenceLinks>
+	    <URL>http://en.wikipedia.org/wiki/Checkstyle</URL>
+	 </ReferenceLinks>
+  </metric>
+  <metric name="JAVA DEFFECTS">
+     <overview>
+      PMD scans Java source code and looks for potential problems like:
+	  <ul>
+        <li> Possible bugs - empty try/catch/finally/switch statements </li>
+        <li> Dead code - unused local variables, parameters and private methods </li>
+        <li> Suboptimal code - wasteful String/StringBuffer usage   </li>
+        <li> Overcomplicated expressions - unnecessary if statements, for loops that could be while loops </li>
+        <li> Duplicate code - copied/pasted code means copied/pasted bugs </li>
+	   </ul>  
+	 </overview>
+	 <QuestionAndAnswers>
+	 </QuestionAndAnswers>
+	 <ReferenceLinks>
+	    <URL>http://en.wikipedia.org/wiki/PMD_%28software%29</URL>
+	 </ReferenceLinks>
+  </metric>
+  <metric name="JAVA DUPLICATION">
+     <overview>
+    The Copy/Paste Detector (CPD) is an add-on to PMD that uses the Rabin-Karp string search algorithm to find duplicated code. CPD works with Java, JSP, C, C++, Fortran, PHP, and C# code.
+	 </overview>
+	 <QuestionAndAnswers>
+	 </QuestionAndAnswers>
+	 <ReferenceLinks>
+	    <URL>http://pmd.sourceforge.net/pmd-5.0.1/cpd.html</URL>
+	 </ReferenceLinks>
+  </metric>
+  <metric name="JAVA MI">
+     <overview>
+      Maintainability Index is a software metric which measures how maintainable (easy to support and change) the source code is. The maintainability index is calculated as a factored formula consisting of Lines Of Code, Cyclomatic Complexity and Halstead volume.
+	 </overview>
+	 <QuestionAndAnswers>
+	 </QuestionAndAnswers>
+	 <ReferenceLinks>
+	    <URL>http://www.projectcodemeter.com/cost_estimation/help/GL_maintainability.htm</URL>
+	 </ReferenceLinks>
+  </metric>
+  <metric name="JAVA COVERAGE">
+     <overview>
+         Code coverage is a measure used in software testing. It describes the degree to which the source code of a program has been tested.
+	 </overview>
+	 <QuestionAndAnswers>
+	 </QuestionAndAnswers>
+	 <ReferenceLinks>
+	    <URL>http://en.wikipedia.org/wiki/Code_coverage</URL>
+	 </ReferenceLinks>
+  </metric>
+  <metric name="JAVA TEST SUMMERY">
+     <overview>
+         This metric reports the success rate of junit test.
+	 </overview>
+	 <QuestionAndAnswers>
+	 </QuestionAndAnswers>
+  </metric>
+</metricdescriptions>

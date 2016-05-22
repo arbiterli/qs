@@ -1,0 +1,12 @@
+#userTable {
+	color: black;
+}
+
+#userJsp {
+	height: 580px;
+	overflow-y: scroll;
+}
+
+input {
+	border: 1px solid black;
+}

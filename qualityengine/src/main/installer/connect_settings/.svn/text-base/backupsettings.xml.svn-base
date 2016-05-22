@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<!-- backup settings -->
+	<!-- note:if you don't set parameter 'version', backup-download task will download the latest version-->
+	<property name="backup.server" value="quality.glority.com" />
+	<property name="backup.username" value="qsbackup" />
+	<property name="backup.password" value="hzWEf5OKdXQ" />
+	<property name="backup.upload.local.dir" value="C:/Sandbox/ar" />
+	<property name="backup.upload.remote.dir" value="/qsbackup/tmp/" />	
+	<property name="backup.download.local.dir" value="C:/Sandbox/tmp" />
+	<property name="backup.download.remote.dir" value="/qsbackup/tmp/" />	
+</project>
+
+
+
+
+
+
+
+

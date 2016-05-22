@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports
+END
+TEST-com.glority.tt.service.impl.ClientManagerTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.impl.ClientManagerTest.xml
+END
+TEST-com.glority.tt.service.impl.AutoUpdateSettingsManagerImplTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.impl.AutoUpdateSettingsManagerImplTest.xml
+END
+com.glority.tt.webapp.filter.LocaleFilterTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.webapp.filter.LocaleFilterTest.txt
+END
+com.glority.tt.service.MailEngineTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.MailEngineTest.txt
+END
+com.glority.tt.service.UserManagerTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.UserManagerTest.txt
+END
+com.glority.tt.service.impl.AutoUpdateSettingsManagerImplTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.impl.AutoUpdateSettingsManagerImplTest.txt
+END
+com.glority.tt.service.impl.ClientManagerTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.impl.ClientManagerTest.txt
+END
+com.glority.tt.service.core.item.ItemUrlFilterTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.core.item.ItemUrlFilterTest.txt
+END
+TEST-com.glority.tt.service.AspectTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.AspectTest.xml
+END
+com.glority.tt.service.AspectTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.AspectTest.txt
+END
+com.glority.tt.dao.ActionInfoDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.ActionInfoDaoTest.txt
+END
+TEST-com.glority.tt.util.DateConverterTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.util.DateConverterTest.xml
+END
+TEST-com.glority.tt.service.impl.UserSecurityAdviceTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.impl.UserSecurityAdviceTest.xml
+END
+TEST-com.glority.tt.util.UUIDTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.util.UUIDTest.xml
+END
+com.glority.tt.util.DateConverterTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.util.DateConverterTest.txt
+END
+TEST-com.glority.tt.dao.ItemDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.ItemDaoTest.xml
+END
+TEST-com.glority.tt.service.impl.UserUidGeneratorTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.impl.UserUidGeneratorTest.xml
+END
+TEST-com.glority.tt.dao.SummaryDemoDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.SummaryDemoDaoTest.xml
+END
+com.glority.tt.util.DateUtilTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.util.DateUtilTest.txt
+END
+com.glority.tt.dao.RoleDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.RoleDaoTest.txt
+END
+com.glority.tt.service.core.item.ItemCollectorTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.core.item.ItemCollectorTest.txt
+END
+com.glority.tt.dao.SummaryDemoDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.SummaryDemoDaoTest.txt
+END
+TEST-com.glority.tt.dao.hibernate.HibernateConfigurationTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.hibernate.HibernateConfigurationTest.xml
+END
+com.glority.tt.dao.hibernate.HibernateConfigurationTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.hibernate.HibernateConfigurationTest.txt
+END
+TEST-com.glority.tt.dao.MemberDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.MemberDaoTest.xml
+END
+com.glority.tt.service.UserExistsExceptionTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.UserExistsExceptionTest.txt
+END
+com.glority.tt.service.impl.TagRuleManagerTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.impl.TagRuleManagerTest.txt
+END
+TEST-com.glority.tt.service.ProfileTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.ProfileTest.xml
+END
+TEST-com.glority.tt.dao.TagDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.TagDaoTest.xml
+END
+TEST-com.glority.tt.dao.GenericDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.GenericDaoTest.xml
+END
+com.glority.tt.dao.TagDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.TagDaoTest.txt
+END
+com.glority.tt.dao.GenericDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.GenericDaoTest.txt
+END
+TEST-com.glority.tt.service.UserManagerTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.UserManagerTest.xml
+END
+TEST-com.glority.tt.service.core.item.ItemUrlFilterTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.core.item.ItemUrlFilterTest.xml
+END
+TEST-com.glority.tt.dao.ActionInfoDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.ActionInfoDaoTest.xml
+END
+TEST-com.glority.tt.dao.GroupDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.GroupDaoTest.xml
+END
+com.glority.tt.service.impl.UserSecurityAdviceTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.impl.UserSecurityAdviceTest.txt
+END
+com.glority.tt.dao.GroupDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.GroupDaoTest.txt
+END
+com.glority.tt.util.UUIDTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.util.UUIDTest.txt
+END
+com.glority.tt.dao.ItemDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.ItemDaoTest.txt
+END
+TEST-com.glority.tt.util.DateUtilTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.util.DateUtilTest.xml
+END
+TEST-com.glority.tt.dao.RoleDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.RoleDaoTest.xml
+END
+TEST-com.glority.tt.service.core.item.ItemCollectorTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.core.item.ItemCollectorTest.xml
+END
+com.glority.tt.service.impl.UserUidGeneratorTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.impl.UserUidGeneratorTest.txt
+END
+TEST-com.glority.tt.dao.TagRuleDaoTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.dao.TagRuleDaoTest.xml
+END
+com.glority.tt.dao.TagRuleDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.TagRuleDaoTest.txt
+END
+TEST-com.glority.tt.service.UserExistsExceptionTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.UserExistsExceptionTest.xml
+END
+TEST-com.glority.tt.service.impl.TagRuleManagerTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.impl.TagRuleManagerTest.xml
+END
+TEST-com.glority.tt.service.core.item.ItemModuleFilterTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.core.item.ItemModuleFilterTest.xml
+END
+com.glority.tt.dao.MemberDaoTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.dao.MemberDaoTest.txt
+END
+com.glority.tt.service.core.item.ItemModuleFilterTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.core.item.ItemModuleFilterTest.txt
+END
+com.glority.tt.service.ProfileTest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/com.glority.tt.service.ProfileTest.txt
+END
+TEST-com.glority.tt.webapp.filter.LocaleFilterTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.webapp.filter.LocaleFilterTest.xml
+END
+TEST-com.glority.tt.service.MailEngineTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/testtasks/reports/surefire-reports/TEST-com.glority.tt.service.MailEngineTest.xml
+END

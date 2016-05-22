@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin
+END
+admin.css
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/admin.css
+END
+common.css
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/common.css
+END
+usermanagement.css
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/usermanagement.css
+END
+versionofproduct.css
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/versionofproduct.css
+END
+productmanagement.css
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/productmanagement.css
+END
+rolemanagement.css
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/rolemanagement.css
+END
+errorofproduct.css
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/errorofproduct.css
+END
+versionmanagement.css
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/versionmanagement.css
+END
+roleofuser.css
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/roleofuser.css
+END
+errormanagement.css
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/css/admin/errormanagement.css
+END

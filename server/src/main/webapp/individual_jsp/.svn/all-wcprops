@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp
+END
+updatehistory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/updatehistory.jsp
+END
+prodhistory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/prodhistory.jsp
+END
+hotdeploy.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/hotdeploy.jsp
+END
+base.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/base.jsp
+END
+testbuildinfo_buildDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/testbuildinfo_buildDetail.jsp
+END
+buildreport_status.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/buildreport_status.jsp
+END
+prevhistory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/prevhistory.jsp
+END
+testbuildinfo_metrics.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/testbuildinfo_metrics.jsp
+END
+serverinfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp/individual_jsp/serverinfo.jsp
+END

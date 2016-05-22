@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/resources/templates
+END
+score_fail_report.vm
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/resources/templates/score_fail_report.vm
+END
+error_report.vm
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/resources/templates/error_report.vm
+END
+weekly_report.vm
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/resources/templates/weekly_report.vm
+END

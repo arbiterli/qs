@@ -1,0 +1,50 @@
+package datetest;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateCompare4CPD {
+    public boolean compareTime(String time1, String time2) {
+        boolean isTimeEarlier = false;
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
+        try {
+            isTimeEarlier = sdf.parse(time1).before(sdf.parse(time2));
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return isTimeEarlier;
+    }
+
+    private String getCurrentDate() {
+        String currentDate = null;
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
+        currentDate = sdf.format(new Date());
+        return currentDate;
+    }
+
+    private boolean isExpired(String date1, String date2) {
+        boolean isEarlier = true;
+        String currentDate = null;
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
+        currentDate = sdf.format(new Date());
+        try {
+            if (sdf.parse(currentDate).after(sdf.parse(date2))) {
+                isEarlier = false;
+            }
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return isEarlier;
+    }
+
+    public static void main(String[] args) {
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
+        Date date1 = new Date();
+        String time1 = sdf.format(date1);
+        String time2 = sdf.format(new Date(date1.getTime() + 2000));
+    }
+
+}

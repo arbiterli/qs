@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/manager/impl
+END
+ScoreOwnerMappingManagerImplTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/manager/impl/ScoreOwnerMappingManagerImplTest.java
+END
+BuildMetricManagerImplTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/manager/impl/BuildMetricManagerImplTest.java
+END
+SystemErrorImplTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/manager/impl/SystemErrorImplTest.java
+END
+BuildManagerImplTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/manager/impl/BuildManagerImplTest.java
+END
+DefaultMetricsDescriptionManagerImplTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/manager/impl/DefaultMetricsDescriptionManagerImplTest.java
+END

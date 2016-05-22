@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript
+END
+ES3.g
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3.g
+END
+ES3Walker.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3Walker.java
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/license.txt
+END
+ES3.g3
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3.g3
+END
+ES3Walker.tokens
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3Walker.tokens
+END
+ES3Walker.g
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3Walker.g
+END
+ES3Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3Parser.java
+END
+ES3Walker.g3
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3Walker.g3
+END
+ES3Lexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3Lexer.java
+END
+ES3.tokens
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/ecmascript/ES3.tokens
+END

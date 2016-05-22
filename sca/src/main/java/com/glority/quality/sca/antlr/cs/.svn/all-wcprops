@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs
+END
+Expression.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/Expression.java
+END
+CSharp4PreProcessor.g
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4PreProcessor.g
+END
+CSharp4AST.g
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4AST.g
+END
+CSharp4.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4.java
+END
+CSharp4.tokens
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4.tokens
+END
+CSharp4.g
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4.g
+END
+CommonReturnToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CommonReturnToken.java
+END
+CSharp4PreProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4PreProcessor.java
+END
+CSharp4AST.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4AST.java
+END
+CSharp4PreProcessor.tokens
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4PreProcessor.tokens
+END
+CSharp4PreProcessorImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4PreProcessorImpl.java
+END
+CSharp4AST.tokens
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/sca/src/main/java/com/glority/quality/sca/antlr/cs/CSharp4AST.tokens
+END

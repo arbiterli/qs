@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator
+END
+HasCloudWatchCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/HasCloudWatchCalculator.java
+END
+AbstractLinearScoreCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/AbstractLinearScoreCalculator.java
+END
+Per1000RateLinearScoreCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/Per1000RateLinearScoreCalculator.java
+END
+HasServerCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/HasServerCalculator.java
+END
+AbstractCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/AbstractCalculator.java
+END
+HasNagiosWatchCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/HasNagiosWatchCalculator.java
+END
+SumScoreWithDynamicPower.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/SumScoreWithDynamicPower.java
+END
+CalculatorEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/CalculatorEngine.java
+END
+LinearScoreCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/LinearScoreCalculator.java
+END
+StatisticInvalidChangesCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/StatisticInvalidChangesCalculator.java
+END
+SumMetricCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/SumMetricCalculator.java
+END
+FullScoreWithSpecifiedStatusCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/FullScoreWithSpecifiedStatusCalculator.java
+END
+HasTestCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/HasTestCalculator.java
+END
+ScoreCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/ScoreCalculator.java
+END
+SumWithPowerCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/SumWithPowerCalculator.java
+END
+AverageMetricCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/AverageMetricCalculator.java
+END
+LinearScoreWithFullScoreForNoDataCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/LinearScoreWithFullScoreForNoDataCalculator.java
+END
+SumScoreWithCheckExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/SumScoreWithCheckExists.java
+END
+LinearScoreWithBackupDataCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/LinearScoreWithBackupDataCalculator.java
+END
+ReduceOneHundredCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/metricengine/calculator/ReduceOneHundredCalculator.java
+END

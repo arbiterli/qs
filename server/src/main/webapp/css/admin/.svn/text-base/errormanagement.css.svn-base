@@ -1,0 +1,11 @@
+#errorIframe {
+	width: 100%;
+	height: 100%;
+	border: 0px solid transparent;
+}
+
+#errorDiv {
+	width: 775px;
+	height: 562px;
+	border: 0px solid transparent;
+}

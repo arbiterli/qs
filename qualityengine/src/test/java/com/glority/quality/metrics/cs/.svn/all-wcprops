@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/metrics/cs
+END
+CSFxcopCheckTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/metrics/cs/CSFxcopCheckTaskTest.java
+END
+CSStylecopCheckTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/metrics/cs/CSStylecopCheckTaskTest.java
+END
+CSMICheckTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/metrics/cs/CSMICheckTaskTest.java
+END
+CsCPDCheckTaskTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality/metrics/cs/CsCPDCheckTaskTest.java
+END

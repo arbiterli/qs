@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="qualityenginetest" basedir="." default="check-init">
+    <property name="failOnError" value="false" />
+    <property name="project" value="qualityenginetest"/>	
+    <property name="threshholdFile" value="threshold.properties"/>
+	<property name="qualityxmlFile" value="quality.xml"/>
+	<property name="cpdMiniTokenCount" value="20"/>
+	<property name="qualityreport.dir" value="out"/>
+	<property name="src.dir" value="../src" />
+	<property name="engine.res.dir" value="res" />
+	<property name="productinfo.businessUnit" value="Glority" />
+	<property name="productinfo.productName" value="QualityEngine" />
+	<property name="productinfo.productVersion" value="1.0" />
+	<property name="productinfo.svnUrl" value="http://svn.glority.com/projects/QualitySystem/trunk/qualityengine" />
+	<property name="productinfo.svnRevision" value="999" />
+	<property name="buildinfo.jenkinsJob" value="QaulityNightly" />
+	<property name="buildinfo.jenkinsBuildId" value="22" />
+	<property name="testinfo.configuration.os" value="" />
+	<property name="testinfo.configuration.lang" value="" />
+	<property name="testinfo.configuration.arch" value="" />
+	<property name="testinfo.configuration.softwares" value="" />
+	<property name="testinfo.configuration.csvpath" value="" />
+    <property name="reportserver.qualityXmlUploadURL" value="https://qualitytest.glority.com/keyupload?key=ffebdb20-053a-4588-b316-5562746ff940"/>
+	<property name="source.dir" value="../../scripts/src" />
+	<property name="testGroupId" value="12"/>
+	
+	<property name="ssh.server" value="" />
+	<property name="ssh.username" value="" />
+	<property name="ssh.password" value="" />
+	<property name="scp.localpath" value="" />
+	<property name="scp.remotepath" value="" />
+	<property name="ssh.command" value="" />
+	<property name="ssh.script" value="" />
+	<property name="jenkins.jobName" value="ATC_Deploy_VM" />
+	<property name="jenkins.postData" value="Operating_System:WinXP 32bit;Language:en-US;Office:2010-x86;Email_Type:Exchange2010;Internet_Explorer:9.0;net_Framework:2.0+4.0;Firefox:install;Chrome:install;UAC:false;Batch_Num:10004;Node:;Jenkins_Test_Job:Courier45_ATC_Run_TestComplete_Dynamic;" />
+	
+	<target name="check-init">
+		<mkdir dir="${qualityreport.dir}"/>
+	</target>
+	
+	<target name="java-check-cpd" description="Check Java CPD">
+      <path id="classpath">
+		<fileset dir="../target" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpdcheck_threshold" classname="com.glority.quality.metrics.java.JavaCPDCheckTask" classpathref="classpath"/>	
+      <cpdcheck_threshold reportPath="reports" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </cpdcheck_threshold>
+    </target>
+	
+	<target name="cpp-check-cpd">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpdcheck_threshold" classname="com.glority.quality.metrics.cpp.CppCPDCheckTask" classpathref="classpath"/>	
+      <cpdcheck_threshold reportPath="reports/cpd.txt" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </cpdcheck_threshold>
+    </target>
+
+	<target name="cs-check-cpd">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpdcheck_threshold" classname="com.glority.quality.metrics.cs.CsCPDCheckTask" classpathref="classpath"/>	
+      <cpdcheck_threshold reportPath="reports/cpd.txt" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </cpdcheck_threshold>
+    </target>	
+	<target name="js-check-cpd">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="jscheck_threshold" classname="com.glority.quality.metrics.js.JsCPDCheckTask" classpathref="classpath"/>	
+      <jscheck_threshold reportPath="reports/cpd.txt" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </jscheck_threshold>
+    </target>
+	<target name="check-testcomplete">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="testcompletecheck" classname="com.glority.quality.metrics.all.TestCompleteCheckTask" classpathref="classpath" />	
+      <testcompletecheck reportPath="reports\testcomplete.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </testcompletecheck>
+    </target>
+	<target name="java-check-junit">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="junitcheck" classname="com.glority.quality.metrics.java.JavaJunitCheckTask" classpathref="classpath" />	
+      <junitcheck reportPath="reports\surefire-reports" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </junitcheck>
+    </target>
+	<target name="guality-report-merge">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="reportmerge" classname="com.glority.quality.reportxml.QualityReportMergeTask" classpathref="classpath" />	
+      <reportmerge srcRptOneName="d:\\src1.xml" srcRptTwoName="d:\\src2.xml" targetRptName="d:\\target.xml">
+      </reportmerge>
+    </target>
+
+	<target name="java-run-cpd">
+      <path id="classpath">
+		<fileset dir="../target" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="classpath" />	
+      <mkdir dir="${qualityreport.dir}/java-cpd" />
+	  <cpd minimumTokenCount="${cpdMiniTokenCount}" outputFile="${qualityreport.dir}/java-cpd/cpd.txt" language="java" divisionNum="50" method="byFolder" verbose="false">
+         <fileset dir="${src.dir}">
+           <include name="**/*.java"/>
+         </fileset>
+      </cpd>
+    </target>
+	
+	<target name="java-run-mi">
+      <path id="classpath">
+		<fileset dir="../target" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="mi" classname="com.glority.quality.sca.ExtendedMITask" classpathref="classpath" />	
+      <mkdir dir="${qualityreport.dir}/java-mi" />
+	  <mi reportPath="${qualityreport.dir}/java-mi" language="java" method="byFolder">
+         <fileset dir="${src.dir}">
+           <include name="**/*.java"/>
+         	<exclude name="**/antlr/**/*.java"/>
+         </fileset>
+      </mi>
+    </target>
+	
+	<target name="injection">
+	      <path id="classpath">
+			<fileset dir="../dist" includes="**/*.jar" />
+			<fileset dir="../lib" includes="**/*.jar" />	
+	      </path>
+		  <taskdef name="inject" classname="com.glority.quality.injection.cpp.CppInjectionTask" classpathref="classpath" />	
+		  <inject outputDir="instr" headInPath="h/CppParser.h" headOutPath="CppParser.h" includeText="CppParser.h">
+	         <fileset dir="src">
+	           <include name="*.cpp"/>  
+	         </fileset>
+	      </inject>
+	    </target>
+	
+	<target name="cpp-run-mi">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="mi" classname="com.glority.quality.sca.ExtendedMITask" classpathref="classpath" />	
+      <mkdir dir="reports/code/out/cpp-mi" />
+	  <mi reportPath="reports/code/out/cpp-mi" language="cpp">
+         <fileset dir="reports/code/cpp">
+           <include name="**/*.c"/>
+           <include name="**/*.h"/>
+           <include name="**/*.cpp"/>
+           <include name="**/*.cc"/>
+         </fileset>
+      </mi>
+	</target>
+	
+	<target name="cpp-run-cpplint">
+	      <path id="classpath">
+			<fileset dir="../target" includes="**/*.jar" />
+	      </path>
+		  <taskdef name="cpplint" classname="com.glority.quality.sca.ExtendedCpplintTask" classpathref="classpath" />
+		  <delete dir="out/cpp-cpplint"/>
+	      <mkdir dir="out/cpp-cpplint" />
+		  <cpplint pythonPath="C:/Python27/python.exe" cpplintPath="../src/main/installer/res/cpplint.py" method="none"
+			srcDir="src" reportFilePath="out/cpp-cpplint/cpplint.txt" qualityXmlPath="quality.xml" verbose="false" scaErrorSetting="../src/main/installer/sca_error_settings.properties">
+	         <fileset dir="src">
+	           <include name="**/*.c"/>
+	           <include name="**/*.h"/>
+	           <include name="**/*.cpp"/>
+	           <include name="**/*.cc"/>
+	         </fileset>
+	      </cpplint>
+		</target>
+	
+	<target name="cs-run-mi">
+	   <path id="classpath">
+		 <fileset dir="../dist" includes="**/*.jar" />
+		 <fileset dir="../lib" includes="**/*.jar" />	
+	   </path>
+	   <taskdef name="mi" classname="com.glority.quality.sca.ExtendedMITask" classpathref="classpath" />	
+	   <mkdir dir="reports/code/out/cs-mi" />
+	   <mi reportPath="reports/code/out/cs-mi" language="cs">
+	     <fileset dir="reports/code/cs">
+	       <include name="**/*.cs"/>
+	     </fileset>
+	   </mi>
+	</target>
+	
+	<target name="js-run-mi">
+	   <path id="classpath">
+		 <fileset dir="../dist" includes="**/*.jar" />
+		 <fileset dir="../lib" includes="**/*.jar" />	
+	   </path>
+	   <taskdef name="mi" classname="com.glority.quality.sca.ExtendedMITask" classpathref="classpath" />	
+	   <mkdir dir="reports/code/out/js-mi" />
+	   <mi reportPath="reports/code/out/js-mi" language="js">
+	     <fileset dir="reports/code/js">
+	       <include name="**/*.js"/>
+	     </fileset>
+	   </mi>
+	</target>
+
+	<target name="java-check-mi" description="Check Java MI">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="micheck_threshold" classname="com.glority.quality.metrics.java.JavaMICheckTask" classpathref="classpath"/>	
+      <micheck_threshold reportPath="reports" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </micheck_threshold>
+    </target>
+	
+	<target name="cs-run-cpd">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="classpath" />	
+      <mkdir dir="${qualityreport.dir}/cs-cpd" />
+	  <cpd minimumTokenCount="${cpdMiniTokenCount}" outputFile="${qualityreport.dir}/cs-cpd/cpd.txt" language="cs">
+         <fileset dir="${src.dir}">
+           <include name="**/*.cs"/>
+         </fileset>
+      </cpd>
+    </target>
+	<target name="js-run-cpd">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpd" classname="com.glority.quality.sca.ExtendedCPDTask" classpathref="classpath" />	
+      <mkdir dir="${qualityreport.dir}/js-cpd" />
+	  <cpd minimumTokenCount="${cpdMiniTokenCount}" outputFile="${qualityreport.dir}/js-cpd/cpd.txt" language="ecmascript">
+         <fileset dir="${src.dir}">
+           <include name="**/*.js"/>
+         </fileset>
+      </cpd>
+    </target>
+	
+	<target name="java-run-pmd">
+	    <path id="classpath">
+		    <fileset dir="../dist" includes="**/*.jar" />
+			<fileset dir="../lib" includes="**/*.jar" />	
+	    </path>		
+        <mkdir dir="${qualityreport.dir}/java-pmd" />
+        <taskdef name="pmd" classname="com.glority.quality.sca.ExtendedPMDTask" classpathref="classpath" />
+        <pmd>
+        	<ruleset>rulesets/java/android.xml</ruleset>
+        	<ruleset>rulesets/java/basic.xml</ruleset>
+        	<ruleset>rulesets/java/braces.xml</ruleset>
+        	<ruleset>rulesets/java/clone.xml</ruleset>	
+        	<ruleset>rulesets/java/codesize.xml</ruleset>
+        	<ruleset>rulesets/java/comments.xml</ruleset>
+        	<ruleset>rulesets/java/controversial.xml</ruleset>
+        	<ruleset>rulesets/java/coupling.xml</ruleset>
+        	<ruleset>rulesets/java/design.xml</ruleset>
+        	<ruleset>rulesets/java/empty.xml</ruleset>
+        	<ruleset>rulesets/java/finalizers.xml</ruleset>
+        	<ruleset>rulesets/java/j2ee.xml</ruleset>
+        	<ruleset>rulesets/java/javabeans.xml</ruleset>
+        	<ruleset>rulesets/java/junit.xml</ruleset>
+        	<ruleset>rulesets/java/logging-jakarta-commons.xml</ruleset>
+        	<ruleset>rulesets/java/logging-java.xml</ruleset>
+        	<ruleset>rulesets/java/migrating.xml</ruleset>
+        	<ruleset>rulesets/java/optimizations.xml</ruleset>
+        	<ruleset>rulesets/java/strictexception.xml</ruleset>
+        	<ruleset>rulesets/java/strings.xml</ruleset>
+        	<ruleset>rulesets/java/sunsecure.xml</ruleset>
+        	<ruleset>rulesets/java/unnecessary.xml</ruleset>
+        	<ruleset>rulesets/java/unusedcode.xml</ruleset>
+        	<formatter type="xml" toFile="${qualityreport.dir}/java-pmd/pmd.xml"/>
+            <fileset dir="${src.dir}">
+                <include name="**/*.java" />
+            </fileset>
+        </pmd>
+        <xslt in="${qualityreport.dir}/java-pmd/pmd.xml" out="${qualityreport.dir}/java-pmd/pmd.html" style="${engine.res.dir}/pmd-report-per-class.xslt">
+            <outputproperty name="indent" value="yes" />
+        </xslt>
+    </target>	
+
+	<target name="js-run-pmd">
+	    <path id="classpath">
+		    <fileset dir="../dist" includes="**/*.jar" />
+			<fileset dir="../lib" includes="**/*.jar" />	
+	    </path>		
+        <mkdir dir="${qualityreport.dir}/js-pmd" />
+        <taskdef name="pmd" classname="com.glority.quality.sca.ExtendedPMDTask" classpathref="classpath" />
+        <pmd>
+        	<ruleset>rulesets/ecmascript/basic.xml</ruleset>
+        	<ruleset>rulesets/ecmascript/braces.xml</ruleset>
+        	<ruleset>rulesets/ecmascript/unnecessary.xml</ruleset>
+        	<formatter type="xml" toFile="${qualityreport.dir}/js-pmd/pmd.xml"/>
+            <fileset dir="${src.dir}">
+                <include name="**/*.js" />
+            </fileset>
+        </pmd>
+        <xslt in="${qualityreport.dir}/js-pmd/pmd.xml" out="${qualityreport.dir}/js-pmd/pmd.html" style="${engine.res.dir}/pmd-report-per-class.xslt">
+            <outputproperty name="indent" value="yes" />
+        </xslt>
+    </target>
+	<target name="js-check-pmd">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="jscheck_threshold" classname="com.glority.quality.metrics.js.JsPMDCheckTask" classpathref="classpath"/>	
+      <jscheck_threshold reportPath="reports/pmd.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </jscheck_threshold>
+    </target>
+	<target name="java-check-pmd">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="javacheck_threshold" classname="com.glority.quality.metrics.java.JavaPMDCheckTask" classpathref="classpath"/>	
+      <javacheck_threshold reportPath="reports/pmd.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </javacheck_threshold>
+    </target>
+	
+	<target name="java-check-checkstyle">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="javacheckstyle_threshold" classname="com.glority.quality.metrics.java.JavaCheckStyleCheckTask" classpathref="classpath"/>	
+      <javacheckstyle_threshold reportPath="reports/checkstyle_report.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </javacheckstyle_threshold>
+    </target>
+	
+	<target name="cpp-check-cppunit">
+	      <path id="classpath">
+			<fileset dir="../dist" includes="**/*.jar" />
+			<fileset dir="../lib" includes="**/*.jar" />	
+	      </path>
+		  <taskdef name="cppcppunit_threshold" classname="com.glority.quality.metrics.cpp.CppCppunitCheckTask" classpathref="classpath"/>	
+	      <cppcppunit_threshold reportPath="res\testInter.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+	      </cppcppunit_threshold>
+	    </target>
+	
+	<target name="cpp-check-vsts">
+		      <path id="classpath">
+				<fileset dir="../dist" includes="**/*.jar" />
+				<fileset dir="../lib" includes="**/*.jar" />	
+		      </path>
+			  <taskdef name="vsts_threshold" classname="com.glority.quality.metrics.cpp.CppVSTSCheckTask" classpathref="classpath"/>	
+		      <vsts_threshold reportPath="../testReports/vsts.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+		      </vsts_threshold>
+		    </target>
+	
+	<target name="cpp-check-gtest">
+			      <path id="classpath">
+					<fileset dir="../dist" includes="**/*.jar" />
+					<fileset dir="../lib" includes="**/*.jar" />	
+			      </path>
+				  <taskdef name="gtest_threshold" classname="com.glority.quality.metrics.cpp.CppGtestCheckTask" classpathref="classpath"/>	
+			      <gtest_threshold reportPath="../testReports/gtest.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+			      </gtest_threshold>
+			    </target>
+	
+	<target name="cpp-check-nunit">
+				      <path id="classpath">
+						<fileset dir="../dist" includes="**/*.jar" />
+						<fileset dir="../lib" includes="**/*.jar" />	
+				      </path>
+					  <taskdef name="nunit_threshold" classname="com.glority.quality.metrics.cs.CSNunitCheckTask" classpathref="classpath"/>	
+				      <nunit_threshold reportPath="../testReports/nunit.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+				      </nunit_threshold>
+				    </target>
+
+	<target name="cpp-check-bullseye">
+	      <path id="classpath">
+			<fileset dir="../dist" includes="**/*.jar" />
+			<fileset dir="../lib" includes="**/*.jar" />	
+	      </path>
+		  <taskdef name="bullseye_threshold" classname="com.glority.quality.metrics.cpp.CppBullseyeCheckTask" classpathref="classpath"/>	
+	      <bullseye_threshold reportPath="res\bullseye.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+	      </bullseye_threshold>
+	    </target>
+	
+	<target name="java-check-emma">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="emma_threshold" classname="com.glority.quality.metrics.java.JavaEmmaCheckTask" classpathref="classpath"/>	
+      <emma_threshold reportPath="reports/emma.xml" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </emma_threshold>
+    </target>
+	
+	<target name="cpp-check-cpplint">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="cpplint_threshold" classname="com.glority.quality.metrics.cpp.CppCpplintCheckTask" classpathref="classpath"/>	
+      <cpplint_threshold reportPath="reports/cpplint-report.txt" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+      </cpplint_threshold>
+    </target>
+	
+	<target name="cpp-check-PClint">
+	      <path id="classpath">
+			<fileset dir="../dist" includes="**/*.jar" />
+			<fileset dir="../lib" includes="**/*.jar" />	
+	      </path>
+		  <taskdef name="PClint_threshold" classname="com.glority.quality.metrics.cpp.CppPClintCheckTask" classpathref="classpath"/>
+	      <PClint_threshold reportPath="c:/lint.log" failOnError="${failOnError}" thresholdPath="${threshholdFile}" qualityXmlPath="${qualityxmlFile}">
+	      </PClint_threshold>
+	    </target>
+	
+	<target name="dump">
+	      <path id="classpath">
+			<fileset dir="../dist" includes="**/*.jar" />
+			<fileset dir="../lib" includes="**/*.jar" />	
+	      </path>
+		  <taskdef name="dump" classname="com.glority.quality.metrics.java.JavaEmmaDumpSourceTask" classpathref="classpath"/>	
+	      <dump emmaTempPath="C:/Sandbox/QualitySystem/qualityengine/target/emma-data/emma-src-tmp" >
+	      </dump>
+	    </target>
+	
+	<target name="qualityreport-initial">
+      <path id="classpath">
+		<fileset dir="../target" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreport" classname="com.glority.quality.reportxml.QualityReportInitialTask" classpathref="classpath"/>	
+      <qualityreport qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" businessUnit="${productinfo.businessUnit}" productName="${productinfo.productName}" productVersion="${productinfo.productVersion}" svnUrl="${productinfo.svnUrl}" svnRevision="${productinfo.svnRevision}">
+      </qualityreport>
+    </target>	
+	<target name="qualityreport-jenkinsbuild">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreport" classname="com.glority.quality.reportxml.QualityReportBuildTask" classpathref="classpath"/>	
+      <qualityreport qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" jenkinsJobName="${buildinfo.jenkinsJob}" jenkinsBuildId="${buildinfo.jenkinsBuildId}">
+      </qualityreport>
+    </target>
+	<target name="qualityreport-jenkinstest">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreport" classname="com.glority.quality.reportxml.QualityReportTestTask" classpathref="classpath"/>	
+      <qualityreport qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" jenkinsJobName="${buildinfo.jenkinsJob}" jenkinsBuildId="${buildinfo.jenkinsBuildId}">
+      </qualityreport>
+    </target>
+	<target name="qualityreport-upload">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreportuploader" classname="com.glority.quality.connectors.reportserver.UploadQualityReportTask" classpathref="classpath"/>	
+      <qualityreportuploader qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" qualityXmlUploadURL="${reportserver.qualityXmlUploadURL}">
+      </qualityreportuploader>	
+    </target>
+	<target name="qualityreport-configuration">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityreport" classname="com.glority.quality.reportxml.QualityReportConfigurationTask" classpathref="classpath"/>	
+      <qualityreport 
+	    id="${testGroupId}"
+		qualityXmlPath="${qualityxmlFile}" 
+      	failOnError="${failOnError}"
+        os="${testinfo.configuration.os}"
+		lang="${testinfo.configuration.lang}"
+		arch="${testinfo.configuration.arch}"
+		softwares="${testinfo.configuration.softwares}"
+      	configurationCSVPath="${testinfo.configuration.csvpath}">
+      </qualityreport>
+    </target>
+    <target name="ftp-tp-upload">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="ftpuploader" classname="com.glority.quality.connectors.ftp.FTPTPUploadTask" classpathref="classpath"/>	
+      <ftpuploader localPath="E:\\ftptest\\quality.xml" pathDefFile="../../scripts/qualityengine/res/path_types.properties" businessUnit="timetracking" failOnError="${failOnError}" server="quality.glority.com" username="qsdata" password="qsdata" productName="TimeTrackingServer" jenkinsBuild="latest" folderType="qualityxml">
+      </ftpuploader>	
+    </target>
+	
+    <target name="jenkins-result-merge">
+      <path id="classpath">
+        <fileset dir="../dist" includes="**/*.jar" />
+        <fileset dir="../lib" includes="**/*.jar" />    
+      </path>
+      <taskdef name="jenkinsresultmerge" classname="com.glority.quality.connectors.jenkins.JenkinsResultMergeTask" classpathref="classpath"/> 
+      <jenkinsresultmerge cacheFolderPath="C:\jenkins_cache" businessUnit="winzip" productName="Courier45" ftpPathDefFile="../../scripts/qualityengine/res/path_types.properties" failOnError="${failOnError}" ftpServer="quality.glority.com" ftpUser="qsdata" ftpPassword="qsdata" jenkinsBuild="latest" covToolBinFolder="C:\Program Files\BullseyeCoverage\bin" qualityXmlUploadURL="${reportserver.qualityXmlUploadURL}">
+      </jenkinsresultmerge>    
+    </target>
+	
+    <target name="jenkins-check-build-result">
+      <path id="classpath">
+        <fileset dir="../dist" includes="**/*.jar" />
+        <fileset dir="../lib" includes="**/*.jar" />    
+      </path>
+      <taskdef name="jenkinschecker" classname="com.glority.quality.connectors.jenkins.JenkinsCheckBuildResult" classpathref="classpath"/> 
+      <jenkinschecker server="http://jenkins.glority.com" buildId="152" jobName="ATC_Deploy_VM" verbose="on" failOnError="${failOnError}">
+      </jenkinschecker>    
+    </target>
+	
+	<target name="jenkins-add-build">
+	      <path id="classpath">
+			<fileset dir="../dist" includes="**/*.jar" />
+			<fileset dir="../lib" includes="**/*.jar" />	
+	      </path>
+		  <taskdef name="jenkinsaddbuild" classname="com.glority.quality.connectors.jenkins.JenkinsAddBuild" classpathref="classpath" />	
+		  <jenkinsaddbuild failOnError="${failOnError}" server="http://jenkins.glority.com" port="8080" jobName="${jenkins.jobName}" postData="${jenkins.postData}" >
+	      </jenkinsaddbuild>
+	</target>
+	
+    <target name="ftp-tp-download">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="ftpdownloader" classname="com.glority.quality.connectors.ftp.FTPTPDownloadTask" classpathref="classpath"/>	
+      <ftpdownloader localPath="E:\\ftptttest" pathDefFile="../../scripts/qualityengine/res/path_types.properties" businessUnit="winzip" productName="Courier45" jenkinsBuild="latest" server="quality.glority.com" username="qsdata" password="qsdata" folderType="all" verbose="on">
+      </ftpdownloader>	
+    </target>
+    <target name="ftp-common-upload">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="ftpcommonuploader" classname="com.glority.quality.connectors.ftp.FTPCommonUploadTask" classpathref="classpath"/>	
+      <ftpcommonuploader localPath="E:\\MYSQL5.1\\Data\\summary" remotePath="/qsdata/winzip/build/Courier45/22466_400/buildreports/qualityreports/test/" failOnError="${failOnError}" server="quality.glority.com" username="qsdata" password="qsdata">
+      </ftpcommonuploader>	
+    </target>
+    <target name="ftp-tests-upload">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="ftptestsuploader" classname="com.glority.quality.connectors.ftp.FTPTestsUploadTask" classpathref="classpath"/>	
+      <ftptestsuploader localPath="C:\\test\\" failOnError="${failOnError}" pathDefFile="../../scripts/qualityengine/res/path_types.properties" businessUnit="winzip" productName="Courier45" server="quality.glority.com" username="qsdata" password="qsdata" jenkinsBuild="latest" folderType="tests" suiteNum="1" testNum="1">
+      </ftptestsuploader>	
+    </target>
+    <target name="ftp-tests-download">
+      <path id="classpath">
+        <fileset dir="../dist" includes="**/*.jar" />
+        <fileset dir="../lib" includes="**/*.jar" />    
+      </path>
+      <taskdef name="ftptestsdownloader" classname="com.glority.quality.connectors.ftp.FTPTestsDownloadTask" classpathref="classpath"/> 
+      <ftptestsdownloader localPath="C:\\test\\" failOnError="${failOnError}" pathDefFile="../../scripts/qualityengine/res/path_types.properties" businessUnit="winzip" productName="Courier45" server="quality.glority.com" username="qsdata" password="qsdata" jenkinsBuild="latest" folderType="tests">
+      </ftptestsdownloader>   
+    </target>
+    <target name="ftp-common-download">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="ftpcommondownloader" classname="com.glority.quality.connectors.ftp.FTPCommonDownloadTask" classpathref="classpath"/>	
+      <ftpcommondownloader localPath="E:\\ftptest\\" remotePath="/qsdata/timetracking/build/TimeTrackingServer/2222_70/quality.xml" failOnError="${failOnError}" server="quality.glority.com" username="qsdata" password="qsdata">
+      </ftpcommondownloader>	
+    </target>
+    <target name="scp-uploadfile">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityscp" classname="com.glority.quality.connectors.ssh.Scp" classpathref="classpath"/>	
+      <qualityscp qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" 
+      	   file="${scp.localpath}" todir="${ssh.username}@${ssh.server}:${scp.remotepath}" 
+      	   password="${ssh.password}" trust="true">
+      </qualityscp>	
+    </target>
+    <target name="scp-uploadfolder">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityscp" classname="com.glority.quality.connectors.ssh.Scp" classpathref="classpath"/>	
+      <qualityscp qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" 
+      	   todir="${ssh.username}@${ssh.server}:${scp.remotepath}" 
+      	   password="${ssh.password}" trust="true">
+      	<fileset dir="${scp.localpath}"/>
+      </qualityscp>	
+    </target>	
+    <target name="scp-download">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+  	  <taskdef name="qualityscp" classname="com.glority.quality.connectors.ssh.Scp" classpathref="classpath"/>	
+        <qualityscp qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" 
+        	   file="${ssh.username}@${ssh.server}:${scp.remotepath}" todir="${scp.localpath}"
+        	   password="${ssh.password}" trust="true">
+        </qualityscp>
+    </target>
+    <target name="ssh-run">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="qualityssh" classname="com.glority.quality.connectors.ssh.SSHExec" classpathref="classpath"/>	
+  	  <qualityssh qualityXmlPath="${qualityxmlFile}" failOnError="${failOnError}" 
+       	  host="${ssh.server}"
+  	  	  username="${ssh.username}"
+  	      password="${ssh.password}"
+  	      trust="true"
+  	      command="${ssh.command}"
+    	  commandResource="${ssh.script}">
+      </qualityssh>
+    </target>	
+    <target name="svn-checkout">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="svncheckout" classname="com.glority.quality.connectors.svn.SVNCheckoutTask" classpathref="classpath"/>	
+      <svncheckout localPath="E:\\svntest" svnURI="http://svn.glority.com/scripts/zhang.miao/terail_mini_api" failOnError="${failOnError}" username="zhang.miao" password="12121212zmzm">
+      </svncheckout>	
+    </target>
+    <target name="svn-showlog">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="svncheckout" classname="com.glority.quality.connectors.svn.SVNShowLogTask" classpathref="classpath"/>	
+      <svncheckout svnURI="http://svn.glority.com/projects/TimeTrackingServer/trunk" failOnError="${failOnError}" username="zhang.miao" password="12121212zmzm">
+      </svncheckout>	
+    </target>
+    <target name="svn-commit">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="svncommit" classname="com.glority.quality.connectors.svn.SVNCommitTask" classpathref="classpath"/>	
+      <svncommit localPath="E:\\svntest" svnURI="http://svn.glority.com/scripts/zhang.miao/terail_mini_api" failOnError="${failOnError}" username="zhang.miao" password="12121212zmzm" commitMessage="commit for test">
+      </svncommit>	
+    </target>
+    <target name="svn-diff">
+      <path id="classpath">
+        <fileset dir="../dist" includes="**/*.jar" />
+        <fileset dir="../lib" includes="**/*.jar" />    
+      </path>
+      <taskdef name="svndiff" classname="com.glority.quality.connectors.svn.SVNDiffTask" classpathref="classpath"/> 
+      <svndiff revisionOld="20872" revisionNew="20983" svnURI="http://svn.glority.com/projects/QualitySystem/trunk" failOnError="${failOnError}" username="zhang.miao" password="12121212zmzm">
+      </svndiff>  
+    </target>
+    <target name="svn-update">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="svnupdate" classname="com.glority.quality.connectors.svn.SVNUpdateTask" classpathref="classpath"/>	
+      <svnupdate localPath="E:\\svntest" svnURI="http://svn.glority.com/scripts/zhang.miao/terail_mini_api" failOnError="${failOnError}" username="zhang.miao" password="12121212zmzm">
+      </svnupdate>	
+    </target>
+    <target name="svn-info">
+      <path id="classpath">
+        <fileset dir="../dist" includes="**/*.jar" />
+        <fileset dir="../lib" includes="**/*.jar" />    
+      </path>
+      <taskdef name="svninfo" classname="com.glority.quality.connectors.svn.SVNInfoTask" classpathref="classpath"/> 
+      <svninfo qualityXmlPath="E:\quality.xml" localPath="C:\Sandbox\TimeTrackingServer" svnURI="http://svn.glority.com/projects/TimeTrackingServer/trunk" failOnError="${failOnError}" username="zhang.miao" password="12121212zmzm">
+      </svninfo>  
+    </target>
+    <target name="svn-switch">
+      <path id="classpath">
+        <fileset dir="../dist" includes="**/*.jar" />
+        <fileset dir="../lib" includes="**/*.jar" />    
+      </path>
+      <taskdef name="svnswitch" classname="com.glority.quality.connectors.svn.SVNSwitchTask" classpathref="classpath"/> 
+      <svnswitch revision="sds" localPath="C:\Sandbox\minipai" svnURI="http://svn.glority.com/scripts/zhang.miao/terail_mini_api" failOnError="${failOnError}" username="zhang.miao" password="12121212zmzm">
+      </svnswitch>  
+    </target>
+    <target name="svn-export">
+      <path id="classpath">
+		<fileset dir="../dist" includes="**/*.jar" />
+		<fileset dir="../lib" includes="**/*.jar" />	
+      </path>
+	  <taskdef name="svnexport" classname="com.glority.quality.connectors.svn.SVNExportTask" classpathref="classpath"/>	
+      <svnexport destPath="/var/www/test/svnexporttest" svnURI="http://svn.glority.com/scripts/zhang.miao/terail_mini_api" failOnError="${failOnError}" username="zhang.miao" password="12121212zmzm">
+      </svnexport>	
+    </target>
+    <target name="testrail-test">
+      <path id="classpath">
+    <fileset dir="../dist" includes="**/*.jar" />
+    <fileset dir="../lib" includes="**/*.jar" />  
+      </path>
+    <taskdef name="testrailtest" classname="com.glority.quality.connectors.testrail.TCOfProductTask" classpathref="classpath"/> 
+      <testrailtest  testRailServer="http://localhost" testRailKey="123456" failOnError="${failOnError}" productId="9">
+      </testrailtest> 
+    </target>
+</project>

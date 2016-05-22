@@ -1,0 +1,88 @@
+.pagination span {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px #646464 solid;
+	font-size: 13px;
+	display: block;
+}
+
+.pagination {
+	text-decoration: none;
+	color: #b89178;
+	width: 20px;
+	display: block;
+	margin-left: 10px;
+	float: left;
+}
+
+.pagination:hover span {
+	background-color: white;
+}
+
+.error {
+	margin-left: 20px;
+	table-layout: fixed;
+	border-spacing: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+	width: 860px;
+	color: #646464;
+}
+
+.col-error-from {
+	width: 200px;
+}
+
+.col-error-owner {
+	width: 0px;
+}
+
+.col-error-status {
+	width: 100px;
+}
+
+.col-error-create-time {
+	widht: 180px;
+}
+
+.col-error-extern-info {
+	width: 230px;
+}
+
+.col-error-info {
+	width: 130px;
+}
+
+.error-info,.error-from,.error-owner,.error-status,.error-create-time,.error-extern-info
+	{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	word-break:break-all;
+}
+
+.error-head-info,.error-head-from,.error-head-owner,.error-head-status,.error-head-create-time,.error-head-extern-info
+	{
+	padding-top: 35px;
+}
+
+.error-from,.error-head-from {
+	padding-left: 5px;
+}
+
+.error-info {
+	cursor: pointer;
+}
+
+.error-head {
+	height: 50px;
+	color: #847367;
+	background: #54403b;
+	font-size: 18px;
+}
+.pagination-div {
+	margin-left:10px;
+	padding-bottom:60px;
+}

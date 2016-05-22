@@ -1,0 +1,146 @@
+<html>
+<head>
+<link rel="shortcut icon" href="/nagios/images/favicon.ico" type="image/ico">
+<title>
+Alert Notifications
+</title>
+<LINK REL='stylesheet' TYPE='text/css' HREF='/nagios/stylesheets/common.css'>
+<LINK REL='stylesheet' TYPE='text/css' HREF='/nagios/stylesheets/notifications.css'>
+</head>
+<body CLASS='notifications'>
+
+<!-- Produced by Nagios (http://www.nagios.org).  Copyright (c) 1999-2007 Ethan Galstad. -->
+<table border=0 width=100%>
+<tr>
+<td align=left valign=top width=33%>
+<TABLE CLASS='infoBox' BORDER=1 CELLSPACING=0 CELLPADDING=0>
+<TR><TD CLASS='infoBox'>
+<DIV CLASS='infoBoxTitle'>Host Notifications</DIV>
+Last Updated: Tue Jan 15 12:42:11 CST 2013<BR>
+Nagios&reg; Core&trade; 3.3.1 - <A HREF='http://www.nagios.org' TARGET='_new' CLASS='homepageURL'>www.nagios.org</A><BR>
+Logged in as <i>nagiosadmin</i><BR>
+</TD></TR>
+</TABLE>
+<TABLE BORDER=1 CELLPADDING=0 CELLSPACING=0 CLASS='linkBox'>
+<TR><TD CLASS='linkBox'>
+<A HREF='status.cgi?host=zipsend'>View Status Detail For This Host</A><BR>
+<A HREF='history.cgi?host=zipsend'>View History For This Host</A><BR>
+<A HREF='trends.cgi?host=zipsend'>View Trends For This Host</A><BR>
+</TD></TR>
+</TABLE>
+</td>
+<td align=center valign=top width=33%>
+<DIV ALIGN=CENTER CLASS='dataTitle'>
+Host 'zipsend'</DIV>
+<BR>
+<table border=0 cellspacing=0 cellpadding=0 CLASS='navBox'>
+<tr>
+<td align=center valign=center CLASS='navBoxItem'>
+Earlier Archive<br><a href='notifications.cgi?host=zipsend&type=0&archive=47'><img src='/nagios/images/left.gif' border=0 alt='Earlier Archive' title='Earlier Archive'></a></td>
+<td width=15></td>
+<td align=center CLASS='navBoxDate'>
+<DIV CLASS='navBoxTitle'>Log File Navigation</DIV>
+Fri Nov 30 00:00:00 CST 2012<br>to<br>Sat Dec 1 00:00:00 CST 2012</td>
+<td width=15></td>
+<td align=center valign=center CLASS='navBoxItem'>
+More Recent Archive<br><a href='notifications.cgi?host=zipsend&type=0&archive=45'><img src='/nagios/images/right.gif' border=0 alt='More Recent Archive' title='More Recent Archive'></a></td>
+</tr>
+</table>
+<BR><DIV CLASS='navBoxFile'>File: /var/log/nagios/archives/nagios-12-01-2012-00.log</DIV>
+</td>
+<td align=right valign=top width=33%>
+<table border=0 CLASS='optBox'>
+<form method='GET' action='notifications.cgi'>
+<input type='hidden' name='host' value='zipsend'>
+<input type='hidden' name='archive' value='46'>
+<tr>
+<td align=left colspan=2 CLASS='optBoxItem'>Notification detail level for this host:</td></tr>
+<tr>
+<td align=left colspan=2 CLASS='optBoxItem'><select name='type'>
+<option value=0 selected>All notifications
+<option value=1 >All service notifications
+<option value=2 >All host notifications
+<option value=8192 >Service custom
+<option value=512 >Service acknowledgements
+<option value=4 >Service warning
+<option value=8 >Service unknown
+<option value=16 >Service critical
+<option value=32 >Service recovery
+<option value=2048 >Service flapping
+<option value=16384 >Host custom
+<option value=1024 >Host acknowledgements
+<option value=64 >Host down
+<option value=128 >Host unreachable
+<option value=256 >Host recovery
+<option value=4096 >Host flapping
+</select></td>
+</tr>
+<tr>
+<td align=left CLASS='optBoxItem'>Older Entries First:</td>
+<td></td>
+</tr>
+<tr>
+<td align=left valign=bottom CLASS='optBoxItem'><input type='checkbox' name='oldestfirst' ></td><td align=right CLASS='optBoxItem'><input type='submit' value='Update'></td>
+</tr>
+<tr><td></td><td align=right valign=bottom>
+</td></tr>
+</form>
+</table>
+</td>
+</tr>
+</table>
+<p>
+<div align='center'>
+<table border=0 CLASS='notifications'>
+<tr>
+<th CLASS='notifications'>Host</th>
+<th CLASS='notifications'>Service</th>
+<th CLASS='notifications'>Type</th>
+<th CLASS='notifications'>Time</th>
+<th CLASS='notifications'>Contact</th>
+<th CLASS='notifications'>Notification Command</th>
+<th CLASS='notifications'>Information</th>
+</tr>
+<tr CLASS='notificationsEven'>
+<td CLASS='notificationsEven'><a href='extinfo.cgi?type=1&host=zipsend'>zipsend</a></td>
+<td CLASS='notificationsEven'><a href='extinfo.cgi?type=2&host=zipsend&service=HTTP+SERVER'>HTTP SERVER</a></td>
+<td CLASS='notificationsOK'>OK</td>
+<td CLASS='notificationsEven'>11-30-2012 09:47:15</td>
+<td CLASS='notificationsEven'><a href='config.cgi?type=contacts#quality'>quality</a></td>
+<td CLASS='notificationsEven'><a href='config.cgi?type=commands#notify-service-by-email'>notify-service-by-email</a></td>
+<td CLASS='notificationsEven'>HTTP OK&#58; HTTP&#47;1&#46;1 200 OK &#45; 28995 bytes in 1&#46;864 second response time</td>
+</tr>
+<tr CLASS='notificationsOdd'>
+<td CLASS='notificationsOdd'><a href='extinfo.cgi?type=1&host=zipsend'>zipsend</a></td>
+<td CLASS='notificationsOdd'><a href='extinfo.cgi?type=2&host=zipsend&service=HTTP+SERVER'>HTTP SERVER</a></td>
+<td CLASS='notificationsOK'>OK</td>
+<td CLASS='notificationsOdd'>11-30-2012 09:47:15</td>
+<td CLASS='notificationsOdd'><a href='config.cgi?type=contacts#zipsend'>zipsend</a></td>
+<td CLASS='notificationsOdd'><a href='config.cgi?type=commands#notify-service-by-email'>notify-service-by-email</a></td>
+<td CLASS='notificationsOdd'>HTTP OK&#58; HTTP&#47;1&#46;1 200 OK &#45; 28995 bytes in 1&#46;864 second response time</td>
+</tr>
+<tr CLASS='notificationsEven'>
+<td CLASS='notificationsEven'><a href='extinfo.cgi?type=1&host=zipsend'>zipsend</a></td>
+<td CLASS='notificationsEven'><a href='extinfo.cgi?type=2&host=zipsend&service=HTTP+SERVER'>HTTP SERVER</a></td>
+<td CLASS='notificationsCRITICAL'>CRITICAL</td>
+<td CLASS='notificationsEven'>11-30-2012 09:37:25</td>
+<td CLASS='notificationsEven'><a href='config.cgi?type=contacts#quality'>quality</a></td>
+<td CLASS='notificationsEven'><a href='config.cgi?type=commands#notify-service-by-email'>notify-service-by-email</a></td>
+<td CLASS='notificationsEven'>CRITICAL &#45; Socket timeout after 10 seconds</td>
+</tr>
+<tr CLASS='notificationsOdd'>
+<td CLASS='notificationsOdd'><a href='extinfo.cgi?type=1&host=zipsend'>zipsend</a></td>
+<td CLASS='notificationsOdd'><a href='extinfo.cgi?type=2&host=zipsend&service=HTTP+SERVER'>HTTP SERVER</a></td>
+<td CLASS='notificationsCRITICAL'>CRITICAL</td>
+<td CLASS='notificationsOdd'>11-30-2012 09:37:25</td>
+<td CLASS='notificationsOdd'><a href='config.cgi?type=contacts#zipsend'>zipsend</a></td>
+<td CLASS='notificationsOdd'><a href='config.cgi?type=commands#notify-service-by-email'>notify-service-by-email</a></td>
+<td CLASS='notificationsOdd'>CRITICAL &#45; Socket timeout after 10 seconds</td>
+</tr>
+</table>
+</div>
+</p>
+
+<!-- Produced by Nagios (http://www.nagios.org).  Copyright (c) 1999-2007 Ethan Galstad. -->
+</body>
+</html>

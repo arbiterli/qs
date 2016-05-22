@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+<error file="..\src\CppParse.cpp" line="9" id="noQuoteCharPair" severity="error" msg="No pair for character (&quot;). Can't process file. File is either invalid or unicode, which is currently not supported."/>
+<error file="..\src\Cpp_grammar_Parser.c" line="32927" id="syntaxError" severity="error" msg="Invalid number of character (() when these macros are defined: ''."/>
+<error file="..\src\Cpp_grammar_Parser.c" line="32927" id="syntaxError" severity="error" msg="Invalid number of character (() when these macros are defined: 'MYCODE'."/>
+<error file="..\src\Cpp_grammar_Parser.c" line="32927" id="syntaxError" severity="error" msg="Invalid number of character (() when these macros are defined: 'SKIP_FOLLOW_SETS'."/>
+</results>

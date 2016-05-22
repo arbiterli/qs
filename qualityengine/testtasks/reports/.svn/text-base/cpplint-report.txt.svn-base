@@ -1,0 +1,515 @@
+..//src\CppParse.cpp error at line no.0 No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>" legal/copyright
+..//src\CppParse.cpp error at line no.4 Include the directory when naming .h files build/include
+..//src\CppParse.cpp error at line no.8 { should almost always be at the end of the previous line whitespace/braces
+..//src\CppParse.cpp error at line no.9 Multi-line string ("...") found.  This lint script doesn't do well with such strings, and may give bogus warnings.  They're ugly and unnecessary, and you should use concatenation instead". readability/multiline_string
+..//src\CppParse.cpp error at line no.9 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.0 No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>" legal/copyright
+..//src\Cpp_grammar_Lexer.h error at line no.500 #ifndef header guard has wrong style, please use: C:_QUALITY_SYSTEM_QUALITYSYSTEM_SCRIPTS_SRC_CPP_GRAMMAR_LEXER_H_ build/header_guard
+..//src\Cpp_grammar_Lexer.h error at line no.1579 #endif line should be "#endif  // C:_QUALITY_SYSTEM_QUALITYSYSTEM_SCRIPTS_SRC_CPP_GRAMMAR_LEXER_H_" build/header_guard
+..//src\Cpp_grammar_Lexer.h error at line no.500 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.524 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.525 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.525 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Lexer.h error at line no.525 Missing space before { whitespace/braces
+..//src\Cpp_grammar_Lexer.h error at line no.526 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.526 Include the directory when naming .h files build/include
+..//src\Cpp_grammar_Lexer.h error at line no.527 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.528 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.528 Should have a space between // and comment whitespace/comments
+..//src\Cpp_grammar_Lexer.h error at line no.529 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.529 Should have a space between // and comment whitespace/comments
+..//src\Cpp_grammar_Lexer.h error at line no.532 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.533 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.533 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.534 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.534 Lines should very rarely be longer than 100 characters whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.535 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.535 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.536 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.536 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.537 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.537 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.538 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.538 Lines should very rarely be longer than 100 characters whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.538 Should have a space between // and comment whitespace/comments
+..//src\Cpp_grammar_Lexer.h error at line no.540 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.541 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.542 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.545 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.546 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.547 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.548 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.549 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.550 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.559 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Lexer.h error at line no.581 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Lexer.h error at line no.587 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.587 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.587 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.598 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.610 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Lexer.h error at line no.616 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.616 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.616 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.639 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Lexer.h error at line no.645 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.645 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.645 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.668 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Lexer.h error at line no.674 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.674 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.674 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.693 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Lexer.h error at line no.705 Lines should very rarely be longer than 100 characters whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.716 Lines should very rarely be longer than 100 characters whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.727 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.738 Lines should very rarely be longer than 100 characters whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.745 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.748 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.751 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.754 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.757 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.760 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.763 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.766 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.769 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.772 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.775 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.778 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.781 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.784 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.787 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.787 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.790 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.793 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.796 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.796 Lines should very rarely be longer than 100 characters whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.799 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.802 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.805 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.808 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.811 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.814 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.817 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.820 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.823 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.826 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.829 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.832 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.835 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.838 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.841 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.844 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.847 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.847 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.850 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.853 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.856 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.859 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.862 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.862 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.865 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.868 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.871 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.874 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.877 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.880 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.883 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.886 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.889 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.892 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.895 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.898 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.901 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.904 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.907 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.910 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.913 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.916 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.919 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.922 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.925 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.928 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.931 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.934 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.937 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.940 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.943 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.946 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.949 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.952 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.955 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.958 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.961 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.964 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.967 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.970 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.973 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.976 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.979 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.982 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.985 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.988 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.991 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.994 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.997 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1000 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1003 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1006 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1009 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1012 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1015 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1018 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1021 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1024 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1027 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1030 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1033 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1036 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1039 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1042 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1045 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1048 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1051 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1054 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1057 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1060 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1063 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1066 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1069 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1072 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1075 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1078 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1078 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.1081 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1084 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1087 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1090 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1093 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1096 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1099 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1102 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1105 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1108 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1111 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1114 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1117 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1120 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1123 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1126 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1129 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1132 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1135 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1138 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1141 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1144 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1147 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1150 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1153 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1156 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1159 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1162 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1165 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1168 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1171 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1174 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1177 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1180 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1183 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1186 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1189 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1192 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1195 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1198 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1201 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1204 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1207 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1210 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1213 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1216 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1219 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1222 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1225 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1228 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1231 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1234 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1237 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1240 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1243 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1246 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1249 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1252 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1255 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1258 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1261 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1264 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1267 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1270 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1273 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1276 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1279 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1282 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1285 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1288 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1291 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1294 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1297 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1300 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1303 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1306 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1309 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1312 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1315 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1318 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1321 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1324 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1327 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1330 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1333 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1336 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1339 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1342 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1345 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1348 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1351 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1354 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1358 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.1359 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1359 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.1362 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Lexer.h error at line no.1365 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.1367 Weird number of spaces at line-start.  Are you using a 2-space indent? whitespace/indent
+..//src\Cpp_grammar_Lexer.h error at line no.1368 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Lexer.h error at line no.1370 Weird number of spaces at line-start.  Are you using a 2-space indent? whitespace/indent
+..//src\Cpp_grammar_Lexer.h error at line no.1382 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1383 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1385 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1386 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1561 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1562 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Lexer.h error at line no.1563 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.0 No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>" legal/copyright
+..//src\Cpp_grammar_Parser.h error at line no.604 #ifndef header guard has wrong style, please use: C:_QUALITY_SYSTEM_QUALITYSYSTEM_SCRIPTS_SRC_CPP_GRAMMAR_PARSER_H_ build/header_guard
+..//src\Cpp_grammar_Parser.h error at line no.1430 #endif line should be "#endif  // C:_QUALITY_SYSTEM_QUALITYSYSTEM_SCRIPTS_SRC_CPP_GRAMMAR_PARSER_H_" build/header_guard
+..//src\Cpp_grammar_Parser.h error at line no.604 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.628 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.629 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.629 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Parser.h error at line no.629 Missing space before { whitespace/braces
+..//src\Cpp_grammar_Parser.h error at line no.630 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.630 Include the directory when naming .h files build/include
+..//src\Cpp_grammar_Parser.h error at line no.631 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.634 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.635 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.635 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.636 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.636 Lines should very rarely be longer than 100 characters whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.637 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.637 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.638 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.638 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.639 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.639 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.640 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.640 Lines should very rarely be longer than 100 characters whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.640 Should have a space between // and comment whitespace/comments
+..//src\Cpp_grammar_Parser.h error at line no.642 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.643 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.644 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.647 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.648 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.649 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.650 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.651 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.652 Extra space after ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.666 { should almost always be at the end of the previous line whitespace/braces
+..//src\Cpp_grammar_Parser.h error at line no.673 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.676 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.679 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.682 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.685 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.688 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.691 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.694 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.697 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.700 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.703 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.706 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.709 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.712 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.715 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.718 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.721 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.724 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.727 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.730 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.733 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.736 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.739 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.742 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.745 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.748 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.751 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.754 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.757 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.760 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.763 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.766 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.769 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.772 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.775 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.778 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.781 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.784 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.787 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.790 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.793 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.796 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.799 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.802 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.805 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.808 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.811 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.814 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.817 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.820 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.823 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.826 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.829 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.832 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.835 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.838 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.841 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.844 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.847 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.850 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.853 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.856 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.859 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.862 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.865 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.868 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.871 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.874 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.877 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.880 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.883 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.886 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.889 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.892 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.895 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.898 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.901 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.904 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.907 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.907 More than one command on the same line whitespace/newline
+..//src\Cpp_grammar_Parser.h error at line no.910 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.913 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.916 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.919 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.922 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.925 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.928 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.931 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.934 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.937 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.940 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.943 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.946 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.949 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.952 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.955 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.958 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.961 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.964 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.967 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.970 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.973 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.976 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.979 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.982 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.985 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.988 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.991 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.994 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.997 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1000 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1003 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1006 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1009 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1012 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1015 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1018 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1021 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1024 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1027 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1030 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1033 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1036 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1039 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1042 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1045 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1048 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1051 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1054 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1057 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1060 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1063 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1066 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1069 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1072 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1075 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1078 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1081 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1084 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1087 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1090 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1093 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1096 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1099 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1102 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1105 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1108 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1111 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1114 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1117 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1120 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1123 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1126 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1129 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1132 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1135 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1138 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1141 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1144 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1147 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1150 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1153 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1156 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1159 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1162 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1165 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1168 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1171 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1174 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1177 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1180 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1183 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1186 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1189 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1209 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.1210 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1210 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.1213 Lines should be <= 80 characters long whitespace/line_length
+..//src\Cpp_grammar_Parser.h error at line no.1216 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.1218 Weird number of spaces at line-start.  Are you using a 2-space indent? whitespace/indent
+..//src\Cpp_grammar_Parser.h error at line no.1219 Extra space before ( in function call whitespace/parens
+..//src\Cpp_grammar_Parser.h error at line no.1221 Weird number of spaces at line-start.  Are you using a 2-space indent? whitespace/indent
+..//src\Cpp_grammar_Parser.h error at line no.1233 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1234 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1236 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1237 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1412 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1413 Tab found; better to use spaces whitespace/tab
+..//src\Cpp_grammar_Parser.h error at line no.1414 Tab found; better to use spaces whitespace/tab
+Total No. Of Error Count is : 514

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl
+END
+DeployServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/DeployServiceImpl.java
+END
+SystemErrorServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/SystemErrorServiceImpl.java
+END
+BuildServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/BuildServiceImpl.java
+END
+PhaseServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/PhaseServiceImpl.java
+END
+ProductServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/ProductServiceImpl.java
+END
+RoleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/RoleServiceImpl.java
+END
+ScoreEmailSettingServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/ScoreEmailSettingServiceImpl.java
+END
+QualityReportSaveServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/QualityReportSaveServiceImpl.java
+END
+SvnSyncServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/SvnSyncServiceImpl.java
+END
+SystemUserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/SystemUserServiceImpl.java
+END
+VersionServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/VersionServiceImpl.java
+END
+QualityEngineFailureServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/QualityEngineFailureServiceImpl.java
+END
+LoginServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/java/com/glority/qualityserver/web/service/impl/LoginServiceImpl.java
+END

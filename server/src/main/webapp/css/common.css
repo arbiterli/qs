@@ -1,0 +1,82 @@
+a {
+	text-decoration: none;
+	color: #646464;
+}
+
+body {
+	font: normal 76% Avenir, Helvetica, Verdana, sans-serif;
+	font-size: 14px;
+	background-image: url(/images/bg.png);
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+
+#content {
+	min-height: 900px;
+}
+
+#content,#email,#logo {
+	width: 922px;
+	margin: 0 auto;
+}
+
+#email {
+	text-align: right;
+	line-height: 27px;
+	vertical-align: bottom;
+	height: 27px;
+	color: #646464;
+}
+
+#logo {
+	padding-left: 30px;
+	font-size: 62px;
+	margin-bottom: 15px;
+}
+
+#navigation {
+	margin-left: 20px;
+}
+.nav-span {
+	background-image: url(/images/nav-body-1.png);
+	padding-left: 19px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-repeat:repeat-x;
+}
+
+.nav-arrow {
+	background-image: url(/images/nav-arrow.png);
+	height: 29px;
+	width: 15px;
+	position: absolute;
+	background-repeat:no-repeat;
+}
+
+.rear {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background-image: url(/images/nav-rear.png);
+	padding-right: 1px;
+	background-repeat:repeat-x;
+}
+
+#product-name {
+	margin-top: 50px;
+	padding-left: 40px;
+	font-size: 26px;
+}
+
+#logo,#product-name {
+	color: #a5704e;
+}
+
+#logout {
+	background-image: url(/images/logout.png);
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+	background-color: transparent;
+	border-color: transparent;
+	cursor: pointer;
+}

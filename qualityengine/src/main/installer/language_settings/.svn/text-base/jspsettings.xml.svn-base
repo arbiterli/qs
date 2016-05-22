@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <!-- Jsp source paths -->
+    <fileset dir="${src.dir}" id="jsp.src.fileset">
+      <include name="**/*.jsp"/>
+      <include name="**/*.jspx"/>
+    </fileset>
+	
+    <!-- Jsp report paths  -->
+    <property name="jsp.cpd.dir" value="${qualityreport.dir}/jsp-cpd" />
+    <property name="jsp.cpd.report" value="${jsp.cpd.dir}/cpd.txt" />
+    <property name="jsp.pmd.dir" value="${qualityreport.dir}/jsp-pmd" />
+    <property name="jsp.pmd.report" value="${jsp.pmd.dir}/pmd.xml" />
+</project>
+
+
+
+
+
+
+
+

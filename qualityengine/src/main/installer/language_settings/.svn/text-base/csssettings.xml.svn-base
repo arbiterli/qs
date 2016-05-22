@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <!-- Css source paths -->
+    <fileset dir="${src.dir}" id="css.src.fileset">
+      <include name="**/*.css"/>
+    </fileset>
+	
+    <!-- Css report paths  -->
+    <property name="css.cpd.dir" value="${qualityreport.dir}/css-cpd" />
+    <property name="css.cpd.report" value="${css.cpd.dir}/cpd.txt" />
+    <property name="css.csslint.dir" value="${qualityreport.dir}/css-csslint" />
+    <property name="css.csslint.report" value="${css.csslint.dir}/csslint-report.txt" />
+</project>
+
+
+
+
+
+
+
+

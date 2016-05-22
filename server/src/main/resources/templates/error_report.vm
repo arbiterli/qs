@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>https://quality.glority.com/systemerror</title>
+	</head>
+	<body>
+		This list is all the <span style="color:red">NEW</span> errors monitored by Quality Portal.
+		For more errors, click <a href="${serverUrl}/systemerror">here</a>.
+		<div class="content">
+			<div class="head">Quality Portal</div>
+			<div class="line"></div>
+			<div class="products">
+					<table style="width:600px;">	
+						<thead>
+							<tr style="color:#646464;font-size:12px;">
+								<td style="line-height:30px;height:30px;vertical-align: top; width:50px;">Error From</td>
+								<td style="line-height:30px;height:30px;vertical-align: top; width:150px;">Report Time</td>
+								<td style="line-height:30px;height:30px;vertical-align: top; width:200px;">Info</td>
+								<td style="line-height:30px;height:30px;vertical-align: top; width:100px;">Extern Info</td>
+							</tr>
+						</thead>
+						<tbody>
+							#foreach($error in $errors)
+									<tr style="color:green;">
+										<td style="font-size:12px;width:50px;">${error.from}</td>
+										<td style="font-size:12px;width:150px">${error.createTime}</td>
+										<td style="font-size:12px;width:200px"><a href ="${serverUrl}/errordetail?errorId=${error.id}" >${error.info}</a></td>
+										<td style="font-size:12px;width:100px">${error.externInfo}</td>
+									</tr>
+							#end
+						</tbody>
+					</table>
+			</div>
+		</div>
+	</body>
+</html>

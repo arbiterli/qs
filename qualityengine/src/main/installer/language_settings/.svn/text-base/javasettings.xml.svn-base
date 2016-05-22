@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<!-- Out paths -->
+    <property name="java.out.dir" value="${projectRoot}/target" />
+    
+    <!-- Java source paths -->
+    <fileset dir="${src.dir}" id="java.src.fileset">
+      <include name="**/*.java"/>
+	  <exclude name="**/antlr/**/*.java"/>
+    </fileset>
+    <!-- Java Emma settings -->
+    <property name="emma.enabled" value="true" />
+    <!-- note that coverage filters can be set through nested <filter>
+         elements as well: many of EMMA setting are 'mergeable' in the
+         sense that they can be specified multiple times and the result
+         is a union of all such values. Here we are not merging several
+         filters together but merely demonstrating that it is possible:
+    -->     
+    <property name="emma.filter" value="" />
+    <property name="emma.instr.in.dir" value="${java.out.dir}/classes" />
+    <property name="emma.instr.tmp.dir" value="${java.out.dir}/emma-instr-tmp" />
+    <!-- The base folder for emma related data. 
+         If the project only have one module. then keep it as default.  
+         if the project has multiple module. suggest to set it as parent folder of the module
+         To generate a single merge coverage report, you should set it to the same path for all modules -->
+    <property name="emma.data.dir" value="${java.out.dir}/emma-data" />
+    <property name="emma.src.tmp.dir" value="${emma.data.dir}/emma-src-tmp" />
+    <property name="emma.coverage.dir" value="${emma.data.dir}/emma-coverage" />
+    <property name="emma.coverage.merged.es" value="${emma.coverage.dir}/coverage.es" />
+    <property name="emma.coverage.rundata" value="${emma.coverage.dir}/coverage.ec" />
+	
+	    <!-- Java report paths  -->
+    <property name="java.cpd.dir" value="${qualityreport.dir}/java-cpd" />
+    <property name="java.cpd.report" value="${java.cpd.dir}/cpd.txt" />
+    <property name="java.pmd.dir" value="${qualityreport.dir}/java-pmd" />
+    <property name="java.pmd.report" value="${java.pmd.dir}/pmd.xml" /> 
+    <property name="java.checkstyle.dir" value="${qualityreport.dir}/java-checkstyle" />
+    <property name="java.checkstyle.report" value="${java.checkstyle.dir}/checkstyle_report.xml" /> 
+    <property name="java.mi.dir" value="${qualityreport.dir}/java-mi" />
+    <property name="java.mi.report" value="${java.mi.dir}/mi.xml" />
+    <property name="java.emma.dir" value="${qualityreport.dir}/java-emma" />
+    <property name="java.emma.report" value="${qualityreport.dir}/java-emma/emma.xml" />
+</project>
+
+
+
+
+
+
+
+

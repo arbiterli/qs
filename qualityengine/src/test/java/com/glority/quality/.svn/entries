@@ -1,0 +1,86 @@
+10
+
+dir
+35822
+http://svn.glority.com/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/qualityengine/src/test/java/com/glority/quality
+http://svn.glority.com
+
+
+
+2013-02-20T05:42:51.414791Z
+34681
+li.yuxing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5edd340b-b13c-4ad3-bdb9-d9e00e381f86
+
+model
+dir
+
+AbstractBaseTaskTest.java
+file
+
+
+
+
+2013-02-28T05:47:52.131500Z
+aea4637c8926bfeb690c810c60b0b7c2
+2013-01-16T01:56:19.936017Z
+31687
+zhao.jipu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1027
+
+failurereporttest
+dir
+
+metrics
+dir
+
+sca
+dir
+
+factory
+dir
+
+connector
+dir
+
+reportxml
+dir
+
+connectors
+dir
+

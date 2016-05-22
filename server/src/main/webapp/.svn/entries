@@ -1,0 +1,86 @@
+10
+
+dir
+35822
+http://svn.glority.com/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/main/webapp
+http://svn.glority.com
+
+
+
+2013-02-20T06:20:37.284948Z
+34693
+li.heping
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+5edd340b-b13c-4ad3-bdb9-d9e00e381f86
+
+image
+dir
+
+include
+dir
+
+common_jsp
+dir
+
+individual_jsp
+dir
+
+images
+dir
+
+WEB-INF
+dir
+
+upload.html
+file
+
+
+
+
+2013-02-28T05:47:35.084625Z
+2dee8ef4c51ae9f88106af62ea37c291
+2012-09-27T04:44:21.807007Z
+21631
+li.heping
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+413
+
+css
+dir
+
+js
+dir
+

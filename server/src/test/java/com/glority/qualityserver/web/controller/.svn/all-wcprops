@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/web/controller
+END
+BuildControllerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/web/controller/BuildControllerTest.java
+END
+MetricsDescriptionControllerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/!svn/ver/34727/projects/QualitySystem/branches/deliver/1008728_make_report_acceptable/server/src/test/java/com/glority/qualityserver/web/controller/MetricsDescriptionControllerTest.java
+END

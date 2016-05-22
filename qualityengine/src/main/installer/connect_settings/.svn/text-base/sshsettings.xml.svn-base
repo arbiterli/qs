@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<!-- you should use "-D" to specify the properties in your script.-->
+    <property name="ssh.server" value="" />
+	<property name="ssh.username" value="" />
+	<property name="ssh.password" value="" />
+	<property name="scp.localpath" value="" />
+	<property name="scp.remotepath" value="" />
+	<property name="ssh.command" value="" />
+	<property name="ssh.script" value="" />
+</project>
+
+
+
+
+
+
+
+

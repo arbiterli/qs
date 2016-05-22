@@ -1,0 +1,12 @@
+#productTable {
+	color: black;
+}
+
+#productJsp {
+	height: 580px;
+	overflow-y: scroll;
+}
+
+input {
+	border: 1px solid black;
+}
